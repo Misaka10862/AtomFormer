@@ -27,7 +27,10 @@ def save_checkpoint(
 def load_checkpoint(path: str, map_location: str = "cpu") -> Tuple[ConditionalMolGenerator, CharTokenizer, Dict]:
     payload = torch.load(path, map_location=map_location)
     tokenizer = CharTokenizer.from_state(payload["tokenizer_state"])
-    config = ConditionalGeneratorConfig(**payload["model_config"])
+    config_values = dict(payload["model_config"])
+    # Checkpoints predating the encoder selector used the geometric encoder.
+    config_values.setdefault("encoder_type", "geo")
+    config = ConditionalGeneratorConfig(**config_values)
     model = ConditionalMolGenerator(config)
     load_info = model.load_state_dict(payload["model_state"], strict=False)
     extra = payload.get("extra", {})

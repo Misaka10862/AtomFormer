@@ -1,6 +1,6 @@
 # AtomFormer
 
-AtomFormer generates molecular decorations conditioned on a three-dimensional scaffold. A geometric scaffold encoder supplies atom-type and coordinate features to an autoregressive decoder, and a graph assembly step attaches the generated decoration to the requested scaffold. Supervised learning can be followed by reinforcement learning using molecular quality and scaffold-preservation rewards.
+AtomFormer generates molecular decorations conditioned on a fixed scaffold. The default model uses scaffold atom identities and a scaffold-SMILES prefix, without coordinate features. An autoregressive decoder generates an attachment-rooted decoration, and explicit graph assembly attaches it to the requested scaffold. Supervised learning is followed by balanced reinforcement learning with molecular-property rewards and a supervised anchor.
 
 The implementation supports single-attachment scaffold–decoration pairs. It includes data preparation, scaffold-disjoint splitting, training, checkpoint recovery, generation, and molecular evaluation.
 
@@ -20,7 +20,7 @@ For GPU training, install a CUDA-enabled PyTorch build compatible with your syst
 
 ## Prepare data
 
-Provide your own UTF-8 SMILES file at `data/molecules.smi`, with one SMILES string per line and no header. Preprocessing extracts eligible single-attachment scaffold–decoration pairs and computes scaffold coordinates. Molecules that cannot be represented or embedded are skipped, and their count is printed.
+Provide your own UTF-8 SMILES file at `data/molecules.smi`, with one SMILES string per line and no header. Preprocessing extracts eligible single-attachment scaffold–decoration pairs. To retain the evaluated data-selection protocol and compatibility with the optional geometric encoder, it still computes scaffold coordinates. Molecules that cannot be represented or embedded are skipped, and their count is printed. The default atom-type encoder ignores these coordinates; this model change does not make the preprocessing pipeline conformer-independent.
 
 ```bash
 python preprocess.py \
@@ -35,7 +35,7 @@ python split_scaffold_disjoint.py \
 
 The split groups canonical scaffold cores into approximately 80% training, 10% validation, and 10% test groups. Record counts depend on group sizes. It deduplicates canonical molecules and writes an overlap audit in `split_manifest.json`.
 
-Processed `.pt` files contain a list of dictionaries. The training fields are `scaffold_smiles`, `rooted_decoration_smiles`, `cond_z` (scaffold atomic numbers), `cond_pos` (an N×3 coordinate array), `anchor_z`, and `canonical_smiles`. Load only data and checkpoints from sources you trust.
+Processed `.pt` files contain a list of dictionaries. The training fields are `scaffold_smiles`, `rooted_decoration_smiles`, `cond_z` (scaffold atomic numbers), `cond_pos` (an N×3 coordinate array retained for data-format compatibility), `anchor_z`, and `canonical_smiles`. `cond_pos` is required by the shared data loader but is not used by the default model's encoder. Load only data and checkpoints from sources you trust.
 
 ## Train
 
@@ -46,6 +46,9 @@ python train.py --stage supervised \
   --train-path data/splits/train.pt \
   --val-path data/splits/validation.pt \
   --output-dir runs/supervised \
+  --encoder-type atom --representation rooted \
+  --epochs 12 --batch-size 256 \
+  --learning-rate 3e-4 --use-amp 1 \
   --device cuda
 ```
 
@@ -56,10 +59,20 @@ python train.py --stage rl \
   --checkpoint runs/supervised/last.pt \
   --train-path data/splits/train.pt \
   --output-dir runs/rl \
+  --representation rooted --epochs 4 \
+  --learning-rate 2e-6 --batch-size 64 \
+  --max-train-samples 32768 --supervised-weight 0.2 \
+  --qed-weight 1.0 --novelty-weight 0.2 --sas-weight 0.2 \
   --device cuda
 ```
 
-RL checkpoints preserve model and optimizer state, random-number state, and the position within the shuffled batches. To recover an interrupted run, repeat its command with `--resume`. Keep its inputs, code, and training parameters unchanged. `--reward-workers` controls parallel CPU reward scoring, and `--checkpoint-every` controls the checkpoint interval in batches. RL requires every selected training record to fit the tokenizer and sequence-length limit.
+These are the default no-3D rooted/balanced settings in both the wrapper and individual stage entry points. If GPU memory requires a smaller supervised batch, reduce `--batch-size` and set `--grad-accum-steps` to preserve an effective batch of 256. `--block-size` sets the supervised sequence limit; use a compatible `--max-length` for RL and evaluation. The examples use the default limit of 128; use 256 consistently when the dataset requires longer sequences.
+
+Balanced RL uses `QED + 0.2 × novelty − 0.2 × SAS` for valid, strictly scaffold-retaining products and a failure reward of −2. The total loss combines the policy loss with 0.2 times the supervised loss, including the configured anchor auxiliary term. This balances property optimization and candidate variety; it does not imply that the supervised term improves all molecular properties.
+
+RL and evaluation load the encoder architecture from the checkpoint. `--encoder-type atom` applies to supervised training and does not convert an existing geometric checkpoint. Use `--encoder-type geo` at the supervised stage for the optional 3D comparison. For a plain-decoration comparison, use `--representation plain` consistently across supervised training, RL and evaluation. For Pure RL, start from the same rooted supervised checkpoint and set `--supervised-weight 0`; the supervised forward pass remains in place to preserve the random-number consumption path.
+
+RL checkpoints preserve model and optimizer state, random-number state, and the position within the shuffled batches. To recover an interrupted run, repeat its command with `--resume`. Keep its inputs, code, and training parameters unchanged. Existing runs created with different defaults must retain their original explicit arguments and code. `--reward-workers` controls parallel CPU reward scoring, and `--checkpoint-every` controls the checkpoint interval in batches. RL requires every selected training record to fit the tokenizer and sequence-length limit.
 
 Training writes `last.pt`, `history.json`, and `run_manifest.json`; supervised training also writes `tokenizer.json`. RL additionally writes `resume.pt`, a configuration contract, and reward traces. `train_supervised.py` and `train_rl.py` expose the individual training stages. Run an entry point with `--help` for its options.
 

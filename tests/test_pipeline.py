@@ -11,6 +11,8 @@ from unittest.mock import patch
 import torch
 
 import train
+import train_rl
+import train_supervised
 from condmolgen.checkpoint import load_checkpoint, save_checkpoint
 from condmolgen.decoration_model import DecorationGenerator
 from condmolgen.metrics import evaluate_generations
@@ -42,15 +44,43 @@ class PipelineTests(unittest.TestCase):
             args = train.parse_args()
         command = train.build_rl_command(args)
         self.assertEqual(Path(command[1]).name, 'train_rl.py')
-        expected = {'--epochs': '1', '--batch-size': '64', '--learning-rate': '5e-06',
-                    '--supervised-weight': '0.1', '--novelty-weight': '0.4', '--sas-weight': '0.05',
+        expected = {'--epochs': '4', '--batch-size': '64', '--learning-rate': '2e-06',
+                    '--supervised-weight': '0.2', '--novelty-weight': '0.2', '--sas-weight': '0.2',
                     '--reward-workers': '2', '--checkpoint-every': '3'}
         for flag, value in expected.items():
             self.assertEqual(command[command.index(flag) + 1], value)
         self.assertIn('--resume', command)
+        with patch.object(sys, 'argv', command[1:]):
+            forwarded = train_rl.parse_args()
+        with patch.object(sys, 'argv', ['train_rl.py', '--checkpoint', 'input.pt',
+                                       '--train-path', 'train.pt', '--output-dir', 'run']):
+            direct = train_rl.parse_args()
+        for field in ('epochs', 'batch_size', 'learning_rate', 'supervised_weight',
+                      'novelty_weight', 'sas_weight', 'max_train_samples'):
+            self.assertEqual(getattr(forwarded, field), getattr(direct, field))
+        args.encoder_type = 'atom'
+        with self.assertRaisesRegex(ValueError, 'checkpoint encoder'):
+            train.build_rl_command(args)
+        args.encoder_type = None
         args.checkpoint = None
         with self.assertRaises(ValueError):
             train.build_rl_command(args)
+
+    def test_supervised_wrapper_selects_atom_and_forwards_explicit_geo(self):
+        argv = ['train.py', '--stage', 'supervised', '--train-path', 'train.pt', '--output-dir', 'run']
+        with patch.object(sys, 'argv', argv):
+            args = train.parse_args()
+        command = train.build_supervised_command(args)
+        with patch.object(sys, 'argv', command[1:]):
+            forwarded = train_supervised.parse_args()
+        with patch.object(sys, 'argv', ['train_supervised.py', '--train-path', 'train.pt', '--output-dir', 'run']):
+            direct = train_supervised.parse_args()
+        self.assertEqual(forwarded.encoder_type, 'atom')
+        for field in ('encoder_type', 'epochs', 'batch_size', 'learning_rate', 'use_amp', 'representation'):
+            self.assertEqual(getattr(forwarded, field), getattr(direct, field))
+        args.encoder_type = 'geo'
+        command = train.build_supervised_command(args)
+        self.assertEqual(command[command.index('--encoder-type') + 1], 'geo')
 
     def test_checkpoint_roundtrip_preserves_weights_and_predictions(self):
         tokenizer = CharTokenizer(texts=['*c1ccccc1', 'CO'])
@@ -123,6 +153,8 @@ class PipelineTests(unittest.TestCase):
                          '--encoder-heads', '2', '--decoder-heads', '2', '--encoder-layers', '1',
                          '--decoder-layers', '1', '--encoder-ffn-dim', '32', '--decoder-ffn-dim', '32',
                          '--block-size', '64', '--dropout', '0', '--use-amp', '0')
+            supervised_payload = torch.load(supervised / 'last.pt', map_location='cpu')
+            self.assertEqual(supervised_payload['model_config']['encoder_type'], 'atom')
             rl_args = ['train.py', '--stage', 'rl', '--checkpoint', supervised / 'last.pt',
                        '--train-path', splits / 'train.pt', '--output-dir', rl, '--device', 'cpu',
                        '--epochs', '1', '--max-train-samples', '4', '--val-ratio', '0',
@@ -130,6 +162,7 @@ class PipelineTests(unittest.TestCase):
                        '--reward-workers', '2']
             self.command(*rl_args)
             before = torch.load(rl / 'last.pt', map_location='cpu')
+            self.assertEqual(before['model_config']['encoder_type'], 'atom')
             self.command(*rl_args, '--resume')
             after = torch.load(rl / 'last.pt', map_location='cpu')
             for name in before['model_state']:

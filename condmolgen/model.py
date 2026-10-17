@@ -53,7 +53,7 @@ class ConditionalGeneratorConfig:
     decoder_pad_token_id: int = 0
     scaffold_aux_weight: float = 0.0
     anchor_aux_weight: float = 0.0
-    encoder_type: str = "geo"
+    encoder_type: str = "atom"
 
     def to_dict(self) -> Dict:
         return asdict(self)

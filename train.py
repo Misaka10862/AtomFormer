@@ -17,6 +17,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--output-dir", required=True)
     parser.add_argument("--device", default="cuda")
     parser.add_argument("--representation", choices=["rooted", "plain"], default="rooted")
+    parser.add_argument("--encoder-type", choices=["atom", "geo"], default=None,
+                        help="Supervised stage only; defaults to atom. RL uses the checkpoint encoder.")
     parser.add_argument("--require-full-coverage", type=int, default=None)
 
     parser.add_argument("--checkpoint", default=None)
@@ -91,10 +93,12 @@ def build_supervised_command(args: argparse.Namespace) -> List[str]:
         args.device,
         "--representation",
         representation,
+        "--encoder-type",
+        args.encoder_type if args.encoder_type is not None else "atom",
         "--epochs",
         str(args.epochs if args.epochs is not None else 12),
         "--batch-size",
-        str(args.batch_size if args.batch_size is not None else 128),
+        str(args.batch_size if args.batch_size is not None else 256),
         "--learning-rate",
         str(args.learning_rate if args.learning_rate is not None else 3e-4),
         "--use-amp",
@@ -134,6 +138,8 @@ def build_supervised_command(args: argparse.Namespace) -> List[str]:
 
 
 def build_rl_command(args: argparse.Namespace) -> List[str]:
+    if args.encoder_type is not None:
+        raise ValueError("--encoder-type applies only to supervised training; RL uses the checkpoint encoder.")
     if not args.checkpoint:
         raise ValueError("--checkpoint is required for --stage rl.")
     representation = getattr(args, "representation", "rooted")
@@ -151,19 +157,19 @@ def build_rl_command(args: argparse.Namespace) -> List[str]:
         "--representation",
         representation,
         "--epochs",
-        str(args.epochs if args.epochs is not None else 1),
+        str(args.epochs if args.epochs is not None else 4),
         "--batch-size",
         str(args.batch_size if args.batch_size is not None else 64),
         "--learning-rate",
-        str(args.learning_rate if args.learning_rate is not None else 5e-6),
+        str(args.learning_rate if args.learning_rate is not None else 2e-6),
         "--supervised-weight",
-        str(args.supervised_weight if args.supervised_weight is not None else 0.1),
+        str(args.supervised_weight if args.supervised_weight is not None else 0.2),
         "--novelty-weight",
-        str(args.novelty_weight if args.novelty_weight is not None else 0.4),
+        str(args.novelty_weight if args.novelty_weight is not None else 0.2),
         "--qed-weight",
         str(args.qed_weight if args.qed_weight is not None else 1.0),
         "--sas-weight",
-        str(args.sas_weight if args.sas_weight is not None else 0.05),
+        str(args.sas_weight if args.sas_weight is not None else 0.2),
         "--reward-baseline",
         str(args.reward_baseline if args.reward_baseline is not None else "batch_mean"),
     ]
