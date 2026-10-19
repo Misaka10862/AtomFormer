@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "Please cite the software version and the linked research-data archive used."
+type: software
+version: 1.0.0
+date-released: 2026-10-19
+title: "AtomFormer: scaffold-preserving molecular decoration"
+authors:
+  - family-names: Zhang
+    given-names: Pengkai
+    affiliation: Lanzhou University
+  - family-names: Yuan
+    given-names: Yongna
+    affiliation: Lanzhou University
+repository-code: "https://github.com/Misaka10862/AtomFormer"
+license: GPL-3.0-or-later
+keywords:
+  - molecular generation
+  - scaffold decoration
+  - reinforcement learning

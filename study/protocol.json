@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "main_model": {
+    "configuration": "atomformer",
+    "representation": "rooted",
+    "encoder_type": "atom",
+    "uses_3d": false,
+    "supervised_weight": 0.2
+  },
+  "model": {
+    "max_z": 64,
+    "embedding_dim": 256,
+    "encoder_layers": 4,
+    "encoder_heads": 8,
+    "encoder_ffn_dim": 512,
+    "decoder_layers": 6,
+    "decoder_heads": 8,
+    "decoder_ffn_dim": 1024,
+    "dropout": 0.1,
+    "attention_dropout": 0.0,
+    "anchor_aux_weight": 0.1
+  },
+  "datasets": {
+    "gdb13": {
+      "train_records": 181472,
+      "validation_records": 23368,
+      "test_records": 24441,
+      "max_serialized_length": 128
+    },
+    "chembl37": {
+      "train_records": 180000,
+      "validation_records": 20000,
+      "test_records": 20000,
+      "max_serialized_length": 256
+    },
+    "moses": {
+      "train_records": 180000,
+      "validation_records": 20000,
+      "test_records": 20000,
+      "max_serialized_length": 256
+    }
+  },
+  "supervised": {
+    "epochs": 12,
+    "effective_batch": 256,
+    "learning_rate": 0.0003,
+    "weight_decay": 0.01,
+    "checkpoint": "last",
+    "mixed_precision": true,
+    "physical_batch": "preserve archived run configuration"
+  },
+  "rl": {
+    "epochs": 4,
+    "batch_size": 64,
+    "learning_rate": 2e-06,
+    "weight_decay": 0.01,
+    "max_records": 32768,
+    "validation_ratio": 0.1,
+    "policy_update_records": 29491,
+    "supervised_weight": 0.2,
+    "reward": "QED + 0.2 novelty - 0.2 SAS",
+    "failure_reward": -2,
+    "max_grad_norm": 1.0
+  },
+  "evaluation": {
+    "samples_per_record": 20,
+    "temperature": 1.0,
+    "greedy": false,
+    "rdkit_scoring_version": "2022.09.5",
+    "generation_batching": "preserve original run boundaries",
+    "diversity_cap": 5000,
+    "validity_denominator": "all native attempts",
+    "retention_denominator": "valid products",
+    "retained_yield_denominator": "all intended attempts",
+    "record_unique_valid_denominator": "records with at least one valid product",
+    "unique_retained_denominator": "all intended records"
+  },
+  "statistical_scope": {
+    "summary": "three trained runs, sample SD",
+    "component_summary": "paired run differences, sample SD",
+    "no3d_bootstrap": "2000 scoring-target-core resamples, conditional on fixed trained runs"
+  }
+}

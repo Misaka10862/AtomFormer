@@ -4,6 +4,18 @@ AtomFormer generates molecular decorations conditioned on a fixed scaffold. The 
 
 The implementation supports single-attachment scaffold–decoration pairs. It includes data preparation, scaffold-disjoint splitting, training, checkpoint recovery, generation, and molecular evaluation.
 
+## Research materials
+
+Fixed study inputs, GDB13 reconstruction selectors, nine primary-model weights,
+and saved evaluation outputs have been prepared for the associated
+[Zenodo deposit](https://doi.org/10.5281/zenodo.23468121) (reserved DOI, version 1.0.0).
+The deposit is currently a draft and its files are not yet publicly accessible.
+The [study guide](study/README.md) describes their use and the fixed evaluation
+protocol. See [data sources](study/data_sources.json) for original dataset versions
+and citations. Use the `v1.0.0` code tag with this archive. Original software is distributed
+under GPL-3.0-or-later, with the upstream notices in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+Data and model artifacts have their own licenses and are distributed separately.
+
 ## Installation
 
 Use Python 3.11 and a virtual environment:
@@ -66,7 +78,7 @@ python train.py --stage rl \
   --device cuda
 ```
 
-These are the default no-3D rooted/balanced settings in both the wrapper and individual stage entry points. If GPU memory requires a smaller supervised batch, reduce `--batch-size` and set `--grad-accum-steps` to preserve an effective batch of 256. `--block-size` sets the supervised sequence limit; use a compatible `--max-length` for RL and evaluation. The examples use the default limit of 128; use 256 consistently when the dataset requires longer sequences.
+These are the default no-3D rooted/balanced settings in both the wrapper and individual stage entry points. A smaller physical batch can be used with `--grad-accum-steps` for general training, but the microbatch weighting is not a guarantee of the archived training trajectory. See the study guide before an exact replay. `--block-size` sets the supervised sequence limit; use a compatible `--max-length` for RL and evaluation. The examples use the default limit of 128; use 256 consistently when the dataset requires longer sequences.
 
 Balanced RL uses `QED + 0.2 × novelty − 0.2 × SAS` for valid, strictly scaffold-retaining products and a failure reward of −2. The total loss combines the policy loss with 0.2 times the supervised loss, including the configured anchor auxiliary term. This balances property optimization and candidate variety; it does not imply that the supervised term improves all molecular properties.
 

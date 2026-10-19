@@ -1,0 +1,1070 @@
+{
+  "schema": 1,
+  "summaries": [
+    {
+      "dataset": "gdb13",
+      "configuration": "geometry_extension",
+      "metrics": {
+        "validity": {
+          "mean": 0.9966695307065996,
+          "sd": 0.0001963380279044409,
+          "n": 3
+        },
+        "assembly_success_rate": {
+          "mean": 0.9966722583636786,
+          "sd": 0.00019708620113419192,
+          "n": 3
+        },
+        "decoration_validity": {
+          "mean": 0.9982652100977865,
+          "sd": 0.00043630951153820634,
+          "n": 3
+        },
+        "scaffold_core_match_rate": {
+          "mean": 1.0,
+          "sd": 0.0,
+          "n": 3
+        },
+        "scaffold_core_retention_rate": {
+          "mean": 1.0,
+          "sd": 0.0,
+          "n": 3
+        },
+        "novelty": {
+          "mean": 1.0,
+          "sd": 0.0,
+          "n": 3
+        },
+        "qed_mean": {
+          "mean": 0.5218044648812553,
+          "sd": 0.0005808861202265998,
+          "n": 3
+        },
+        "sas_mean": {
+          "mean": 4.961067562476743,
+          "sd": 0.002865348762340148,
+          "n": 3
+        },
+        "diversity": {
+          "mean": 0.9114668948122367,
+          "sd": 0.00019996168475327358,
+          "n": 3
+        },
+        "unique_rate": {
+          "mean": 0.4344284660713712,
+          "sd": 0.02481557772885014,
+          "n": 3
+        },
+        "mean_unique_per_record": {
+          "mean": 11.208065681982461,
+          "sd": 0.01421179360235093,
+          "n": 3
+        },
+        "mean_within_record_diversity": {
+          "mean": 0.4129025436216912,
+          "sd": 0.0016741098750503475,
+          "n": 3
+        },
+        "retained_yield": {
+          "mean": 0.9966695307065996,
+          "sd": 0.0001963380279044409,
+          "n": 3
+        }
+      }
+    },
+    {
+      "dataset": "gdb13",
+      "configuration": "atomformer",
+      "metrics": {
+        "validity": {
+          "mean": 0.9965692893089481,
+          "sd": 0.00016071780484762483,
+          "n": 3
+        },
+        "assembly_success_rate": {
+          "mean": 0.9965706531374876,
+          "sd": 0.0001609563262559168,
+          "n": 3
+        },
+        "decoration_validity": {
+          "mean": 0.9980654092167532,
+          "sd": 0.0001841206412029395,
+          "n": 3
+        },
+        "scaffold_core_match_rate": {
+          "mean": 1.0,
+          "sd": 0.0,
+          "n": 3
+        },
+        "scaffold_core_retention_rate": {
+          "mean": 1.0,
+          "sd": 0.0,
+          "n": 3
+        },
+        "novelty": {
+          "mean": 1.0,
+          "sd": 0.0,
+          "n": 3
+        },
+        "qed_mean": {
+          "mean": 0.5260811715212289,
+          "sd": 0.0037958063127912457,
+          "n": 3
+        },
+        "sas_mean": {
+          "mean": 4.964363916835192,
+          "sd": 0.0031024561910404105,
+          "n": 3
+        },
+        "diversity": {
+          "mean": 0.9107461082676878,
+          "sd": 0.00024060828339218449,
+          "n": 3
+        },
+        "unique_rate": {
+          "mean": 0.49252555652432617,
+          "sd": 0.035280409144331275,
+          "n": 3
+        },
+        "mean_unique_per_record": {
+          "mean": 12.082102478076456,
+          "sd": 0.701662218970648,
+          "n": 3
+        },
+        "mean_within_record_diversity": {
+          "mean": 0.4352892266455521,
+          "sd": 0.019217325638195313,
+          "n": 3
+        },
+        "retained_yield": {
+          "mean": 0.9965692893089481,
+          "sd": 0.00016071780484762483,
+          "n": 3
+        }
+      }
+    },
+    {
+      "dataset": "gdb13",
+      "configuration": "drugex",
+      "metrics": {
+        "validity": {
+          "mean": 1.0,
+          "sd": 0.0,
+          "n": 3
+        },
+        "assembly_success_rate": {
+          "mean": null,
+          "sd": null,
+          "n": 3
+        },
+        "decoration_validity": {
+          "mean": null,
+          "sd": null,
+          "n": 3
+        },
+        "scaffold_core_match_rate": {
+          "mean": 0.9999720357941834,
+          "sd": 1.4802296075613506e-05,
+          "n": 3
+        },
+        "scaffold_core_retention_rate": {
+          "mean": 0.7895004637965842,
+          "sd": 0.012527360506076054,
+          "n": 3
+        },
+        "novelty": {
+          "mean": 0.9999297484585584,
+          "sd": 9.669781523705106e-06,
+          "n": 3
+        },
+        "qed_mean": {
+          "mean": 0.5443998509934218,
+          "sd": 0.003955013292665126,
+          "n": 3
+        },
+        "sas_mean": {
+          "mean": 5.09275832951471,
+          "sd": 0.028361859766238853,
+          "n": 3
+        },
+        "diversity": {
+          "mean": 0.906901759189177,
+          "sd": 0.0011132768716637224,
+          "n": 3
+        },
+        "unique_rate": {
+          "mean": 0.7818048507666285,
+          "sd": 0.008902037781225523,
+          "n": 3
+        },
+        "mean_unique_per_record": {
+          "mean": 15.901634200905768,
+          "sd": 0.14599214814338599,
+          "n": 3
+        },
+        "mean_within_record_diversity": {
+          "mean": 0.6898964963614332,
+          "sd": 0.001310841323171838,
+          "n": 3
+        },
+        "retained_yield": {
+          "mean": 0.789338952306916,
+          "sd": 0.01252479773030864,
+          "n": 3
+        }
+      }
+    },
+    {
+      "dataset": "gdb13",
+      "configuration": "libinvent",
+      "metrics": {
+        "validity": {
+          "mean": 0.9999884074574145,
+          "sd": 2.007887274705556e-05,
+          "n": 3
+        },
+        "assembly_success_rate": {
+          "mean": null,
+          "sd": null,
+          "n": 3
+        },
+        "decoration_validity": {
+          "mean": null,
+          "sd": null,
+          "n": 3
+        },
+        "scaffold_core_match_rate": {
+          "mean": 1.0,
+          "sd": 0.0,
+          "n": 3
+        },
+        "scaffold_core_retention_rate": {
+          "mean": 1.0,
+          "sd": 0.0,
+          "n": 3
+        },
+        "novelty": {
+          "mean": 1.0,
+          "sd": 0.0,
+          "n": 3
+        },
+        "qed_mean": {
+          "mean": 0.5404770994810656,
+          "sd": 0.03640072462953952,
+          "n": 3
+        },
+        "sas_mean": {
+          "mean": 4.514995452135092,
+          "sd": 0.07297881427337843,
+          "n": 3
+        },
+        "diversity": {
+          "mean": 0.8697781758679507,
+          "sd": 0.007335822277190712,
+          "n": 3
+        },
+        "unique_rate": {
+          "mean": 0.04560507792055274,
+          "sd": 0.012597192007899322,
+          "n": 3
+        },
+        "mean_unique_per_record": {
+          "mean": 1.227923025517232,
+          "sd": 0.3712200782904442,
+          "n": 3
+        },
+        "mean_within_record_diversity": {
+          "mean": 0.008478214244442974,
+          "sd": 0.01396915350933772,
+          "n": 3
+        },
+        "retained_yield": {
+          "mean": 0.9999884074574145,
+          "sd": 2.007887274705556e-05,
+          "n": 3
+        }
+      }
+    },
+    {
+      "dataset": "gdb13",
+      "configuration": "promptsmiles",
+      "metrics": {
+        "validity": {
+          "mean": 0.9877159963449396,
+          "sd": 0.002564779288122322,
+          "n": 3
+        },
+        "assembly_success_rate": {
+          "mean": null,
+          "sd": null,
+          "n": 3
+        },
+        "decoration_validity": {
+          "mean": null,
+          "sd": null,
+          "n": 3
+        },
+        "scaffold_core_match_rate": {
+          "mean": 0.9999910177399342,
+          "sd": 5.237363026470004e-06,
+          "n": 3
+        },
+        "scaffold_core_retention_rate": {
+          "mean": 0.5958062396690874,
+          "sd": 0.05115916467876408,
+          "n": 3
+        },
+        "novelty": {
+          "mean": 0.9999599445045733,
+          "sd": 7.380774496928034e-06,
+          "n": 3
+        },
+        "qed_mean": {
+          "mean": 0.5261478231726102,
+          "sd": 0.0072372246684043766,
+          "n": 3
+        },
+        "sas_mean": {
+          "mean": 4.840342060958693,
+          "sd": 0.0066843832190879564,
+          "n": 3
+        },
+        "diversity": {
+          "mean": 0.9059440730174049,
+          "sd": 0.00035886191637976805,
+          "n": 3
+        },
+        "unique_rate": {
+          "mean": 0.28091999487224156,
+          "sd": 0.013101669845924218,
+          "n": 3
+        },
+        "mean_unique_per_record": {
+          "mean": 6.701277960747706,
+          "sd": 0.147685533424611,
+          "n": 3
+        },
+        "mean_within_record_diversity": {
+          "mean": 0.28357202897868883,
+          "sd": 0.006410524350933715,
+          "n": 3
+        },
+        "retained_yield": {
+          "mean": 0.5884320063281644,
+          "sd": 0.04964214344100064,
+          "n": 3
+        }
+      }
+    },
+    {
+      "dataset": "chembl37",
+      "configuration": "geometry_extension",
+      "metrics": {
+        "validity": {
+          "mean": 0.98099,
+          "sd": 0.006591250355585027,
+          "n": 3
+        },
+        "assembly_success_rate": {
+          "mean": 0.9809924999999999,
+          "sd": 0.00659125035558509,
+          "n": 3
+        },
+        "decoration_validity": {
+          "mean": 0.9817033333333334,
+          "sd": 0.006427870143627134,
+          "n": 3
+        },
+        "scaffold_core_match_rate": {
+          "mean": 1.0,
+          "sd": 0.0,
+          "n": 3
+        },
+        "scaffold_core_retention_rate": {
+          "mean": 0.9912040922867261,
+          "sd": 8.318373282161088e-05,
+          "n": 3
+        },
+        "novelty": {
+          "mean": 1.0,
+          "sd": 0.0,
+          "n": 3
+        },
+        "qed_mean": {
+          "mean": 0.6248966301115466,
+          "sd": 0.001792497201143311,
+          "n": 3
+        },
+        "sas_mean": {
+          "mean": 2.595146490779801,
+          "sd": 0.011930647346260148,
+          "n": 3
+        },
+        "diversity": {
+          "mean": 0.8729030506979923,
+          "sd": 0.0004194040020775891,
+          "n": 3
+        },
+        "unique_rate": {
+          "mean": 0.31293402119892505,
+          "sd": 0.0033968499631796753,
+          "n": 3
+        },
+        "mean_unique_per_record": {
+          "mean": 7.489883333333333,
+          "sd": 0.13876013776778062,
+          "n": 3
+        },
+        "mean_within_record_diversity": {
+          "mean": 0.23659510288104593,
+          "sd": 0.000412514128935442,
+          "n": 3
+        },
+        "retained_yield": {
+          "mean": 0.9723616666666667,
+          "sd": 0.006614858432599535,
+          "n": 3
+        }
+      }
+    },
+    {
+      "dataset": "chembl37",
+      "configuration": "atomformer",
+      "metrics": {
+        "validity": {
+          "mean": 0.9839416666666666,
+          "sd": 0.0011952100582464102,
+          "n": 3
+        },
+        "assembly_success_rate": {
+          "mean": 0.983945,
+          "sd": 0.0011937100778664938,
+          "n": 3
+        },
+        "decoration_validity": {
+          "mean": 0.9844183333333333,
+          "sd": 0.001209551397557485,
+          "n": 3
+        },
+        "scaffold_core_match_rate": {
+          "mean": 1.0,
+          "sd": 0.0,
+          "n": 3
+        },
+        "scaffold_core_retention_rate": {
+          "mean": 0.9912757340226366,
+          "sd": 2.917861783004016e-05,
+          "n": 3
+        },
+        "novelty": {
+          "mean": 1.0,
+          "sd": 0.0,
+          "n": 3
+        },
+        "qed_mean": {
+          "mean": 0.6221125293447003,
+          "sd": 0.0019234841850657401,
+          "n": 3
+        },
+        "sas_mean": {
+          "mean": 2.598359390189994,
+          "sd": 0.005057741916564421,
+          "n": 3
+        },
+        "diversity": {
+          "mean": 0.8730782885416782,
+          "sd": 0.0004480957547438837,
+          "n": 3
+        },
+        "unique_rate": {
+          "mean": 0.4569778740343547,
+          "sd": 0.0036628517130002283,
+          "n": 3
+        },
+        "mean_unique_per_record": {
+          "mean": 10.937733333333334,
+          "sd": 0.075154446530683,
+          "n": 3
+        },
+        "mean_within_record_diversity": {
+          "mean": 0.32538430384895173,
+          "sd": 0.0011657338329150533,
+          "n": 3
+        },
+        "retained_yield": {
+          "mean": 0.9753575,
+          "sd": 0.0011877578667388077,
+          "n": 3
+        }
+      }
+    },
+    {
+      "dataset": "chembl37",
+      "configuration": "drugex",
+      "metrics": {
+        "validity": {
+          "mean": 1.0,
+          "sd": 0.0,
+          "n": 3
+        },
+        "assembly_success_rate": {
+          "mean": null,
+          "sd": null,
+          "n": 3
+        },
+        "decoration_validity": {
+          "mean": null,
+          "sd": null,
+          "n": 3
+        },
+        "scaffold_core_match_rate": {
+          "mean": 0.9993729870485849,
+          "sd": 0.00021267915511321683,
+          "n": 3
+        },
+        "scaffold_core_retention_rate": {
+          "mean": 0.7522819159871171,
+          "sd": 0.008812612172435378,
+          "n": 3
+        },
+        "novelty": {
+          "mean": 0.9995100390598232,
+          "sd": 5.384853575515268e-05,
+          "n": 3
+        },
+        "qed_mean": {
+          "mean": 0.6506785520415009,
+          "sd": 0.004156892654629775,
+          "n": 3
+        },
+        "sas_mean": {
+          "mean": 2.877917039380673,
+          "sd": 0.05420457317536453,
+          "n": 3
+        },
+        "diversity": {
+          "mean": 0.8760068610260183,
+          "sd": 0.0009354313171254216,
+          "n": 3
+        },
+        "unique_rate": {
+          "mean": 0.705102903218438,
+          "sd": 0.07303736106760651,
+          "n": 3
+        },
+        "mean_unique_per_record": {
+          "mean": 15.245985518170812,
+          "sd": 1.372743759595963,
+          "n": 3
+        },
+        "mean_within_record_diversity": {
+          "mean": 0.46695345585866826,
+          "sd": 0.023515842582715857,
+          "n": 3
+        },
+        "retained_yield": {
+          "mean": 0.5489025,
+          "sd": 0.006430122471617439,
+          "n": 3
+        }
+      }
+    },
+    {
+      "dataset": "chembl37",
+      "configuration": "libinvent",
+      "metrics": {
+        "validity": {
+          "mean": 0.9993249324932494,
+          "sd": 0.00043103759328324767,
+          "n": 3
+        },
+        "assembly_success_rate": {
+          "mean": null,
+          "sd": null,
+          "n": 3
+        },
+        "decoration_validity": {
+          "mean": null,
+          "sd": null,
+          "n": 3
+        },
+        "scaffold_core_match_rate": {
+          "mean": 1.0,
+          "sd": 0.0,
+          "n": 3
+        },
+        "scaffold_core_retention_rate": {
+          "mean": 0.9912732730743165,
+          "sd": 0.00012629602620352576,
+          "n": 3
+        },
+        "novelty": {
+          "mean": 1.0,
+          "sd": 0.0,
+          "n": 3
+        },
+        "qed_mean": {
+          "mean": 0.6366458807447835,
+          "sd": 0.013214670581834675,
+          "n": 3
+        },
+        "sas_mean": {
+          "mean": 2.398710288673883,
+          "sd": 0.07907093947969925,
+          "n": 3
+        },
+        "diversity": {
+          "mean": 0.8579926762320811,
+          "sd": 0.01439173853560108,
+          "n": 3
+        },
+        "unique_rate": {
+          "mean": 0.13023540652381072,
+          "sd": 0.10572813782960684,
+          "n": 3
+        },
+        "mean_unique_per_record": {
+          "mean": 4.924792479247925,
+          "sd": 3.114985583033275,
+          "n": 3
+        },
+        "mean_within_record_diversity": {
+          "mean": 0.15369326261346675,
+          "sd": 0.10610798790765344,
+          "n": 3
+        },
+        "retained_yield": {
+          "mean": 0.9905050000000001,
+          "sd": 0.00030107100491413976,
+          "n": 3
+        }
+      }
+    },
+    {
+      "dataset": "chembl37",
+      "configuration": "promptsmiles",
+      "metrics": {
+        "validity": {
+          "mean": 0.9125395872920625,
+          "sd": 0.030015372354672325,
+          "n": 3
+        },
+        "assembly_success_rate": {
+          "mean": null,
+          "sd": null,
+          "n": 3
+        },
+        "decoration_validity": {
+          "mean": null,
+          "sd": null,
+          "n": 3
+        },
+        "scaffold_core_match_rate": {
+          "mean": 0.9999691447271184,
+          "sd": 2.0944099252256873e-05,
+          "n": 3
+        },
+        "scaffold_core_retention_rate": {
+          "mean": 0.20673399757717334,
+          "sd": 0.019828791972659417,
+          "n": 3
+        },
+        "novelty": {
+          "mean": 0.9998795026720798,
+          "sd": 9.554347556596599e-05,
+          "n": 3
+        },
+        "qed_mean": {
+          "mean": 0.6173989903932254,
+          "sd": 0.004485662111478351,
+          "n": 3
+        },
+        "sas_mean": {
+          "mean": 2.5459807436145034,
+          "sd": 0.028898085506274804,
+          "n": 3
+        },
+        "diversity": {
+          "mean": 0.852654632253841,
+          "sd": 0.0010761019909784183,
+          "n": 3
+        },
+        "unique_rate": {
+          "mean": 0.3354707646034075,
+          "sd": 0.027469856481822798,
+          "n": 3
+        },
+        "mean_unique_per_record": {
+          "mean": 7.425558040724518,
+          "sd": 0.5359696287370727,
+          "n": 3
+        },
+        "mean_within_record_diversity": {
+          "mean": 0.2787456607426354,
+          "sd": 0.019341816302532906,
+          "n": 3
+        },
+        "retained_yield": {
+          "mean": 0.18892666666666666,
+          "sd": 0.023269559827881002,
+          "n": 3
+        }
+      }
+    },
+    {
+      "dataset": "moses",
+      "configuration": "geometry_extension",
+      "metrics": {
+        "validity": {
+          "mean": 0.9989358333333334,
+          "sd": 8.082903768656434e-05,
+          "n": 3
+        },
+        "assembly_success_rate": {
+          "mean": 0.9989375,
+          "sd": 8.011710179482247e-05,
+          "n": 3
+        },
+        "decoration_validity": {
+          "mean": 0.9990733333333334,
+          "sd": 3.467107343785418e-05,
+          "n": 3
+        },
+        "scaffold_core_match_rate": {
+          "mean": 1.0,
+          "sd": 0.0,
+          "n": 3
+        },
+        "scaffold_core_retention_rate": {
+          "mean": 1.0,
+          "sd": 0.0,
+          "n": 3
+        },
+        "novelty": {
+          "mean": 1.0,
+          "sd": 0.0,
+          "n": 3
+        },
+        "qed_mean": {
+          "mean": 0.7980187758534387,
+          "sd": 0.00011510054559043166,
+          "n": 3
+        },
+        "sas_mean": {
+          "mean": 2.432985681928134,
+          "sd": 0.0005290619473532825,
+          "n": 3
+        },
+        "diversity": {
+          "mean": 0.8544140504390348,
+          "sd": 0.00046340506621764873,
+          "n": 3
+        },
+        "unique_rate": {
+          "mean": 0.2256016334197876,
+          "sd": 0.0053337157111647115,
+          "n": 3
+        },
+        "mean_unique_per_record": {
+          "mean": 5.53635,
+          "sd": 0.09898311724733666,
+          "n": 3
+        },
+        "mean_within_record_diversity": {
+          "mean": 0.14742596107242537,
+          "sd": 0.0025724601177817183,
+          "n": 3
+        },
+        "retained_yield": {
+          "mean": 0.9989358333333334,
+          "sd": 8.082903768656434e-05,
+          "n": 3
+        }
+      }
+    },
+    {
+      "dataset": "moses",
+      "configuration": "atomformer",
+      "metrics": {
+        "validity": {
+          "mean": 0.9987816666666667,
+          "sd": 5.305264680799926e-05,
+          "n": 3
+        },
+        "assembly_success_rate": {
+          "mean": 0.9987841666666667,
+          "sd": 5.064171534745544e-05,
+          "n": 3
+        },
+        "decoration_validity": {
+          "mean": 0.9988833333333333,
+          "sd": 1.8929694486022287e-05,
+          "n": 3
+        },
+        "scaffold_core_match_rate": {
+          "mean": 1.0,
+          "sd": 0.0,
+          "n": 3
+        },
+        "scaffold_core_retention_rate": {
+          "mean": 1.0,
+          "sd": 0.0,
+          "n": 3
+        },
+        "novelty": {
+          "mean": 1.0,
+          "sd": 0.0,
+          "n": 3
+        },
+        "qed_mean": {
+          "mean": 0.798268897525837,
+          "sd": 0.00010265772203765118,
+          "n": 3
+        },
+        "sas_mean": {
+          "mean": 2.4358975356196515,
+          "sd": 0.0002581608701952963,
+          "n": 3
+        },
+        "diversity": {
+          "mean": 0.8546921351418111,
+          "sd": 9.960013988686881e-05,
+          "n": 3
+        },
+        "unique_rate": {
+          "mean": 0.3468950868720848,
+          "sd": 0.0015875363525463108,
+          "n": 3
+        },
+        "mean_unique_per_record": {
+          "mean": 8.82155,
+          "sd": 0.028002812358761255,
+          "n": 3
+        },
+        "mean_within_record_diversity": {
+          "mean": 0.2367290259008034,
+          "sd": 0.0005038714224657707,
+          "n": 3
+        },
+        "retained_yield": {
+          "mean": 0.9987816666666667,
+          "sd": 5.305264680799926e-05,
+          "n": 3
+        }
+      }
+    },
+    {
+      "dataset": "moses",
+      "configuration": "drugex",
+      "metrics": {
+        "validity": {
+          "mean": 1.0,
+          "sd": 0.0,
+          "n": 3
+        },
+        "assembly_success_rate": {
+          "mean": null,
+          "sd": null,
+          "n": 3
+        },
+        "decoration_validity": {
+          "mean": null,
+          "sd": null,
+          "n": 3
+        },
+        "scaffold_core_match_rate": {
+          "mean": 0.9998975,
+          "sd": 6.128825336066836e-05,
+          "n": 3
+        },
+        "scaffold_core_retention_rate": {
+          "mean": 0.8404375,
+          "sd": 0.087478270123214,
+          "n": 3
+        },
+        "novelty": {
+          "mean": 0.9994016666666666,
+          "sd": 9.712534856218116e-05,
+          "n": 3
+        },
+        "qed_mean": {
+          "mean": 0.7898069698909783,
+          "sd": 0.007329784437208308,
+          "n": 3
+        },
+        "sas_mean": {
+          "mean": 2.6756325365112947,
+          "sd": 0.10147395083382876,
+          "n": 3
+        },
+        "diversity": {
+          "mean": 0.8583983279806091,
+          "sd": 0.0012189274968020661,
+          "n": 3
+        },
+        "unique_rate": {
+          "mean": 0.6503875,
+          "sd": 0.08194938392080808,
+          "n": 3
+        },
+        "mean_unique_per_record": {
+          "mean": 14.871599999999999,
+          "sd": 1.3954546311148914,
+          "n": 3
+        },
+        "mean_within_record_diversity": {
+          "mean": 0.45077280222639005,
+          "sd": 0.0377894088574875,
+          "n": 3
+        },
+        "retained_yield": {
+          "mean": 0.8404375,
+          "sd": 0.087478270123214,
+          "n": 3
+        }
+      }
+    },
+    {
+      "dataset": "moses",
+      "configuration": "libinvent",
+      "metrics": {
+        "validity": {
+          "mean": 0.9988975,
+          "sd": 0.0005667726616554764,
+          "n": 3
+        },
+        "assembly_success_rate": {
+          "mean": null,
+          "sd": null,
+          "n": 3
+        },
+        "decoration_validity": {
+          "mean": null,
+          "sd": null,
+          "n": 3
+        },
+        "scaffold_core_match_rate": {
+          "mean": 1.0,
+          "sd": 0.0,
+          "n": 3
+        },
+        "scaffold_core_retention_rate": {
+          "mean": 1.0,
+          "sd": 0.0,
+          "n": 3
+        },
+        "novelty": {
+          "mean": 1.0,
+          "sd": 0.0,
+          "n": 3
+        },
+        "qed_mean": {
+          "mean": 0.8016603417206516,
+          "sd": 0.0009595870378188436,
+          "n": 3
+        },
+        "sas_mean": {
+          "mean": 2.3754777060113845,
+          "sd": 0.01439660830347988,
+          "n": 3
+        },
+        "diversity": {
+          "mean": 0.8516885320441292,
+          "sd": 0.0057331657691446864,
+          "n": 3
+        },
+        "unique_rate": {
+          "mean": 0.10457314139782145,
+          "sd": 0.014008560531711916,
+          "n": 3
+        },
+        "mean_unique_per_record": {
+          "mean": 3.2456666666666667,
+          "sd": 0.3867919865164392,
+          "n": 3
+        },
+        "mean_within_record_diversity": {
+          "mean": 0.09359231962879982,
+          "sd": 0.02561339619887944,
+          "n": 3
+        },
+        "retained_yield": {
+          "mean": 0.9988975,
+          "sd": 0.0005667726616554764,
+          "n": 3
+        }
+      }
+    },
+    {
+      "dataset": "moses",
+      "configuration": "promptsmiles",
+      "metrics": {
+        "validity": {
+          "mean": 0.9745425,
+          "sd": 0.0054799469659842824,
+          "n": 3
+        },
+        "assembly_success_rate": {
+          "mean": null,
+          "sd": null,
+          "n": 3
+        },
+        "decoration_validity": {
+          "mean": null,
+          "sd": null,
+          "n": 3
+        },
+        "scaffold_core_match_rate": {
+          "mean": 1.0,
+          "sd": 0.0,
+          "n": 3
+        },
+        "scaffold_core_retention_rate": {
+          "mean": 0.43849560421865835,
+          "sd": 0.06483291975829167,
+          "n": 3
+        },
+        "novelty": {
+          "mean": 0.9999717034325618,
+          "sd": 2.933739901935929e-05,
+          "n": 3
+        },
+        "qed_mean": {
+          "mean": 0.7922727054614545,
+          "sd": 0.003035224374657393,
+          "n": 3
+        },
+        "sas_mean": {
+          "mean": 2.3743066260862657,
+          "sd": 0.021023747267957728,
+          "n": 3
+        },
+        "diversity": {
+          "mean": 0.8380883648432713,
+          "sd": 0.0005886533208814029,
+          "n": 3
+        },
+        "unique_rate": {
+          "mean": 0.15917059707254944,
+          "sd": 0.0185092087619865,
+          "n": 3
+        },
+        "mean_unique_per_record": {
+          "mean": 4.383291909296151,
+          "sd": 0.3855341900709456,
+          "n": 3
+        },
+        "mean_within_record_diversity": {
+          "mean": 0.13913452421333022,
+          "sd": 0.013911071084383674,
+          "n": 3
+        },
+        "retained_yield": {
+          "mean": 0.4273875,
+          "sd": 0.06362380200247383,
+          "n": 3
+        }
+      }
+    }
+  ]
+}

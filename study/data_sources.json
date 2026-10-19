@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "datasets": {
+    "gdb13": {
+      "source": "https://gdb.unibe.ch/downloads/",
+      "citation": "10.1021/ja902302h",
+      "working_input_sha256": "c8f24381b34906ee48430a11d2831fe2e3b955afab6db670985bbdb233f8c27e",
+      "working_nonempty_lines": 1000000,
+      "redistribution": "Upstream GDB structures are obtained directly from their original provider under its terms. The study archive contains fixed source-line selectors, field hashes and original numerical annotations.",
+      "url": "https://zenodo.org/records/5172018/files/gdb13.1M.freq.ll.smi.gz?download=1",
+      "upstream_record_doi": "10.5281/zenodo.5172018",
+      "working_input_derivation": "First whitespace-separated column of each nonempty line, in source order, terminated with LF. Verified byte-identical to the study working input."
+    },
+    "chembl37": {
+      "url": "https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/chembl_37/chembl_37_chemreps.txt.gz",
+      "sha256": "ea6181ce8dc7af41974e35b92e1febb0c9dcbe2c62f7ccc4a5d983ac19f696e7",
+      "license": "CC-BY-SA-3.0",
+      "citation": "10.1093/nar/gkad1004"
+    },
+    "moses": {
+      "repository": "https://github.com/molecularsets/moses",
+      "commit": "dd7ed6ab38e23afd3ef5371d67939a1760bd8599",
+      "citation": "10.3389/fphar.2020.565644",
+      "files": {
+        "train.csv": "49fe1aae29604ec0f5023ea34edc8789415f954138f2903dabd005a4b888a961",
+        "test_scaffolds.csv": "8bc942dd807147e07b506151fe8675f58780ed8e494801b705c4bdadb3df3440"
+      }
+    }
+  }
+}

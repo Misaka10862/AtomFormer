@@ -48,8 +48,8 @@ def format_decoration_targets(site_to_smiles: Dict[int, str]) -> str:
     return "".join(parts)
 
 
-def extract_single_attachment_record(smiles: str) -> Optional[Dict]:
-    record = extract_scaffold_and_decorations(smiles)
+def extract_single_attachment_record(smiles: str, reference_geometry: Optional[Dict] = None) -> Optional[Dict]:
+    record = extract_scaffold_and_decorations(smiles, reference_geometry=reference_geometry)
     if record is None:
         return None
     if record.get("attachment_count") != 1:
@@ -336,7 +336,7 @@ def _single_site_fragment_from_bond(mol, keep_atom_idx: int, cut_atom_idx: int, 
     return candidate
 
 
-def extract_scaffold_and_decorations(smiles: str) -> Optional[Dict]:
+def extract_scaffold_and_decorations(smiles: str, reference_geometry: Optional[Dict] = None) -> Optional[Dict]:
     Chem, AllChem = _import_rdkit()
     mol = Chem.MolFromSmiles(smiles)
     if mol is None:
@@ -381,16 +381,17 @@ def extract_scaffold_and_decorations(smiles: str) -> Optional[Dict]:
     if len({nbr for _, nbr in site_neighbors}) != len(site_neighbors):
         return None
 
-    mol_h = Chem.AddHs(mol)
-    params = AllChem.ETKDGv3()
-    params.randomSeed = 42
-    if AllChem.EmbedMolecule(mol_h, params) != 0:
-        return None
-    try:
-        AllChem.UFFOptimizeMolecule(mol_h, maxIters=200)
-    except Exception:
-        pass
-    mol_3d = Chem.RemoveHs(mol_h)
+    if reference_geometry is None:
+        mol_h = Chem.AddHs(mol)
+        params = AllChem.ETKDGv3()
+        params.randomSeed = 42
+        if AllChem.EmbedMolecule(mol_h, params) != 0:
+            return None
+        try:
+            AllChem.UFFOptimizeMolecule(mol_h, maxIters=200)
+        except Exception:
+            pass
+        mol_3d = Chem.RemoveHs(mol_h)
 
     bond_indices = []
     for a, b in bonds_to_cut:
@@ -427,14 +428,23 @@ def extract_scaffold_and_decorations(smiles: str) -> Optional[Dict]:
         decoration_map[site_id] = frag_smiles
         site_id += 1
 
-    conf = mol_3d.GetConformer()
-    cond_z = []
-    cond_pos = []
-    for atom_idx in match:
-        atom = mol_3d.GetAtomWithIdx(atom_idx)
-        pos = conf.GetAtomPosition(atom_idx)
-        cond_z.append(int(atom.GetAtomicNum()))
-        cond_pos.append([float(pos.x), float(pos.y), float(pos.z)])
+    if reference_geometry is None:
+        conf = mol_3d.GetConformer()
+        cond_z = []
+        cond_pos = []
+        for atom_idx in match:
+            atom = mol_3d.GetAtomWithIdx(atom_idx)
+            pos = conf.GetAtomPosition(atom_idx)
+            cond_z.append(int(atom.GetAtomicNum()))
+            cond_pos.append([float(pos.x), float(pos.y), float(pos.z)])
+    else:
+        cond_z = list(reference_geometry["cond_z"])
+        cond_pos = [list(x) for x in reference_geometry["cond_pos"]]
+        expected_z = [int(mol.GetAtomWithIdx(i).GetAtomicNum()) for i in match]
+        if cond_z != expected_z or len(cond_pos) != len(expected_z):
+            raise ValueError("Archived scaffold geometry does not match the reconstructed atom order")
+        if any(len(x) != 3 for x in cond_pos):
+            raise ValueError("Archived coordinates must have three components per atom")
 
     return {
         "source_smiles": smiles,

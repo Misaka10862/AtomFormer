@@ -1,0 +1,3917 @@
+{
+  "schema": 1,
+  "comparisons": [
+    {
+      "dataset": "gdb13",
+      "comparison": "RL_effect",
+      "minuend": "atomformer",
+      "subtrahend": "supervised",
+      "per_run_deltas": [
+        {
+          "num_generated": 0,
+          "num_valid": 3470,
+          "validity": 0.007098727547972583,
+          "record_coverage": 0,
+          "scaffold_core_match_rate": 0.0,
+          "scaffold_core_retention_rate": 0.0,
+          "scaffold_core_metric_n": 3470,
+          "novelty": 0.0,
+          "diversity": -0.0017180469932605025,
+          "diversity_cap": 0,
+          "diversity_n": 0,
+          "unique_rate": 0.06325718969961508,
+          "mean_unique_per_record": 1.372611595270243,
+          "mean_within_record_diversity": 0.03173337169203705,
+          "within_record_n": 0,
+          "assembly_success_rate": 0.007098727547972583,
+          "decoration_validity": 0.0023382840309316144,
+          "qed_n": 3470,
+          "qed_mean": 0.024089081172564253,
+          "qed_std": -0.003189730603334162,
+          "qed_median": 0.026680003571730948,
+          "sas_n": 3470,
+          "sas_mean": -0.05451537680102181,
+          "sas_std": 0.02533564293888424,
+          "sas_median": -0.055383942865951497,
+          "retained_yield": 0.007098727547972583,
+          "intended_attempts": 0,
+          "uncovered_records": 0,
+          "unique_retained_per_intended_record": 1.372611595270243,
+          "zero_valid_record_fraction": 0.0,
+          "zero_retained_record_fraction": 0.0
+        },
+        {
+          "num_generated": 0,
+          "num_valid": 2557,
+          "validity": 0.005230964363160284,
+          "record_coverage": 0,
+          "scaffold_core_match_rate": 0.0,
+          "scaffold_core_retention_rate": 0.0,
+          "scaffold_core_metric_n": 2557,
+          "novelty": 0.0,
+          "diversity": -0.001245482509707685,
+          "diversity_cap": 0,
+          "diversity_n": 0,
+          "unique_rate": -0.006508908876145025,
+          "mean_unique_per_record": -0.053271142751933453,
+          "mean_within_record_diversity": -0.007931983132267617,
+          "within_record_n": 0,
+          "assembly_success_rate": 0.005233010105969549,
+          "decoration_validity": 0.0009471789206662029,
+          "qed_n": 2557,
+          "qed_mean": 0.014134118996862899,
+          "qed_std": -0.004509061965169536,
+          "qed_median": 0.014571566324672491,
+          "sas_n": 2557,
+          "sas_mean": -0.047404244987245825,
+          "sas_std": 0.01655076785394738,
+          "sas_median": -0.04662023859561071,
+          "retained_yield": 0.005230964363160284,
+          "intended_attempts": 0,
+          "uncovered_records": 0,
+          "unique_retained_per_intended_record": -0.053271142751933453,
+          "zero_valid_record_fraction": 0.0,
+          "zero_retained_record_fraction": 0.0
+        },
+        {
+          "num_generated": 0,
+          "num_valid": 1566,
+          "validity": 0.00320363323922912,
+          "record_coverage": 0,
+          "scaffold_core_match_rate": 0.0,
+          "scaffold_core_retention_rate": 0.0,
+          "scaffold_core_metric_n": 1566,
+          "novelty": 0.0,
+          "diversity": -0.0020376468841311057,
+          "diversity_cap": 0,
+          "diversity_n": 0,
+          "unique_rate": 0.03555076552147135,
+          "mean_unique_per_record": 0.758929667362219,
+          "mean_within_record_diversity": 0.014765719744294359,
+          "within_record_n": 0,
+          "assembly_success_rate": 0.0032015874964199664,
+          "decoration_validity": 0.0011190213166399898,
+          "qed_n": 1566,
+          "qed_mean": 0.017218199938692003,
+          "qed_std": -0.003604098276337231,
+          "qed_median": 0.01836561107088508,
+          "sas_n": 1566,
+          "sas_mean": -0.04684171052230557,
+          "sas_std": 0.020778203701277254,
+          "sas_median": -0.04946497291680174,
+          "retained_yield": 0.00320363323922912,
+          "intended_attempts": 0,
+          "uncovered_records": 0,
+          "unique_retained_per_intended_record": 0.758929667362219,
+          "zero_valid_record_fraction": 0.0,
+          "zero_retained_record_fraction": 0.0
+        }
+      ],
+      "mean_sd": {
+        "num_generated": {
+          "mean": 0,
+          "sd": 0.0
+        },
+        "num_valid": {
+          "mean": 2531,
+          "sd": 952.2662442825535
+        },
+        "validity": {
+          "mean": 0.005177775050120663,
+          "sd": 0.001948091821698261
+        },
+        "record_coverage": {
+          "mean": 0,
+          "sd": 0.0
+        },
+        "scaffold_core_match_rate": {
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "scaffold_core_retention_rate": {
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "scaffold_core_metric_n": {
+          "mean": 2531,
+          "sd": 952.2662442825535
+        },
+        "novelty": {
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "diversity": {
+          "mean": -0.0016670587956997644,
+          "sd": 0.0003985360036988905
+        },
+        "diversity_cap": {
+          "mean": 0,
+          "sd": 0.0
+        },
+        "diversity_n": {
+          "mean": 0,
+          "sd": 0.0
+        },
+        "unique_rate": {
+          "mean": 0.030766348781647135,
+          "sd": 0.0351282665424285
+        },
+        "mean_unique_per_record": {
+          "mean": 0.6927567066268429,
+          "sd": 0.7152408973183572
+        },
+        "mean_within_record_diversity": {
+          "mean": 0.012855702768021263,
+          "sd": 0.019901538055430185
+        },
+        "within_record_n": {
+          "mean": 0,
+          "sd": 0.0
+        },
+        "assembly_success_rate": {
+          "mean": 0.005177775050120699,
+          "sd": 0.0019491570816380737
+        },
+        "decoration_validity": {
+          "mean": 0.0014681614227459356,
+          "sd": 0.0007584309244884395
+        },
+        "qed_n": {
+          "mean": 2531,
+          "sd": 952.2662442825535
+        },
+        "qed_mean": {
+          "mean": 0.018480466702706384,
+          "sd": 0.005096106947225761
+        },
+        "qed_std": {
+          "mean": -0.003767630281613643,
+          "sd": 0.0006746968564791814
+        },
+        "qed_median": {
+          "mean": 0.01987239365576284,
+          "sd": 0.006193251041259051
+        },
+        "sas_n": {
+          "mean": 2531,
+          "sd": 952.2662442825535
+        },
+        "sas_mean": {
+          "mean": -0.04958711077019107,
+          "sd": 0.004277261484763534
+        },
+        "sas_std": {
+          "mean": 0.020888204831369623,
+          "sd": 0.004393470467745551
+        },
+        "sas_median": {
+          "mean": -0.05048971812612132,
+          "sd": 0.004470817060953726
+        },
+        "retained_yield": {
+          "mean": 0.005177775050120663,
+          "sd": 0.001948091821698261
+        },
+        "intended_attempts": {
+          "mean": 0,
+          "sd": 0.0
+        },
+        "uncovered_records": {
+          "mean": 0,
+          "sd": 0.0
+        },
+        "unique_retained_per_intended_record": {
+          "mean": 0.6927567066268429,
+          "sd": 0.7152408973183572
+        },
+        "zero_valid_record_fraction": {
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "zero_retained_record_fraction": {
+          "mean": 0.0,
+          "sd": 0.0
+        }
+      },
+      "paired_target_core_ci": {
+        "unit": "scaffold_core",
+        "groups": 17074,
+        "training_runs": 3,
+        "replicates": 2000,
+        "training_seed_uncertainty": false,
+        "metrics": {
+          "assembly_success_rate": {
+            "point": 0.005177775050120699,
+            "ci95": [
+              0.00396704369731967,
+              0.006572769318344853
+            ]
+          },
+          "decoration_validity": {
+            "point": 0.0014681614227459356,
+            "ci95": [
+              0.0006694461638444754,
+              0.0024943876645983497
+            ]
+          },
+          "novelty": {
+            "point": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "qed_mean": {
+            "point": 0.01848046670270657,
+            "ci95": [
+              0.017580347810176918,
+              0.01936080232724654
+            ]
+          },
+          "retained_yield": {
+            "point": 0.005177775050120663,
+            "ci95": [
+              0.003967799803293559,
+              0.006573317656458596
+            ]
+          },
+          "sas_mean": {
+            "point": -0.0495871107702112,
+            "ci95": [
+              -0.06056082034455386,
+              -0.039739812876046686
+            ]
+          },
+          "scaffold_core_match_rate": {
+            "point": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "scaffold_core_retention_rate": {
+            "point": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "unique_retained_per_intended_record": {
+            "point": 0.6927567066268429,
+            "ci95": [
+              0.6157137271176316,
+              0.7645672513124278
+            ]
+          },
+          "validity": {
+            "point": 0.005177775050120663,
+            "ci95": [
+              0.003967799803293559,
+              0.006573317656458596
+            ]
+          },
+          "zero_retained_record_fraction": {
+            "point": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "zero_valid_record_fraction": {
+            "point": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          }
+        }
+      }
+    },
+    {
+      "dataset": "gdb13",
+      "comparison": "Representation_supervised",
+      "minuend": "supervised",
+      "subtrahend": "plain_supervised",
+      "per_run_deltas": [
+        {
+          "num_generated": 0,
+          "num_valid": 5492,
+          "validity": 0.011235219508203498,
+          "record_coverage": 0,
+          "scaffold_core_match_rate": 0.0,
+          "scaffold_core_retention_rate": 0.0,
+          "scaffold_core_metric_n": 5492,
+          "novelty": 0.0,
+          "diversity": -0.0011496518562849056,
+          "diversity_cap": 0,
+          "diversity_n": 0,
+          "unique_rate": 0.041191326995053956,
+          "mean_unique_per_record": 0.8325354936377405,
+          "mean_within_record_diversity": 0.012469480891457496,
+          "within_record_n": 0,
+          "assembly_success_rate": 0.011235219508203498,
+          "decoration_validity": -0.0010126426905608943,
+          "qed_n": 5492,
+          "qed_mean": 0.005461435031385298,
+          "qed_std": -0.0036003396975424623,
+          "qed_median": 0.004548950939299523,
+          "sas_n": 5492,
+          "sas_mean": 0.015530633679941452,
+          "sas_std": -0.025662170963968056,
+          "sas_median": 0.004841107874820061,
+          "retained_yield": 0.011235219508203498,
+          "intended_attempts": 0,
+          "uncovered_records": 0,
+          "unique_retained_per_intended_record": 0.8325354936377405,
+          "zero_valid_record_fraction": 0.0,
+          "zero_retained_record_fraction": 0.0
+        },
+        {
+          "num_generated": 0,
+          "num_valid": 7933,
+          "validity": 0.01622887770549486,
+          "record_coverage": 0,
+          "scaffold_core_match_rate": 0.0,
+          "scaffold_core_retention_rate": 0.0,
+          "scaffold_core_metric_n": 7933,
+          "novelty": 0.0,
+          "diversity": -0.0010194179857863084,
+          "diversity_cap": 0,
+          "diversity_n": 0,
+          "unique_rate": 0.03703718695348074,
+          "mean_unique_per_record": 0.8343766621660329,
+          "mean_within_record_diversity": 0.010396079646577516,
+          "within_record_n": 0,
+          "assembly_success_rate": 0.01622887770549486,
+          "decoration_validity": 0.0015752219630947861,
+          "qed_n": 7933,
+          "qed_mean": 0.006506987945040121,
+          "qed_std": -0.003967281855852836,
+          "qed_median": 0.006140760965774539,
+          "sas_n": 7933,
+          "sas_mean": 0.0020300569719893247,
+          "sas_std": -0.02062751918208172,
+          "sas_median": -0.011552328051273264,
+          "retained_yield": 0.01622887770549486,
+          "intended_attempts": 0,
+          "uncovered_records": 0,
+          "unique_retained_per_intended_record": 0.8343766621660329,
+          "zero_valid_record_fraction": 0.0,
+          "zero_retained_record_fraction": 0.0
+        },
+        {
+          "num_generated": 0,
+          "num_valid": 6284,
+          "validity": 0.012855447813100995,
+          "record_coverage": 0,
+          "scaffold_core_match_rate": 0.0,
+          "scaffold_core_retention_rate": 0.0,
+          "scaffold_core_metric_n": 6284,
+          "novelty": 0.0,
+          "diversity": -0.0003557296895918549,
+          "diversity_cap": 0,
+          "diversity_n": 0,
+          "unique_rate": 0.042333603908120854,
+          "mean_unique_per_record": 0.8702589910396465,
+          "mean_within_record_diversity": 0.012774623096125759,
+          "within_record_n": 0,
+          "assembly_success_rate": 0.012857493555910149,
+          "decoration_validity": -0.0007201014688432705,
+          "qed_n": 6284,
+          "qed_mean": 0.0046722617680161616,
+          "qed_std": -0.0032308630933454846,
+          "qed_median": 0.0040576918684376295,
+          "sas_n": 6284,
+          "sas_mean": 0.01952786467169343,
+          "sas_std": -0.03216704653032565,
+          "sas_median": 0.00606640770324951,
+          "retained_yield": 0.012855447813100995,
+          "intended_attempts": 0,
+          "uncovered_records": 0,
+          "unique_retained_per_intended_record": 0.8702589910396465,
+          "zero_valid_record_fraction": 0.0,
+          "zero_retained_record_fraction": 0.0
+        }
+      ],
+      "mean_sd": {
+        "num_generated": {
+          "mean": 0,
+          "sd": 0.0
+        },
+        "num_valid": {
+          "mean": 6569.666666666667,
+          "sd": 1245.3209760271982
+        },
+        "validity": {
+          "mean": 0.01343984834226645,
+          "sd": 0.002547606431870993
+        },
+        "record_coverage": {
+          "mean": 0,
+          "sd": 0.0
+        },
+        "scaffold_core_match_rate": {
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "scaffold_core_retention_rate": {
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "scaffold_core_metric_n": {
+          "mean": 6569.666666666667,
+          "sd": 1245.3209760271982
+        },
+        "novelty": {
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "diversity": {
+          "mean": -0.0008415998438876896,
+          "sd": 0.00042578465259195873
+        },
+        "diversity_cap": {
+          "mean": 0,
+          "sd": 0.0
+        },
+        "diversity_n": {
+          "mean": 0,
+          "sd": 0.0
+        },
+        "unique_rate": {
+          "mean": 0.040187372618885185,
+          "sd": 0.0027872838806661123
+        },
+        "mean_unique_per_record": {
+          "mean": 0.8457237156144733,
+          "sd": 0.021268104770506134
+        },
+        "mean_within_record_diversity": {
+          "mean": 0.011880061211386924,
+          "sd": 0.001294190443786418
+        },
+        "within_record_n": {
+          "mean": 0,
+          "sd": 0.0
+        },
+        "assembly_success_rate": {
+          "mean": 0.013440530256536168,
+          "sd": 0.002547372056365434
+        },
+        "decoration_validity": {
+          "mean": -5.25073987697929e-05,
+          "sd": 0.001417223429176946
+        },
+        "qed_n": {
+          "mean": 6569.666666666667,
+          "sd": 1245.3209760271982
+        },
+        "qed_mean": {
+          "mean": 0.00554689491481386,
+          "sd": 0.0009203437292234659
+        },
+        "qed_std": {
+          "mean": -0.003599494882246928,
+          "sd": 0.00036821010812833127
+        },
+        "qed_median": {
+          "mean": 0.004915801257837231,
+          "sd": 0.0010889116507910154
+        },
+        "sas_n": {
+          "mean": 6569.666666666667,
+          "sd": 1245.3209760271982
+        },
+        "sas_mean": {
+          "mean": 0.012362851774541403,
+          "sd": 0.009168939427441488
+        },
+        "sas_std": {
+          "mean": -0.02615224555879181,
+          "sd": 0.005785352425443599
+        },
+        "sas_median": {
+          "mean": -0.0002149374910678977,
+          "sd": 0.009837563644183586
+        },
+        "retained_yield": {
+          "mean": 0.01343984834226645,
+          "sd": 0.002547606431870993
+        },
+        "intended_attempts": {
+          "mean": 0,
+          "sd": 0.0
+        },
+        "uncovered_records": {
+          "mean": 0,
+          "sd": 0.0
+        },
+        "unique_retained_per_intended_record": {
+          "mean": 0.8457237156144733,
+          "sd": 0.021268104770506134
+        },
+        "zero_valid_record_fraction": {
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "zero_retained_record_fraction": {
+          "mean": 0.0,
+          "sd": 0.0
+        }
+      },
+      "paired_target_core_ci": {
+        "unit": "scaffold_core",
+        "groups": 17074,
+        "training_runs": 3,
+        "replicates": 2000,
+        "training_seed_uncertainty": false,
+        "metrics": {
+          "assembly_success_rate": {
+            "point": 0.013440530256536168,
+            "ci95": [
+              0.011355238177349054,
+              0.015278307853874799
+            ]
+          },
+          "decoration_validity": {
+            "point": -5.25073987697929e-05,
+            "ci95": [
+              -0.00021079568470356764,
+              0.00015911028483593548
+            ]
+          },
+          "novelty": {
+            "point": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "qed_mean": {
+            "point": 0.00554689491481275,
+            "ci95": [
+              0.00319335901145598,
+              0.008205575972027424
+            ]
+          },
+          "retained_yield": {
+            "point": 0.01343984834226645,
+            "ci95": [
+              0.011354634003447826,
+              0.015277579044456771
+            ]
+          },
+          "sas_mean": {
+            "point": 0.012362851774539033,
+            "ci95": [
+              -0.0029526919188041546,
+              0.03015383879013924
+            ]
+          },
+          "scaffold_core_match_rate": {
+            "point": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "scaffold_core_retention_rate": {
+            "point": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "unique_retained_per_intended_record": {
+            "point": 0.8457237156144733,
+            "ci95": [
+              0.7130735434359176,
+              0.9524538490743795
+            ]
+          },
+          "validity": {
+            "point": 0.01343984834226645,
+            "ci95": [
+              0.011354634003447826,
+              0.015277579044456771
+            ]
+          },
+          "zero_retained_record_fraction": {
+            "point": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "zero_valid_record_fraction": {
+            "point": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          }
+        }
+      }
+    },
+    {
+      "dataset": "gdb13",
+      "comparison": "Representation_RL",
+      "minuend": "atomformer",
+      "subtrahend": "plain_balanced_rl",
+      "per_run_deltas": [
+        {
+          "num_generated": 0,
+          "num_valid": 1416,
+          "validity": 0.002896771817846977,
+          "record_coverage": 0,
+          "scaffold_core_match_rate": 0.0,
+          "scaffold_core_retention_rate": 0.0,
+          "scaffold_core_metric_n": 1416,
+          "novelty": 0.0,
+          "diversity": -0.0013268164140890493,
+          "diversity_cap": 0,
+          "diversity_n": 0,
+          "unique_rate": 0.11912144440655315,
+          "mean_unique_per_record": 2.298228386727221,
+          "mean_within_record_diversity": 0.06016547963846153,
+          "within_record_n": 0,
+          "assembly_success_rate": 0.002896771817846977,
+          "decoration_validity": 0.0008223886093040589,
+          "qed_n": 1416,
+          "qed_mean": 0.00561911951172811,
+          "qed_std": 0.0011870217755312884,
+          "qed_median": 0.00936681010203777,
+          "sas_n": 1416,
+          "sas_mean": 0.03915447249844117,
+          "sas_std": -0.030033230521440024,
+          "sas_median": 0.024281581550874343,
+          "retained_yield": 0.002896771817846977,
+          "intended_attempts": 0,
+          "uncovered_records": 0,
+          "unique_retained_per_intended_record": 2.298228386727221,
+          "zero_valid_record_fraction": 0.0,
+          "zero_retained_record_fraction": 0.0
+        },
+        {
+          "num_generated": 0,
+          "num_valid": 1184,
+          "validity": 0.0024221594861093543,
+          "record_coverage": 0,
+          "scaffold_core_match_rate": 0.0,
+          "scaffold_core_retention_rate": 0.0,
+          "scaffold_core_metric_n": 1184,
+          "novelty": 0.0,
+          "diversity": -0.0005032296731376507,
+          "diversity_cap": 0,
+          "diversity_n": 0,
+          "unique_rate": 0.046487802221111596,
+          "mean_unique_per_record": 0.8322081747882653,
+          "mean_within_record_diversity": 0.020613349082877708,
+          "within_record_n": 0,
+          "assembly_success_rate": 0.002424205228918619,
+          "decoration_validity": 0.000364142220040109,
+          "qed_n": 1184,
+          "qed_mean": -0.0012353860274744166,
+          "qed_std": -0.0007457663380206619,
+          "qed_median": 0.0001542602957285144,
+          "sas_n": 1184,
+          "sas_mean": 0.041695740250997204,
+          "sas_std": -0.04075313919926771,
+          "sas_median": 0.023306931155941513,
+          "retained_yield": 0.0024221594861093543,
+          "intended_attempts": 0,
+          "uncovered_records": 0,
+          "unique_retained_per_intended_record": 0.8322081747882653,
+          "zero_valid_record_fraction": 0.0,
+          "zero_retained_record_fraction": 0.0
+        },
+        {
+          "num_generated": 0,
+          "num_valid": 1309,
+          "validity": 0.002677877337261103,
+          "record_coverage": 0,
+          "scaffold_core_match_rate": 0.0,
+          "scaffold_core_retention_rate": 0.0,
+          "scaffold_core_metric_n": 1309,
+          "novelty": 0.0,
+          "diversity": -0.000473198416138354,
+          "diversity_cap": 0,
+          "diversity_n": 0,
+          "unique_rate": 0.09216170876180152,
+          "mean_unique_per_record": 1.7356900290495467,
+          "mean_within_record_diversity": 0.04309099973965663,
+          "within_record_n": 0,
+          "assembly_success_rate": 0.0026799230800703677,
+          "decoration_validity": 1.2274456855254634e-05,
+          "qed_n": 1309,
+          "qed_mean": 0.00018123278155646183,
+          "qed_std": 0.0012753073630607792,
+          "qed_median": 0.002170332242492523,
+          "sas_n": 1309,
+          "sas_mean": 0.04488444556785698,
+          "sas_std": -0.03526394795723431,
+          "sas_median": 0.028566712334136213,
+          "retained_yield": 0.002677877337261103,
+          "intended_attempts": 0,
+          "uncovered_records": 0,
+          "unique_retained_per_intended_record": 1.7356900290495467,
+          "zero_valid_record_fraction": 0.0,
+          "zero_retained_record_fraction": 0.0
+        }
+      ],
+      "mean_sd": {
+        "num_generated": {
+          "mean": 0,
+          "sd": 0.0
+        },
+        "num_valid": {
+          "mean": 1303,
+          "sd": 116.11632098891181
+        },
+        "validity": {
+          "mean": 0.0026656028804058116,
+          "sd": 0.00023754412869543868
+        },
+        "record_coverage": {
+          "mean": 0,
+          "sd": 0.0
+        },
+        "scaffold_core_match_rate": {
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "scaffold_core_retention_rate": {
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "scaffold_core_metric_n": {
+          "mean": 1303,
+          "sd": 116.11632098891181
+        },
+        "novelty": {
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "diversity": {
+          "mean": -0.0007677481677883513,
+          "sd": 0.0004844000899210722
+        },
+        "diversity_cap": {
+          "mean": 0,
+          "sd": 0.0
+        },
+        "diversity_n": {
+          "mean": 0,
+          "sd": 0.0
+        },
+        "unique_rate": {
+          "mean": 0.08592365179648875,
+          "sd": 0.03671643379070949
+        },
+        "mean_unique_per_record": {
+          "mean": 1.622042196855011,
+          "sd": 0.7395881879635945
+        },
+        "mean_within_record_diversity": {
+          "mean": 0.04128994282033196,
+          "sd": 0.019837479990953293
+        },
+        "within_record_n": {
+          "mean": 0,
+          "sd": 0.0
+        },
+        "assembly_success_rate": {
+          "mean": 0.002666966708945321,
+          "sd": 0.00023654956332107952
+        },
+        "decoration_validity": {
+          "mean": 0.0003996017620664742,
+          "sd": 0.0004062194841954295
+        },
+        "qed_n": {
+          "mean": 1303,
+          "sd": 116.11632098891181
+        },
+        "qed_mean": {
+          "mean": 0.0015216554219367184,
+          "sd": 0.0036185095257401925
+        },
+        "qed_std": {
+          "mean": 0.0005721876001904685,
+          "sd": 0.0011422348811326102
+        },
+        "qed_median": {
+          "mean": 0.0038971342134196028,
+          "sd": 0.004842948716281271
+        },
+        "sas_n": {
+          "mean": 1303,
+          "sd": 116.11632098891181
+        },
+        "sas_mean": {
+          "mean": 0.04191155277243178,
+          "sd": 0.002871076301208932
+        },
+        "sas_std": {
+          "mean": -0.035350105892647345,
+          "sd": 0.005360473664483139
+        },
+        "sas_median": {
+          "mean": 0.025385075013650688,
+          "sd": 0.0027981418615601688
+        },
+        "retained_yield": {
+          "mean": 0.0026656028804058116,
+          "sd": 0.00023754412869543868
+        },
+        "intended_attempts": {
+          "mean": 0,
+          "sd": 0.0
+        },
+        "uncovered_records": {
+          "mean": 0,
+          "sd": 0.0
+        },
+        "unique_retained_per_intended_record": {
+          "mean": 1.622042196855011,
+          "sd": 0.7395881879635945
+        },
+        "zero_valid_record_fraction": {
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "zero_retained_record_fraction": {
+          "mean": 0.0,
+          "sd": 0.0
+        }
+      },
+      "paired_target_core_ci": {
+        "unit": "scaffold_core",
+        "groups": 17074,
+        "training_runs": 3,
+        "replicates": 2000,
+        "training_seed_uncertainty": false,
+        "metrics": {
+          "assembly_success_rate": {
+            "point": 0.002666966708945321,
+            "ci95": [
+              0.0022941625601170506,
+              0.0031056747356961135
+            ]
+          },
+          "decoration_validity": {
+            "point": 0.0003996017620664742,
+            "ci95": [
+              4.587664968294195e-05,
+              0.0007959497627008557
+            ]
+          },
+          "novelty": {
+            "point": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "qed_mean": {
+            "point": 0.0015216554219370886,
+            "ci95": [
+              0.0007412995002562243,
+              0.0024134681348094923
+            ]
+          },
+          "retained_yield": {
+            "point": 0.0026656028804058116,
+            "ci95": [
+              0.002293172478148106,
+              0.003104232161554407
+            ]
+          },
+          "sas_mean": {
+            "point": 0.04191155277243356,
+            "ci95": [
+              0.022782397768661335,
+              0.06415489938405054
+            ]
+          },
+          "scaffold_core_match_rate": {
+            "point": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "scaffold_core_retention_rate": {
+            "point": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "unique_retained_per_intended_record": {
+            "point": 1.622042196855011,
+            "ci95": [
+              1.3510527380059985,
+              1.8649131953054277
+            ]
+          },
+          "validity": {
+            "point": 0.0026656028804058116,
+            "ci95": [
+              0.002293172478148106,
+              0.003104232161554407
+            ]
+          },
+          "zero_retained_record_fraction": {
+            "point": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "zero_valid_record_fraction": {
+            "point": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          }
+        }
+      }
+    },
+    {
+      "dataset": "gdb13",
+      "comparison": "Supervised_anchor",
+      "minuend": "atomformer",
+      "subtrahend": "pure_rl",
+      "per_run_deltas": [
+        {
+          "num_generated": 0,
+          "num_valid": -1112,
+          "validity": -0.0022748660038460766,
+          "record_coverage": 0,
+          "scaffold_core_match_rate": 0.0,
+          "scaffold_core_retention_rate": 0.0,
+          "scaffold_core_metric_n": -1112,
+          "novelty": 0.0,
+          "diversity": 0.1071879683062511,
+          "diversity_cap": 0,
+          "diversity_n": 0,
+          "unique_rate": 0.3562388559796127,
+          "mean_unique_per_record": 7.497851970050325,
+          "mean_within_record_diversity": 0.32570359838066937,
+          "within_record_n": 0,
+          "assembly_success_rate": -0.0022748660038460766,
+          "decoration_validity": -0.000873532179534342,
+          "qed_n": -1112,
+          "qed_mean": -0.05748860434797909,
+          "qed_std": -0.007628428993903744,
+          "qed_median": -0.03035177021335389,
+          "sas_n": -1112,
+          "sas_mean": 0.7841218485431236,
+          "sas_std": -0.2029342931608441,
+          "sas_median": 0.6598848663776682,
+          "retained_yield": -0.0022748660038460766,
+          "intended_attempts": 0,
+          "uncovered_records": 0,
+          "unique_retained_per_intended_record": 7.497851970050325,
+          "zero_valid_record_fraction": 0.0,
+          "zero_retained_record_fraction": 0.0
+        },
+        {
+          "num_generated": 0,
+          "num_valid": -1279,
+          "validity": -0.002616505052984719,
+          "record_coverage": 0,
+          "scaffold_core_match_rate": 0.0,
+          "scaffold_core_retention_rate": 0.0,
+          "scaffold_core_metric_n": -1279,
+          "novelty": 0.0,
+          "diversity": 0.053810725821961,
+          "diversity_cap": 0,
+          "diversity_n": 0,
+          "unique_rate": 0.2701615336708253,
+          "mean_unique_per_record": 5.537743954829999,
+          "mean_within_record_diversity": 0.2279072206676709,
+          "within_record_n": 0,
+          "assembly_success_rate": -0.0026144593101754543,
+          "decoration_validity": -0.001331778568798292,
+          "qed_n": -1279,
+          "qed_mean": -0.08599813910085508,
+          "qed_std": 0.015024308151336596,
+          "qed_median": -0.09005038492032691,
+          "sas_n": -1279,
+          "sas_mean": 0.5375112366553072,
+          "sas_std": -0.3150632644341721,
+          "sas_median": 0.3803181003549643,
+          "retained_yield": -0.002616505052984719,
+          "intended_attempts": 0,
+          "uncovered_records": 0,
+          "unique_retained_per_intended_record": 5.537743954829999,
+          "zero_valid_record_fraction": 0.0,
+          "zero_retained_record_fraction": 0.0
+        },
+        {
+          "num_generated": 0,
+          "num_valid": -788,
+          "validity": -0.001612045333660661,
+          "record_coverage": 0,
+          "scaffold_core_match_rate": 0.0,
+          "scaffold_core_retention_rate": 0.0,
+          "scaffold_core_metric_n": -788,
+          "novelty": 0.0,
+          "diversity": 0.10123712645413807,
+          "diversity_cap": 0,
+          "diversity_n": 0,
+          "unique_rate": 0.09657194382070161,
+          "mean_unique_per_record": 2.234523955648296,
+          "mean_within_record_diversity": 0.26098144156394776,
+          "within_record_n": 0,
+          "assembly_success_rate": -0.0016099995908513964,
+          "decoration_validity": -0.00014320199664497046,
+          "qed_n": -788,
+          "qed_mean": 0.026261889181858455,
+          "qed_std": -0.04059480127639391,
+          "qed_median": 0.04632785903210157,
+          "sas_n": -788,
+          "sas_mean": 0.9674064737544836,
+          "sas_std": -0.10702067897067047,
+          "sas_median": 0.8439366426890444,
+          "retained_yield": -0.001612045333660661,
+          "intended_attempts": 0,
+          "uncovered_records": 0,
+          "unique_retained_per_intended_record": 2.234523955648296,
+          "zero_valid_record_fraction": 0.0,
+          "zero_retained_record_fraction": 0.0
+        }
+      ],
+      "mean_sd": {
+        "num_generated": {
+          "mean": 0,
+          "sd": 0.0
+        },
+        "num_valid": {
+          "mean": -1059.6666666666667,
+          "sd": 249.64841944889884
+        },
+        "validity": {
+          "mean": -0.002167805463497152,
+          "sd": 0.0005107164589192265
+        },
+        "record_coverage": {
+          "mean": 0,
+          "sd": 0.0
+        },
+        "scaffold_core_match_rate": {
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "scaffold_core_retention_rate": {
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "scaffold_core_metric_n": {
+          "mean": -1059.6666666666667,
+          "sd": 249.64841944889884
+        },
+        "novelty": {
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "diversity": {
+          "mean": 0.08741194019411673,
+          "sd": 0.029251227925505763
+        },
+        "diversity_cap": {
+          "mean": 0,
+          "sd": 0.0
+        },
+        "diversity_n": {
+          "mean": 0,
+          "sd": 0.0
+        },
+        "unique_rate": {
+          "mean": 0.2409907778237132,
+          "sd": 0.13226838649146205
+        },
+        "mean_unique_per_record": {
+          "mean": 5.090039960176207,
+          "sd": 2.660072291671605
+        },
+        "mean_within_record_diversity": {
+          "mean": 0.27153075353742934,
+          "sd": 0.04974433496169435
+        },
+        "within_record_n": {
+          "mean": 0,
+          "sd": 0.0
+        },
+        "assembly_success_rate": {
+          "mean": -0.0021664416349576423,
+          "sd": 0.0005109322017281576
+        },
+        "decoration_validity": {
+          "mean": -0.0007828375816592015,
+          "sd": 0.0005994561698162219
+        },
+        "qed_n": {
+          "mean": -1059.6666666666667,
+          "sd": 249.64841944889884
+        },
+        "qed_mean": {
+          "mean": -0.039074951422325234,
+          "sd": 0.05835131059418238
+        },
+        "qed_std": {
+          "mean": -0.011066307372987019,
+          "sd": 0.027968474917225844
+        },
+        "qed_median": {
+          "mean": -0.024691432033859744,
+          "sd": 0.06836509289920334
+        },
+        "sas_n": {
+          "mean": -1059.6666666666667,
+          "sd": 249.64841944889884
+        },
+        "sas_mean": {
+          "mean": 0.7630131863176381,
+          "sd": 0.2157235741309964
+        },
+        "sas_std": {
+          "mean": -0.20833941218856222,
+          "sd": 0.10412656157466472
+        },
+        "sas_median": {
+          "mean": 0.6280465364738923,
+          "sd": 0.23344334995302515
+        },
+        "retained_yield": {
+          "mean": -0.002167805463497152,
+          "sd": 0.0005107164589192265
+        },
+        "intended_attempts": {
+          "mean": 0,
+          "sd": 0.0
+        },
+        "uncovered_records": {
+          "mean": 0,
+          "sd": 0.0
+        },
+        "unique_retained_per_intended_record": {
+          "mean": 5.090039960176207,
+          "sd": 2.660072291671605
+        },
+        "zero_valid_record_fraction": {
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "zero_retained_record_fraction": {
+          "mean": 0.0,
+          "sd": 0.0
+        }
+      },
+      "paired_target_core_ci": {
+        "unit": "scaffold_core",
+        "groups": 17074,
+        "training_runs": 3,
+        "replicates": 2000,
+        "training_seed_uncertainty": false,
+        "metrics": {
+          "assembly_success_rate": {
+            "point": -0.0021664416349576423,
+            "ci95": [
+              -0.0033464761282793365,
+              -0.001165990245208611
+            ]
+          },
+          "decoration_validity": {
+            "point": -0.0007828375816592015,
+            "ci95": [
+              -0.0017459413905509303,
+              2.4120192682578666e-05
+            ]
+          },
+          "novelty": {
+            "point": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "qed_mean": {
+            "point": -0.03907495142232453,
+            "ci95": [
+              -0.043813031421268155,
+              -0.034452979062839346
+            ]
+          },
+          "retained_yield": {
+            "point": -0.002167805463497152,
+            "ci95": [
+              -0.00334969739030228,
+              -0.0011660494056042754
+            ]
+          },
+          "sas_mean": {
+            "point": 0.7630131863176053,
+            "ci95": [
+              0.6228212391424048,
+              0.9277519007579412
+            ]
+          },
+          "scaffold_core_match_rate": {
+            "point": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "scaffold_core_retention_rate": {
+            "point": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "unique_retained_per_intended_record": {
+            "point": 5.090039960176207,
+            "ci95": [
+              4.658895691585072,
+              5.4745793920291455
+            ]
+          },
+          "validity": {
+            "point": -0.002167805463497152,
+            "ci95": [
+              -0.00334969739030228,
+              -0.0011660494056042754
+            ]
+          },
+          "zero_retained_record_fraction": {
+            "point": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "zero_valid_record_fraction": {
+            "point": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          }
+        }
+      }
+    },
+    {
+      "dataset": "chembl37",
+      "comparison": "RL_effect",
+      "minuend": "atomformer",
+      "subtrahend": "supervised",
+      "per_run_deltas": [
+        {
+          "num_generated": 0,
+          "num_valid": 9289,
+          "validity": 0.023222499999999924,
+          "record_coverage": 0,
+          "scaffold_core_match_rate": 0.0,
+          "scaffold_core_retention_rate": 0.0002143425342081562,
+          "scaffold_core_metric_n": 9289,
+          "novelty": 0.0,
+          "diversity": -0.0012792424791104873,
+          "diversity_cap": 0,
+          "diversity_n": 0,
+          "unique_rate": -0.05921929562388606,
+          "mean_unique_per_record": -0.49315,
+          "mean_within_record_diversity": -0.015306662612969757,
+          "within_record_n": 0,
+          "assembly_success_rate": 0.023227499999999957,
+          "decoration_validity": 0.022117500000000012,
+          "qed_n": 9289,
+          "qed_mean": 0.008195570353657922,
+          "qed_std": -0.00039408591305789553,
+          "qed_median": 0.013643752168037482,
+          "sas_n": 9289,
+          "sas_mean": -0.05850114139092888,
+          "sas_std": 0.020123037860953263,
+          "sas_median": -0.05506708746011668,
+          "retained_yield": 0.02322500000000005,
+          "intended_attempts": 0,
+          "uncovered_records": 0,
+          "unique_retained_per_intended_record": -0.5036500000000004,
+          "zero_valid_record_fraction": 0.0,
+          "zero_retained_record_fraction": 0.00014999999999999996
+        },
+        {
+          "num_generated": 0,
+          "num_valid": 8593,
+          "validity": 0.02148249999999996,
+          "record_coverage": 0,
+          "scaffold_core_match_rate": 0.0,
+          "scaffold_core_retention_rate": 0.0001504530093803247,
+          "scaffold_core_metric_n": 8593,
+          "novelty": 0.0,
+          "diversity": -0.000721951370514895,
+          "diversity_cap": 0,
+          "diversity_n": 0,
+          "unique_rate": -0.05925243616568571,
+          "mean_unique_per_record": -0.4836000000000009,
+          "mean_within_record_diversity": -0.014093811241028598,
+          "within_record_n": 0,
+          "assembly_success_rate": 0.021484999999999976,
+          "decoration_validity": 0.020094999999999974,
+          "qed_n": 8593,
+          "qed_mean": 0.008247474451139825,
+          "qed_std": -0.002593777871382985,
+          "qed_median": 0.012352841107426182,
+          "sas_n": 8593,
+          "sas_mean": -0.06429197435930778,
+          "sas_std": 0.018824971570292393,
+          "sas_median": -0.05910136899883334,
+          "retained_yield": 0.021439999999999904,
+          "intended_attempts": 0,
+          "uncovered_records": 0,
+          "unique_retained_per_intended_record": -0.48939999999999984,
+          "zero_valid_record_fraction": 0.0,
+          "zero_retained_record_fraction": 0.00014999999999999996
+        },
+        {
+          "num_generated": 0,
+          "num_valid": 10074,
+          "validity": 0.025185000000000013,
+          "record_coverage": 0,
+          "scaffold_core_match_rate": 0.0,
+          "scaffold_core_retention_rate": 0.00023367479900304744,
+          "scaffold_core_metric_n": 10074,
+          "novelty": 0.0,
+          "diversity": -0.0007052374402056749,
+          "diversity_cap": 0,
+          "diversity_n": 0,
+          "unique_rate": -0.08260555328282526,
+          "mean_unique_per_record": -0.7342499999999994,
+          "mean_within_record_diversity": -0.021073068089126568,
+          "within_record_n": 0,
+          "assembly_success_rate": 0.025185000000000013,
+          "decoration_validity": 0.024989999999999957,
+          "qed_n": 10074,
+          "qed_mean": 0.017352119062784888,
+          "qed_std": -0.007931866237031238,
+          "qed_median": 0.022194348362137073,
+          "sas_n": 10074,
+          "sas_mean": -0.07701129042885224,
+          "sas_std": 0.014226820622857628,
+          "sas_median": -0.0691631426784074,
+          "retained_yield": 0.025190000000000046,
+          "intended_attempts": 0,
+          "uncovered_records": 0,
+          "unique_retained_per_intended_record": -0.7398499999999988,
+          "zero_valid_record_fraction": 0.0,
+          "zero_retained_record_fraction": -0.00014999999999999996
+        }
+      ],
+      "mean_sd": {
+        "num_generated": {
+          "mean": 0,
+          "sd": 0.0
+        },
+        "num_valid": {
+          "mean": 9318.666666666666,
+          "sd": 740.9455670515434
+        },
+        "validity": {
+          "mean": 0.023296666666666632,
+          "sd": 0.0018523639176288864
+        },
+        "record_coverage": {
+          "mean": 0,
+          "sd": 0.0
+        },
+        "scaffold_core_match_rate": {
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "scaffold_core_retention_rate": {
+          "mean": 0.0001994901141971761,
+          "sd": 4.3553557284556014e-05
+        },
+        "scaffold_core_metric_n": {
+          "mean": 9318.666666666666,
+          "sd": 740.9455670515434
+        },
+        "novelty": {
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "diversity": {
+          "mean": -0.0009021437632770191,
+          "sd": 0.0003266839756998091
+        },
+        "diversity_cap": {
+          "mean": 0,
+          "sd": 0.0
+        },
+        "diversity_n": {
+          "mean": 0,
+          "sd": 0.0
+        },
+        "unique_rate": {
+          "mean": -0.067025761690799,
+          "sd": 0.013492505479417329
+        },
+        "mean_unique_per_record": {
+          "mean": -0.5703333333333335,
+          "sd": 0.1420362835100002
+        },
+        "mean_within_record_diversity": {
+          "mean": -0.01682451398104164,
+          "sd": 0.0037289959935080203
+        },
+        "within_record_n": {
+          "mean": 0,
+          "sd": 0.0
+        },
+        "assembly_success_rate": {
+          "mean": 0.02329916666666665,
+          "sd": 0.0018510408108233065
+        },
+        "decoration_validity": {
+          "mean": 0.022400833333333314,
+          "sd": 0.002459769213429032
+        },
+        "qed_n": {
+          "mean": 9318.666666666666,
+          "sd": 740.9455670515434
+        },
+        "qed_mean": {
+          "mean": 0.011265054622527545,
+          "sd": 0.0052716163207993365
+        },
+        "qed_std": {
+          "mean": -0.003639910007157373,
+          "sd": 0.003876251718767091
+        },
+        "qed_median": {
+          "mean": 0.016063647212533578,
+          "sd": 0.005348432974331299
+        },
+        "sas_n": {
+          "mean": 9318.666666666666,
+          "sd": 740.9455670515434
+        },
+        "sas_mean": {
+          "mean": -0.06660146872636297,
+          "sd": 0.009468723648154936
+        },
+        "sas_std": {
+          "mean": 0.01772494335136776,
+          "sd": 0.003098207706324239
+        },
+        "sas_median": {
+          "mean": -0.06111053304578581,
+          "sd": 0.0072596314166044305
+        },
+        "retained_yield": {
+          "mean": 0.023285,
+          "sd": 0.0018757198618131285
+        },
+        "intended_attempts": {
+          "mean": 0,
+          "sd": 0.0
+        },
+        "uncovered_records": {
+          "mean": 0,
+          "sd": 0.0
+        },
+        "unique_retained_per_intended_record": {
+          "mean": -0.577633333333333,
+          "sd": 0.14066431968816087
+        },
+        "zero_valid_record_fraction": {
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "zero_retained_record_fraction": {
+          "mean": 4.999999999999999e-05,
+          "sd": 0.00017320508075688767
+        }
+      },
+      "paired_target_core_ci": {
+        "unit": "scaffold_core",
+        "groups": 11795,
+        "training_runs": 3,
+        "replicates": 2000,
+        "training_seed_uncertainty": false,
+        "metrics": {
+          "assembly_success_rate": {
+            "point": 0.02329916666666665,
+            "ci95": [
+              0.0034829381954570343,
+              0.04769702448957933
+            ]
+          },
+          "decoration_validity": {
+            "point": 0.022400833333333314,
+            "ci95": [
+              0.003296401304881346,
+              0.0458890539503807
+            ]
+          },
+          "novelty": {
+            "point": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "qed_mean": {
+            "point": 0.011265054622528988,
+            "ci95": [
+              0.009842366738833222,
+              0.013621902680651204
+            ]
+          },
+          "retained_yield": {
+            "point": 0.023285,
+            "ci95": [
+              0.0034677434078457287,
+              0.04767932321076367
+            ]
+          },
+          "sas_mean": {
+            "point": -0.06660146872635335,
+            "ci95": [
+              -0.11848729459380368,
+              -0.024590310031508345
+            ]
+          },
+          "scaffold_core_match_rate": {
+            "point": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "scaffold_core_retention_rate": {
+            "point": 0.0001994901141971761,
+            "ci95": [
+              6.21405697288265e-06,
+              0.00035223727112448087
+            ]
+          },
+          "unique_retained_per_intended_record": {
+            "point": -0.577633333333333,
+            "ci95": [
+              -1.1901835641483067,
+              0.1688808080032159
+            ]
+          },
+          "validity": {
+            "point": 0.023296666666666632,
+            "ci95": [
+              0.0034829381954570343,
+              0.047691313880900005
+            ]
+          },
+          "zero_retained_record_fraction": {
+            "point": 4.999999999999999e-05,
+            "ci95": [
+              -0.00010039284147461953,
+              0.00020046298850876531
+            ]
+          },
+          "zero_valid_record_fraction": {
+            "point": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          }
+        }
+      }
+    },
+    {
+      "dataset": "chembl37",
+      "comparison": "Representation_supervised",
+      "minuend": "supervised",
+      "subtrahend": "plain_supervised",
+      "per_run_deltas": [
+        {
+          "num_generated": 0,
+          "num_valid": 24512,
+          "validity": 0.06128,
+          "record_coverage": 0,
+          "scaffold_core_match_rate": 0.0,
+          "scaffold_core_retention_rate": -6.187352850905992e-05,
+          "scaffold_core_metric_n": 24512,
+          "novelty": 0.0,
+          "diversity": 0.0011732590685247235,
+          "diversity_cap": 0,
+          "diversity_n": 0,
+          "unique_rate": -0.029322767580701625,
+          "mean_unique_per_record": 0.25379017901790135,
+          "mean_within_record_diversity": 0.0052811421989694685,
+          "within_record_n": 2,
+          "assembly_success_rate": 0.06128,
+          "decoration_validity": -0.009672499999999973,
+          "qed_n": 24512,
+          "qed_mean": 0.022601640639772214,
+          "qed_std": -0.0091689899833437,
+          "qed_median": 0.025791308009058933,
+          "sas_n": 24512,
+          "sas_mean": -0.055516183322904755,
+          "sas_std": -0.004299959529897257,
+          "sas_median": -0.051844751985944626,
+          "retained_yield": 0.06067499999999992,
+          "intended_attempts": 0,
+          "uncovered_records": 0,
+          "unique_retained_per_intended_record": 0.25764999999999993,
+          "zero_valid_record_fraction": -0.0001,
+          "zero_retained_record_fraction": -0.00019999999999999966
+        },
+        {
+          "num_generated": 0,
+          "num_valid": 37630,
+          "validity": 0.09407500000000002,
+          "record_coverage": 0,
+          "scaffold_core_match_rate": 0.0,
+          "scaffold_core_retention_rate": 3.193809237522771e-05,
+          "scaffold_core_metric_n": 37630,
+          "novelty": 0.0,
+          "diversity": 0.000422211142007356,
+          "diversity_cap": 0,
+          "diversity_n": 0,
+          "unique_rate": -0.014675152535325253,
+          "mean_unique_per_record": 0.9590367747098849,
+          "mean_within_record_diversity": 0.001614453712922903,
+          "within_record_n": 8,
+          "assembly_success_rate": 0.09407500000000002,
+          "decoration_validity": 0.0060749999999999416,
+          "qed_n": 37630,
+          "qed_mean": 0.010544605896614101,
+          "qed_std": -0.006989813335260886,
+          "qed_median": 0.01031037858980921,
+          "sas_n": 37630,
+          "sas_mean": -0.08425930670867077,
+          "sas_std": -0.022921811342739185,
+          "sas_median": -0.07645249325126002,
+          "retained_yield": 0.09326750000000006,
+          "intended_attempts": 0,
+          "uncovered_records": 0,
+          "unique_retained_per_intended_record": 0.9621499999999994,
+          "zero_valid_record_fraction": -0.0004,
+          "zero_retained_record_fraction": -0.0003500000000000005
+        },
+        {
+          "num_generated": 0,
+          "num_valid": 25770,
+          "validity": 0.06442499999999995,
+          "record_coverage": 0,
+          "scaffold_core_match_rate": 0.0,
+          "scaffold_core_retention_rate": 0.0001483553182283215,
+          "scaffold_core_metric_n": 25770,
+          "novelty": 0.0,
+          "diversity": 0.0010099752671952622,
+          "diversity_cap": 0,
+          "diversity_n": 0,
+          "unique_rate": 0.028024619207295598,
+          "mean_unique_per_record": 1.2816003750937721,
+          "mean_within_record_diversity": 0.019759587231337916,
+          "within_record_n": 5,
+          "assembly_success_rate": 0.06442499999999995,
+          "decoration_validity": -0.010244999999999949,
+          "qed_n": 25770,
+          "qed_mean": 0.002796208342955686,
+          "qed_std": -0.0020414379941239014,
+          "qed_median": 0.0025687721142264586,
+          "sas_n": 25770,
+          "sas_mean": -0.047201421955553435,
+          "sas_std": -0.014158205600704243,
+          "sas_median": -0.042461149242400964,
+          "retained_yield": 0.06398249999999994,
+          "intended_attempts": 0,
+          "uncovered_records": 0,
+          "unique_retained_per_intended_record": 1.2680999999999987,
+          "zero_valid_record_fraction": -0.00025,
+          "zero_retained_record_fraction": -0.000550000000000001
+        }
+      ],
+      "mean_sd": {
+        "num_generated": {
+          "mean": 0,
+          "sd": 0.0
+        },
+        "num_valid": {
+          "mean": 29304,
+          "sd": 7237.910471952523
+        },
+        "validity": {
+          "mean": 0.07325999999999999,
+          "sd": 0.01809477617988133
+        },
+        "record_coverage": {
+          "mean": 0,
+          "sd": 0.0
+        },
+        "scaffold_core_match_rate": {
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "scaffold_core_retention_rate": {
+          "mean": 3.947329403149643e-05,
+          "sd": 0.00010531679091262145
+        },
+        "scaffold_core_metric_n": {
+          "mean": 29304,
+          "sd": 7237.910471952523
+        },
+        "novelty": {
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "diversity": {
+          "mean": 0.0008684818259091139,
+          "sd": 0.0003950108130504237
+        },
+        "diversity_cap": {
+          "mean": 0,
+          "sd": 0.0
+        },
+        "diversity_n": {
+          "mean": 0,
+          "sd": 0.0
+        },
+        "unique_rate": {
+          "mean": -0.00532443363624376,
+          "sd": 0.029795262220699947
+        },
+        "mean_unique_per_record": {
+          "mean": 0.8314757762738528,
+          "sd": 0.5256446575690444
+        },
+        "mean_within_record_diversity": {
+          "mean": 0.008885061047743429,
+          "sd": 0.009594406750898576
+        },
+        "within_record_n": {
+          "mean": 5,
+          "sd": 3.0
+        },
+        "assembly_success_rate": {
+          "mean": 0.07325999999999999,
+          "sd": 0.01809477617988133
+        },
+        "decoration_validity": {
+          "mean": -0.00461416666666666,
+          "sd": 0.009261514567463157
+        },
+        "qed_n": {
+          "mean": 29304,
+          "sd": 7237.910471952523
+        },
+        "qed_mean": {
+          "mean": 0.011980818293114,
+          "sd": 0.009980521862700407
+        },
+        "qed_std": {
+          "mean": -0.00606674710424283,
+          "sd": 0.0036523331980929928
+        },
+        "qed_median": {
+          "mean": 0.012890152904364868,
+          "sd": 0.011824253464055417
+        },
+        "sas_n": {
+          "mean": 29304,
+          "sd": 7237.910471952523
+        },
+        "sas_mean": {
+          "mean": -0.062325637329042984,
+          "sd": 0.019444747452464266
+        },
+        "sas_std": {
+          "mean": -0.013793325491113562,
+          "sd": 0.009316286511032291
+        },
+        "sas_median": {
+          "mean": -0.056919464826535204,
+          "sd": 0.017554697368311164
+        },
+        "retained_yield": {
+          "mean": 0.07264166666666665,
+          "sd": 0.017938886241440296
+        },
+        "intended_attempts": {
+          "mean": 0,
+          "sd": 0.0
+        },
+        "uncovered_records": {
+          "mean": 0,
+          "sd": 0.0
+        },
+        "unique_retained_per_intended_record": {
+          "mean": 0.8292999999999994,
+          "sd": 0.5181593794384112
+        },
+        "zero_valid_record_fraction": {
+          "mean": -0.00025,
+          "sd": 0.00015000000000000001
+        },
+        "zero_retained_record_fraction": {
+          "mean": -0.00036666666666666705,
+          "sd": 0.00017559422921421299
+        }
+      },
+      "paired_target_core_ci": {
+        "unit": "scaffold_core",
+        "groups": 11795,
+        "training_runs": 3,
+        "replicates": 2000,
+        "training_seed_uncertainty": false,
+        "metrics": {
+          "assembly_success_rate": {
+            "point": 0.07325999999999999,
+            "ci95": [
+              0.060559167384186416,
+              0.08460387604041118
+            ]
+          },
+          "decoration_validity": {
+            "point": -0.00461416666666666,
+            "ci95": [
+              -0.0083707267278957,
+              -0.0013030145792766873
+            ]
+          },
+          "novelty": {
+            "point": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "qed_mean": {
+            "point": 0.011980818293115036,
+            "ci95": [
+              0.005672182922380782,
+              0.019567009386963808
+            ]
+          },
+          "retained_yield": {
+            "point": 0.07264166666666665,
+            "ci95": [
+              0.06007547359374945,
+              0.08382632982958427
+            ]
+          },
+          "sas_mean": {
+            "point": -0.06232563732905483,
+            "ci95": [
+              -0.08409717664669228,
+              -0.045000167063106576
+            ]
+          },
+          "scaffold_core_match_rate": {
+            "point": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "scaffold_core_retention_rate": {
+            "point": 3.947329403149643e-05,
+            "ci95": [
+              -0.00012761302065987892,
+              0.0002618526010029755
+            ]
+          },
+          "unique_retained_per_intended_record": {
+            "point": 0.8292999999999994,
+            "ci95": [
+              0.7267144130978245,
+              0.9288755558395884
+            ]
+          },
+          "validity": {
+            "point": 0.07325999999999999,
+            "ci95": [
+              0.060559167384186416,
+              0.08460387604041118
+            ]
+          },
+          "zero_retained_record_fraction": {
+            "point": -0.00036666666666666705,
+            "ci95": [
+              -0.000727708998509375,
+              -4.024503917580386e-05
+            ]
+          },
+          "zero_valid_record_fraction": {
+            "point": -0.00025,
+            "ci95": [
+              -0.0004534117650986903,
+              -0.00011318150166130976
+            ]
+          }
+        }
+      }
+    },
+    {
+      "dataset": "chembl37",
+      "comparison": "Representation_RL",
+      "minuend": "atomformer",
+      "subtrahend": "plain_balanced_rl",
+      "per_run_deltas": [
+        {
+          "num_generated": 0,
+          "num_valid": 5172,
+          "validity": 0.012929999999999997,
+          "record_coverage": 0,
+          "scaffold_core_match_rate": 0.0,
+          "scaffold_core_retention_rate": -7.058674754700789e-06,
+          "scaffold_core_metric_n": 5172,
+          "novelty": 0.0,
+          "diversity": 3.255970546145459e-05,
+          "diversity_cap": 0,
+          "diversity_n": 0,
+          "unique_rate": 0.040621451459450286,
+          "mean_unique_per_record": 1.0298499999999997,
+          "mean_within_record_diversity": 0.02083671508767293,
+          "within_record_n": 0,
+          "assembly_success_rate": 0.012937500000000046,
+          "decoration_validity": -0.0028799999999999937,
+          "qed_n": 5172,
+          "qed_mean": 0.007969915736520838,
+          "qed_std": -0.005766442817667916,
+          "qed_median": 0.00821154680457592,
+          "sas_n": 5172,
+          "sas_mean": -0.044175968136332955,
+          "sas_std": -0.010064067882114558,
+          "sas_median": -0.03590419489216856,
+          "retained_yield": 0.012809999999999988,
+          "intended_attempts": 0,
+          "uncovered_records": 0,
+          "unique_retained_per_intended_record": 1.0191499999999998,
+          "zero_valid_record_fraction": 0.0,
+          "zero_retained_record_fraction": -4.99999999999997e-05
+        },
+        {
+          "num_generated": 0,
+          "num_valid": 7279,
+          "validity": 0.018197499999999978,
+          "record_coverage": 0,
+          "scaffold_core_match_rate": 0.0,
+          "scaffold_core_retention_rate": 6.550523652504303e-06,
+          "scaffold_core_metric_n": 7279,
+          "novelty": 0.0,
+          "diversity": -0.0006619353351404733,
+          "diversity_cap": 0,
+          "diversity_n": 0,
+          "unique_rate": 0.04543663423743549,
+          "mean_unique_per_record": 1.2288499999999996,
+          "mean_within_record_diversity": 0.020351130183278443,
+          "within_record_n": 0,
+          "assembly_success_rate": 0.018199999999999994,
+          "decoration_validity": 0.0024649999999999395,
+          "qed_n": 7279,
+          "qed_mean": 0.0023088316192544367,
+          "qed_std": -0.003970665772935533,
+          "qed_median": 0.001168699265419293,
+          "sas_n": 7279,
+          "sas_mean": -0.047848268494306456,
+          "sas_std": -0.011851852880695457,
+          "sas_median": -0.043306494956304675,
+          "retained_yield": 0.018044999999999978,
+          "intended_attempts": 0,
+          "uncovered_records": 0,
+          "unique_retained_per_intended_record": 1.215349999999999,
+          "zero_valid_record_fraction": 0.0,
+          "zero_retained_record_fraction": 4.99999999999997e-05
+        },
+        {
+          "num_generated": 0,
+          "num_valid": 5300,
+          "validity": 0.013249999999999984,
+          "record_coverage": 0,
+          "scaffold_core_match_rate": 0.0,
+          "scaffold_core_retention_rate": -5.391735975390777e-05,
+          "scaffold_core_metric_n": 5300,
+          "novelty": 0.0,
+          "diversity": 0.00048215575939503097,
+          "diversity_cap": 0,
+          "diversity_n": 0,
+          "unique_rate": 0.05433449237821347,
+          "mean_unique_per_record": 1.2805834733473347,
+          "mean_within_record_diversity": 0.02486425169702189,
+          "within_record_n": 2,
+          "assembly_success_rate": 0.013249999999999984,
+          "decoration_validity": -0.002454999999999985,
+          "qed_n": 5300,
+          "qed_mean": 0.002641001537665777,
+          "qed_std": -0.003218956045690724,
+          "qed_median": 0.0016261130693616677,
+          "sas_n": 5300,
+          "sas_mean": -0.03226329005865747,
+          "sas_std": -0.015769027013473935,
+          "sas_median": -0.02509384946124804,
+          "retained_yield": 0.013082499999999997,
+          "intended_attempts": 0,
+          "uncovered_records": 0,
+          "unique_retained_per_intended_record": 1.2605000000000004,
+          "zero_valid_record_fraction": -0.0001,
+          "zero_retained_record_fraction": -0.00020000000000000052
+        }
+      ],
+      "mean_sd": {
+        "num_generated": {
+          "mean": 0,
+          "sd": 0.0
+        },
+        "num_valid": {
+          "mean": 5917,
+          "sd": 1181.2616136995225
+        },
+        "validity": {
+          "mean": 0.014792499999999986,
+          "sd": 0.0029531540342487986
+        },
+        "record_coverage": {
+          "mean": 0,
+          "sd": 0.0
+        },
+        "scaffold_core_match_rate": {
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "scaffold_core_retention_rate": {
+          "mean": -1.814183695203475e-05,
+          "sd": 3.1720948821436135e-05
+        },
+        "scaffold_core_metric_n": {
+          "mean": 5917,
+          "sd": 1181.2616136995225
+        },
+        "novelty": {
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "diversity": {
+          "mean": -4.907329009466258e-05,
+          "sd": 0.0005763974909916427
+        },
+        "diversity_cap": {
+          "mean": 0,
+          "sd": 0.0
+        },
+        "diversity_n": {
+          "mean": 0,
+          "sd": 0.0
+        },
+        "unique_rate": {
+          "mean": 0.046797526025033086,
+          "sd": 0.006957075007004114
+        },
+        "mean_unique_per_record": {
+          "mean": 1.1797611577824447,
+          "sd": 0.1323786405992284
+        },
+        "mean_within_record_diversity": {
+          "mean": 0.02201736565599109,
+          "sd": 0.0024774015162677956
+        },
+        "within_record_n": {
+          "mean": 0.6666666666666666,
+          "sd": 1.1547005383792517
+        },
+        "assembly_success_rate": {
+          "mean": 0.014795833333333341,
+          "sd": 0.002952232559154724
+        },
+        "decoration_validity": {
+          "mean": -0.0009566666666666798,
+          "sd": 0.0029708598643041193
+        },
+        "qed_n": {
+          "mean": 5917,
+          "sd": 1181.2616136995225
+        },
+        "qed_mean": {
+          "mean": 0.00430658296448035,
+          "sd": 0.0031768836086176863
+        },
+        "qed_std": {
+          "mean": -0.004318688212098058,
+          "sd": 0.0013089163177874162
+        },
+        "qed_median": {
+          "mean": 0.003668786379785627,
+          "sd": 0.003940788126097357
+        },
+        "sas_n": {
+          "mean": 5917,
+          "sd": 1181.2616136995225
+        },
+        "sas_mean": {
+          "mean": -0.04142917556309896,
+          "sd": 0.00814748674685581
+        },
+        "sas_std": {
+          "mean": -0.012561649258761317,
+          "sd": 0.00291796124826166
+        },
+        "sas_median": {
+          "mean": -0.03476817976990709,
+          "sd": 0.009159312842711332
+        },
+        "retained_yield": {
+          "mean": 0.014645833333333321,
+          "sd": 0.002946916114064546
+        },
+        "intended_attempts": {
+          "mean": 0,
+          "sd": 0.0
+        },
+        "uncovered_records": {
+          "mean": 0,
+          "sd": 0.0
+        },
+        "unique_retained_per_intended_record": {
+          "mean": 1.1649999999999998,
+          "sd": 0.12831133036485914
+        },
+        "zero_valid_record_fraction": {
+          "mean": -3.3333333333333335e-05,
+          "sd": 5.773502691896258e-05
+        },
+        "zero_retained_record_fraction": {
+          "mean": -6.666666666666685e-05,
+          "sd": 0.0001258305739211793
+        }
+      },
+      "paired_target_core_ci": {
+        "unit": "scaffold_core",
+        "groups": 11795,
+        "training_runs": 3,
+        "replicates": 2000,
+        "training_seed_uncertainty": false,
+        "metrics": {
+          "assembly_success_rate": {
+            "point": 0.014795833333333341,
+            "ci95": [
+              0.012042913293882572,
+              0.017825373827877616
+            ]
+          },
+          "decoration_validity": {
+            "point": -0.0009566666666666798,
+            "ci95": [
+              -0.0011319244824081318,
+              -0.0007408076468762441
+            ]
+          },
+          "novelty": {
+            "point": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "qed_mean": {
+            "point": 0.00430658296448283,
+            "ci95": [
+              -0.0024227296520192253,
+              0.012810981827602926
+            ]
+          },
+          "retained_yield": {
+            "point": 0.014645833333333321,
+            "ci95": [
+              0.01185683774741147,
+              0.017711963990907374
+            ]
+          },
+          "sas_mean": {
+            "point": -0.041429175563097186,
+            "ci95": [
+              -0.07483690635312842,
+              -0.014413564343951663
+            ]
+          },
+          "scaffold_core_match_rate": {
+            "point": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "scaffold_core_retention_rate": {
+            "point": -1.814183695203475e-05,
+            "ci95": [
+              -0.0001411632360776183,
+              6.922358313868052e-05
+            ]
+          },
+          "unique_retained_per_intended_record": {
+            "point": 1.1649999999999998,
+            "ci95": [
+              1.006047489025258,
+              1.309241712545934
+            ]
+          },
+          "validity": {
+            "point": 0.014792499999999986,
+            "ci95": [
+              0.012042913293882572,
+              0.01781779064327957
+            ]
+          },
+          "zero_retained_record_fraction": {
+            "point": -6.666666666666685e-05,
+            "ci95": [
+              -0.00045050408479998144,
+              0.00029912379663085714
+            ]
+          },
+          "zero_valid_record_fraction": {
+            "point": -3.3333333333333335e-05,
+            "ci95": [
+              -8.695056867400867e-05,
+              0.0
+            ]
+          }
+        }
+      }
+    },
+    {
+      "dataset": "chembl37",
+      "comparison": "Supervised_anchor",
+      "minuend": "atomformer",
+      "subtrahend": "pure_rl",
+      "per_run_deltas": [
+        {
+          "num_generated": 0,
+          "num_valid": -3168,
+          "validity": -0.007920000000000038,
+          "record_coverage": 0,
+          "scaffold_core_match_rate": 0.0,
+          "scaffold_core_retention_rate": -6.237477311799022e-05,
+          "scaffold_core_metric_n": -3168,
+          "novelty": 0.0,
+          "diversity": 0.001285416966759656,
+          "diversity_cap": 0,
+          "diversity_n": 0,
+          "unique_rate": 0.12608798136745586,
+          "mean_unique_per_record": 1.5846,
+          "mean_within_record_diversity": 0.03562839973659776,
+          "within_record_n": 0,
+          "assembly_success_rate": -0.007912499999999989,
+          "decoration_validity": -0.007912499999999989,
+          "qed_n": -3168,
+          "qed_mean": -0.01207547341244708,
+          "qed_std": 0.01211976041387175,
+          "qed_median": -0.007156394984046188,
+          "sas_n": -3168,
+          "sas_mean": 0.09282354287631511,
+          "sas_std": -0.033547435735905795,
+          "sas_median": 0.07587613208781896,
+          "retained_yield": -0.007912499999999989,
+          "intended_attempts": 0,
+          "uncovered_records": 0,
+          "unique_retained_per_intended_record": 1.5807000000000002,
+          "zero_valid_record_fraction": 0.0,
+          "zero_retained_record_fraction": -0.0003499999999999996
+        },
+        {
+          "num_generated": 0,
+          "num_valid": -2840,
+          "validity": -0.007099999999999995,
+          "record_coverage": 0,
+          "scaffold_core_match_rate": 0.0,
+          "scaffold_core_retention_rate": -6.244682258926826e-05,
+          "scaffold_core_metric_n": -2840,
+          "novelty": 0.0,
+          "diversity": -0.0010245137944558946,
+          "diversity_cap": 0,
+          "diversity_n": 0,
+          "unique_rate": 0.115906000069597,
+          "mean_unique_per_record": 1.3809500000000003,
+          "mean_within_record_diversity": 0.02929474118557651,
+          "within_record_n": 0,
+          "assembly_success_rate": -0.007099999999999995,
+          "decoration_validity": -0.006952500000000028,
+          "qed_n": -2840,
+          "qed_mean": -0.010651825244512247,
+          "qed_std": 0.011846944756388728,
+          "qed_median": -0.004838696353109184,
+          "sas_n": -2840,
+          "sas_mean": 0.08857479305154392,
+          "sas_std": -0.04456963600481312,
+          "sas_median": 0.07222759176842786,
+          "retained_yield": -0.007100000000000106,
+          "intended_attempts": 0,
+          "uncovered_records": 0,
+          "unique_retained_per_intended_record": 1.3803999999999998,
+          "zero_valid_record_fraction": 0.0,
+          "zero_retained_record_fraction": 9.99999999999994e-05
+        },
+        {
+          "num_generated": 0,
+          "num_valid": -3145,
+          "validity": -0.007862499999999994,
+          "record_coverage": 0,
+          "scaffold_core_match_rate": 0.0,
+          "scaffold_core_retention_rate": -2.607526075160127e-05,
+          "scaffold_core_metric_n": -3145,
+          "novelty": 0.0,
+          "diversity": 0.000512052792668638,
+          "diversity_cap": 0,
+          "diversity_n": 0,
+          "unique_rate": 0.0944004467329922,
+          "mean_unique_per_record": 1.0406999999999993,
+          "mean_within_record_diversity": 0.022560080125626547,
+          "within_record_n": 0,
+          "assembly_success_rate": -0.007862499999999994,
+          "decoration_validity": -0.007627500000000009,
+          "qed_n": -3145,
+          "qed_mean": -0.008773933432320469,
+          "qed_std": 0.008317660044868752,
+          "qed_median": -0.005839525040872484,
+          "sas_n": -3145,
+          "sas_mean": 0.07476269468296648,
+          "sas_std": -0.025126940103297968,
+          "sas_median": 0.06606951414593176,
+          "retained_yield": -0.007819999999999938,
+          "intended_attempts": 0,
+          "uncovered_records": 0,
+          "unique_retained_per_intended_record": 1.04725,
+          "zero_valid_record_fraction": 0.0,
+          "zero_retained_record_fraction": -0.0002500000000000002
+        }
+      ],
+      "mean_sd": {
+        "num_generated": {
+          "mean": 0,
+          "sd": 0.0
+        },
+        "num_valid": {
+          "mean": -3051,
+          "sd": 183.09287260841148
+        },
+        "validity": {
+          "mean": -0.007627500000000009,
+          "sd": 0.00045773218152104226
+        },
+        "record_coverage": {
+          "mean": 0,
+          "sd": 0.0
+        },
+        "scaffold_core_match_rate": {
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "scaffold_core_retention_rate": {
+          "mean": -5.029895215295325e-05,
+          "sd": 2.097836305845926e-05
+        },
+        "scaffold_core_metric_n": {
+          "mean": -3051,
+          "sd": 183.09287260841148
+        },
+        "novelty": {
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "diversity": {
+          "mean": 0.0002576519883241331,
+          "sd": 0.0011757911622991607
+        },
+        "diversity_cap": {
+          "mean": 0,
+          "sd": 0.0
+        },
+        "diversity_n": {
+          "mean": 0,
+          "sd": 0.0
+        },
+        "unique_rate": {
+          "mean": 0.11213147605668168,
+          "sd": 0.016177460753951448
+        },
+        "mean_unique_per_record": {
+          "mean": 1.3354166666666665,
+          "sd": 0.27479404257249385
+        },
+        "mean_within_record_diversity": {
+          "mean": 0.029161073682600274,
+          "sd": 0.006535185124741122
+        },
+        "within_record_n": {
+          "mean": 0,
+          "sd": 0.0
+        },
+        "assembly_success_rate": {
+          "mean": -0.007624999999999993,
+          "sd": 0.00045535014000217243
+        },
+        "decoration_validity": {
+          "mean": -0.0074975000000000085,
+          "sd": 0.0004930263684631698
+        },
+        "qed_n": {
+          "mean": -3051,
+          "sd": 183.09287260841148
+        },
+        "qed_mean": {
+          "mean": -0.010500410696426599,
+          "sd": 0.0016559699073722903
+        },
+        "qed_std": {
+          "mean": 0.010761455071709744,
+          "sd": 0.0021207799734181626
+        },
+        "qed_median": {
+          "mean": -0.005944872126009286,
+          "sd": 0.0011624350486035473
+        },
+        "sas_n": {
+          "mean": -3051,
+          "sd": 183.09287260841148
+        },
+        "sas_mean": {
+          "mean": 0.0853870102036085,
+          "sd": 0.009442988350092866
+        },
+        "sas_std": {
+          "mean": -0.034414670614672294,
+          "sd": 0.009750316827206711
+        },
+        "sas_median": {
+          "mean": 0.07139107933405953,
+          "sd": 0.004956536457464586
+        },
+        "retained_yield": {
+          "mean": -0.0076108333333333444,
+          "sd": 0.0004448056691784209
+        },
+        "intended_attempts": {
+          "mean": 0,
+          "sd": 0.0
+        },
+        "uncovered_records": {
+          "mean": 0,
+          "sd": 0.0
+        },
+        "unique_retained_per_intended_record": {
+          "mean": 1.3361166666666666,
+          "sd": 0.26946796810258056
+        },
+        "zero_valid_record_fraction": {
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "zero_retained_record_fraction": {
+          "mean": -0.00016666666666666682,
+          "sd": 0.00023629078131262997
+        }
+      },
+      "paired_target_core_ci": {
+        "unit": "scaffold_core",
+        "groups": 11795,
+        "training_runs": 3,
+        "replicates": 2000,
+        "training_seed_uncertainty": false,
+        "metrics": {
+          "assembly_success_rate": {
+            "point": -0.007624999999999993,
+            "ci95": [
+              -0.016431312464427663,
+              -0.0004651962605614864
+            ]
+          },
+          "decoration_validity": {
+            "point": -0.0074975000000000085,
+            "ci95": [
+              -0.016167089657663513,
+              -0.0004511488266732352
+            ]
+          },
+          "novelty": {
+            "point": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "qed_mean": {
+            "point": -0.010500410696425008,
+            "ci95": [
+              -0.01619118437024399,
+              -0.005976687652850202
+            ]
+          },
+          "retained_yield": {
+            "point": -0.0076108333333333444,
+            "ci95": [
+              -0.016425208893978315,
+              -0.00044387363587302113
+            ]
+          },
+          "sas_mean": {
+            "point": 0.08538701020360866,
+            "ci95": [
+              0.0217440103361277,
+              0.16357688443993917
+            ]
+          },
+          "scaffold_core_match_rate": {
+            "point": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "scaffold_core_retention_rate": {
+            "point": -5.029895215295325e-05,
+            "ci95": [
+              -0.00010811765791543896,
+              3.8942664909545094e-05
+            ]
+          },
+          "unique_retained_per_intended_record": {
+            "point": 1.3361166666666666,
+            "ci95": [
+              0.8703709329517908,
+              1.7220746734188404
+            ]
+          },
+          "validity": {
+            "point": -0.007627500000000009,
+            "ci95": [
+              -0.016436961721653844,
+              -0.0004651962605614864
+            ]
+          },
+          "zero_retained_record_fraction": {
+            "point": -0.00016666666666666682,
+            "ci95": [
+              -0.00039770484657995276,
+              2.0387985368479374e-05
+            ]
+          },
+          "zero_valid_record_fraction": {
+            "point": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          }
+        }
+      }
+    },
+    {
+      "dataset": "moses",
+      "comparison": "RL_effect",
+      "minuend": "atomformer",
+      "subtrahend": "supervised",
+      "per_run_deltas": [
+        {
+          "num_generated": 0,
+          "num_valid": 498,
+          "validity": 0.0012449999999999406,
+          "record_coverage": 0,
+          "scaffold_core_match_rate": 0.0,
+          "scaffold_core_retention_rate": 0.0,
+          "scaffold_core_metric_n": 498,
+          "novelty": 0.0,
+          "diversity": -0.0007584259146304895,
+          "diversity_cap": 0,
+          "diversity_n": 0,
+          "unique_rate": 0.018067103701497556,
+          "mean_unique_per_record": 0.40554999999999986,
+          "mean_within_record_diversity": 0.016125303158609078,
+          "within_record_n": 0,
+          "assembly_success_rate": 0.0012449999999999406,
+          "decoration_validity": 0.0012150000000000771,
+          "qed_n": 498,
+          "qed_mean": -0.00042336660789421554,
+          "qed_std": 0.0003845255973191214,
+          "qed_median": 0.0008429605515090088,
+          "sas_n": 498,
+          "sas_mean": -0.0013823953686853407,
+          "sas_std": 0.006847919726461149,
+          "sas_median": 0.002591275216126121,
+          "retained_yield": 0.0012449999999999406,
+          "intended_attempts": 0,
+          "uncovered_records": 0,
+          "unique_retained_per_intended_record": 0.40554999999999986,
+          "zero_valid_record_fraction": 0.0,
+          "zero_retained_record_fraction": 0.0
+        },
+        {
+          "num_generated": 0,
+          "num_valid": 257,
+          "validity": 0.0006424999999999903,
+          "record_coverage": 0,
+          "scaffold_core_match_rate": 0.0,
+          "scaffold_core_retention_rate": 0.0,
+          "scaffold_core_metric_n": 257,
+          "novelty": 0.0,
+          "diversity": 0.0012445503990961004,
+          "diversity_cap": 0,
+          "diversity_n": 0,
+          "unique_rate": 0.01391963008136654,
+          "mean_unique_per_record": 0.26234999999999964,
+          "mean_within_record_diversity": 0.012492670917985171,
+          "within_record_n": 0,
+          "assembly_success_rate": 0.0006450000000000067,
+          "decoration_validity": 0.0005325000000000468,
+          "qed_n": 257,
+          "qed_mean": -0.00026790639066232025,
+          "qed_std": 0.0005939317412410883,
+          "qed_median": 0.0003994421457169661,
+          "sas_n": 257,
+          "sas_mean": 0.0016110640684243727,
+          "sas_std": 0.004885855459642652,
+          "sas_median": 0.004979101205724312,
+          "retained_yield": 0.0006424999999999903,
+          "intended_attempts": 0,
+          "uncovered_records": 0,
+          "unique_retained_per_intended_record": 0.26234999999999964,
+          "zero_valid_record_fraction": 0.0,
+          "zero_retained_record_fraction": 0.0
+        },
+        {
+          "num_generated": 0,
+          "num_valid": 499,
+          "validity": 0.001247499999999957,
+          "record_coverage": 0,
+          "scaffold_core_match_rate": 0.0,
+          "scaffold_core_retention_rate": 0.0,
+          "scaffold_core_metric_n": 499,
+          "novelty": 0.0,
+          "diversity": -0.0007071181616151723,
+          "diversity_cap": 0,
+          "diversity_n": 0,
+          "unique_rate": -0.03510805073510398,
+          "mean_unique_per_record": -0.5679499999999997,
+          "mean_within_record_diversity": -0.003976548644510636,
+          "within_record_n": 0,
+          "assembly_success_rate": 0.0012499999999999734,
+          "decoration_validity": 0.0011649999999999716,
+          "qed_n": 499,
+          "qed_mean": 0.004838145614295852,
+          "qed_std": -0.0015093840255789026,
+          "qed_median": 0.00415095023818568,
+          "sas_n": 499,
+          "sas_mean": -0.018946185840893026,
+          "sas_std": 0.0056366757940014,
+          "sas_median": -0.016709271318870123,
+          "retained_yield": 0.001247499999999957,
+          "intended_attempts": 0,
+          "uncovered_records": 0,
+          "unique_retained_per_intended_record": -0.5679499999999997,
+          "zero_valid_record_fraction": 0.0,
+          "zero_retained_record_fraction": 0.0
+        }
+      ],
+      "mean_sd": {
+        "num_generated": {
+          "mean": 0,
+          "sd": 0.0
+        },
+        "num_valid": {
+          "mean": 418,
+          "sd": 139.43098651304163
+        },
+        "validity": {
+          "mean": 0.0010449999999999626,
+          "sd": 0.0003485774662825802
+        },
+        "record_coverage": {
+          "mean": 0,
+          "sd": 0.0
+        },
+        "scaffold_core_match_rate": {
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "scaffold_core_retention_rate": {
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "scaffold_core_metric_n": {
+          "mean": 418,
+          "sd": 139.43098651304163
+        },
+        "novelty": {
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "diversity": {
+          "mean": -7.366455904985376e-05,
+          "sd": 0.0011418958482671154
+        },
+        "diversity_cap": {
+          "mean": 0,
+          "sd": 0.0
+        },
+        "diversity_n": {
+          "mean": 0,
+          "sd": 0.0
+        },
+        "unique_rate": {
+          "mean": -0.001040438984079961,
+          "sd": 0.029576206859083586
+        },
+        "mean_unique_per_record": {
+          "mean": 0.033316666666666585,
+          "sd": 0.5256117990811594
+        },
+        "mean_within_record_diversity": {
+          "mean": 0.008213808477361204,
+          "sd": 0.010712264434655432
+        },
+        "within_record_n": {
+          "mean": 0,
+          "sd": 0.0
+        },
+        "assembly_success_rate": {
+          "mean": 0.0010466666666666402,
+          "sd": 0.0003478625207367322
+        },
+        "decoration_validity": {
+          "mean": 0.0009708333333333652,
+          "sd": 0.0003804301293711187
+        },
+        "qed_n": {
+          "mean": 418,
+          "sd": 139.43098651304163
+        },
+        "qed_mean": {
+          "mean": 0.0013822908719131055,
+          "sd": 0.002993867226535345
+        },
+        "qed_std": {
+          "mean": -0.00017697556233956432,
+          "sd": 0.0011586401373860343
+        },
+        "qed_median": {
+          "mean": 0.001797784311803885,
+          "sd": 0.0020499315968788563
+        },
+        "sas_n": {
+          "mean": 418,
+          "sd": 139.43098651304163
+        },
+        "sas_mean": {
+          "mean": -0.006239172380384665,
+          "sd": 0.011105914782878572
+        },
+        "sas_std": {
+          "mean": 0.005790150326701733,
+          "sd": 0.0009899948842909197
+        },
+        "sas_median": {
+          "mean": -0.0030462982990065632,
+          "sd": 0.011892562888010718
+        },
+        "retained_yield": {
+          "mean": 0.0010449999999999626,
+          "sd": 0.0003485774662825802
+        },
+        "intended_attempts": {
+          "mean": 0,
+          "sd": 0.0
+        },
+        "uncovered_records": {
+          "mean": 0,
+          "sd": 0.0
+        },
+        "unique_retained_per_intended_record": {
+          "mean": 0.033316666666666585,
+          "sd": 0.5256117990811594
+        },
+        "zero_valid_record_fraction": {
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "zero_retained_record_fraction": {
+          "mean": 0.0,
+          "sd": 0.0
+        }
+      },
+      "paired_target_core_ci": {
+        "unit": "scaffold_core",
+        "groups": 11466,
+        "training_runs": 3,
+        "replicates": 2000,
+        "training_seed_uncertainty": false,
+        "metrics": {
+          "assembly_success_rate": {
+            "point": 0.0010466666666666402,
+            "ci95": [
+              0.0007864476232193321,
+              0.0014489358054446129
+            ]
+          },
+          "decoration_validity": {
+            "point": 0.0009708333333333652,
+            "ci95": [
+              0.0007297563329092871,
+              0.0013487407205688517
+            ]
+          },
+          "novelty": {
+            "point": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "qed_mean": {
+            "point": 0.0013822908719114402,
+            "ci95": [
+              0.0010859005443244456,
+              0.0016938717544125188
+            ]
+          },
+          "retained_yield": {
+            "point": 0.0010449999999999626,
+            "ci95": [
+              0.0007864476232193321,
+              0.0014441338099505936
+            ]
+          },
+          "sas_mean": {
+            "point": -0.006239172380381112,
+            "ci95": [
+              -0.0075709415142612615,
+              -0.004941273126272909
+            ]
+          },
+          "scaffold_core_match_rate": {
+            "point": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "scaffold_core_retention_rate": {
+            "point": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "unique_retained_per_intended_record": {
+            "point": 0.033316666666666585,
+            "ci95": [
+              -0.005617633237706298,
+              0.07385115797053189
+            ]
+          },
+          "validity": {
+            "point": 0.0010449999999999626,
+            "ci95": [
+              0.0007864476232193321,
+              0.0014441338099505936
+            ]
+          },
+          "zero_retained_record_fraction": {
+            "point": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "zero_valid_record_fraction": {
+            "point": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          }
+        }
+      }
+    },
+    {
+      "dataset": "moses",
+      "comparison": "Representation_supervised",
+      "minuend": "supervised",
+      "subtrahend": "plain_supervised",
+      "per_run_deltas": [
+        {
+          "num_generated": 0,
+          "num_valid": 6697,
+          "validity": 0.016742499999999993,
+          "record_coverage": 0,
+          "scaffold_core_match_rate": 0.0,
+          "scaffold_core_retention_rate": 0.0,
+          "scaffold_core_metric_n": 6697,
+          "novelty": 0.0,
+          "diversity": -0.0028572474945436355,
+          "diversity_cap": 0,
+          "diversity_n": 0,
+          "unique_rate": -0.007285048739279043,
+          "mean_unique_per_record": 0.0035500000000006082,
+          "mean_within_record_diversity": -0.0043245810840961685,
+          "within_record_n": 0,
+          "assembly_success_rate": 0.016742499999999993,
+          "decoration_validity": -0.0006675000000000431,
+          "qed_n": 6697,
+          "qed_mean": 0.021142671230983123,
+          "qed_std": -0.01089053003465619,
+          "qed_median": 0.015408934165762611,
+          "sas_n": 6697,
+          "sas_mean": -0.0747188987485452,
+          "sas_std": -0.010565165776050434,
+          "sas_median": -0.07678195715648428,
+          "retained_yield": 0.016742499999999993,
+          "intended_attempts": 0,
+          "uncovered_records": 0,
+          "unique_retained_per_intended_record": 0.0035500000000006082,
+          "zero_valid_record_fraction": 0.0,
+          "zero_retained_record_fraction": 0.0
+        },
+        {
+          "num_generated": 0,
+          "num_valid": 7026,
+          "validity": 0.017564999999999942,
+          "record_coverage": 0,
+          "scaffold_core_match_rate": 0.0,
+          "scaffold_core_retention_rate": 0.0,
+          "scaffold_core_metric_n": 7026,
+          "novelty": 0.0,
+          "diversity": -0.005914594658168348,
+          "diversity_cap": 0,
+          "diversity_n": 0,
+          "unique_rate": -0.010693122737135075,
+          "mean_unique_per_record": 0.0025500000000011624,
+          "mean_within_record_diversity": -0.0031244529588730086,
+          "within_record_n": 0,
+          "assembly_success_rate": 0.017567499999999958,
+          "decoration_validity": -0.00015500000000001624,
+          "qed_n": 7026,
+          "qed_mean": 0.021283304039252382,
+          "qed_std": -0.010937014755949312,
+          "qed_median": 0.01566579668095658,
+          "sas_n": 7026,
+          "sas_mean": -0.0788474623926736,
+          "sas_std": -0.012446441506429595,
+          "sas_median": -0.08215249664352786,
+          "retained_yield": 0.017564999999999942,
+          "intended_attempts": 0,
+          "uncovered_records": 0,
+          "unique_retained_per_intended_record": 0.0025500000000011624,
+          "zero_valid_record_fraction": 0.0,
+          "zero_retained_record_fraction": 0.0
+        },
+        {
+          "num_generated": 0,
+          "num_valid": 9092,
+          "validity": 0.022730000000000028,
+          "record_coverage": 0,
+          "scaffold_core_match_rate": 0.0,
+          "scaffold_core_retention_rate": 0.0,
+          "scaffold_core_metric_n": 9092,
+          "novelty": 0.0,
+          "diversity": -0.0036742581875759406,
+          "diversity_cap": 0,
+          "diversity_n": 0,
+          "unique_rate": 0.026263933252459126,
+          "mean_unique_per_record": 0.7949000000000002,
+          "mean_within_record_diversity": 0.010783563045202144,
+          "within_record_n": 0,
+          "assembly_success_rate": 0.022730000000000028,
+          "decoration_validity": -0.0004250000000000087,
+          "qed_n": 9092,
+          "qed_mean": 0.019668159056493106,
+          "qed_std": -0.010029774636862374,
+          "qed_median": 0.01499315066581719,
+          "sas_n": 9092,
+          "sas_mean": -0.07352339867486979,
+          "sas_std": -0.015952754529528768,
+          "sas_median": -0.07574842033079854,
+          "retained_yield": 0.022730000000000028,
+          "intended_attempts": 0,
+          "uncovered_records": 0,
+          "unique_retained_per_intended_record": 0.7949000000000002,
+          "zero_valid_record_fraction": 0.0,
+          "zero_retained_record_fraction": 0.0
+        }
+      ],
+      "mean_sd": {
+        "num_generated": {
+          "mean": 0,
+          "sd": 0.0
+        },
+        "num_valid": {
+          "mean": 7605,
+          "sd": 1298.2438137730524
+        },
+        "validity": {
+          "mean": 0.019012499999999988,
+          "sd": 0.003245609534432662
+        },
+        "record_coverage": {
+          "mean": 0,
+          "sd": 0.0
+        },
+        "scaffold_core_match_rate": {
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "scaffold_core_retention_rate": {
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "scaffold_core_metric_n": {
+          "mean": 7605,
+          "sd": 1298.2438137730524
+        },
+        "novelty": {
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "diversity": {
+          "mean": -0.0041487001134293084,
+          "sd": 0.001582929017829482
+        },
+        "diversity_cap": {
+          "mean": 0,
+          "sd": 0.0
+        },
+        "diversity_n": {
+          "mean": 0,
+          "sd": 0.0
+        },
+        "unique_rate": {
+          "mean": 0.0027619205920150027,
+          "sd": 0.020424548744402467
+        },
+        "mean_unique_per_record": {
+          "mean": 0.2670000000000006,
+          "sd": 0.4571750840761115
+        },
+        "mean_within_record_diversity": {
+          "mean": 0.0011115096674109888,
+          "sd": 0.00839771035975693
+        },
+        "within_record_n": {
+          "mean": 0,
+          "sd": 0.0
+        },
+        "assembly_success_rate": {
+          "mean": 0.019013333333333327,
+          "sd": 0.0032450523236665246
+        },
+        "decoration_validity": {
+          "mean": -0.000415833333333356,
+          "sd": 0.00025637293798944544
+        },
+        "qed_n": {
+          "mean": 7605,
+          "sd": 1298.2438137730524
+        },
+        "qed_mean": {
+          "mean": 0.020698044775576203,
+          "sd": 0.0008946747132164328
+        },
+        "qed_std": {
+          "mean": -0.010619106475822626,
+          "sd": 0.0005109052941961247
+        },
+        "qed_median": {
+          "mean": 0.015355960504178793,
+          "sd": 0.0003394375082941223
+        },
+        "sas_n": {
+          "mean": 7605,
+          "sd": 1298.2438137730524
+        },
+        "sas_mean": {
+          "mean": -0.07569658660536287,
+          "sd": 0.002793442101930028
+        },
+        "sas_std": {
+          "mean": -0.012988120604002932,
+          "sd": 0.002734335445352756
+        },
+        "sas_median": {
+          "mean": -0.07822762471027023,
+          "sd": 0.003438097491617607
+        },
+        "retained_yield": {
+          "mean": 0.019012499999999988,
+          "sd": 0.003245609534432662
+        },
+        "intended_attempts": {
+          "mean": 0,
+          "sd": 0.0
+        },
+        "uncovered_records": {
+          "mean": 0,
+          "sd": 0.0
+        },
+        "unique_retained_per_intended_record": {
+          "mean": 0.2670000000000006,
+          "sd": 0.4571750840761115
+        },
+        "zero_valid_record_fraction": {
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "zero_retained_record_fraction": {
+          "mean": 0.0,
+          "sd": 0.0
+        }
+      },
+      "paired_target_core_ci": {
+        "unit": "scaffold_core",
+        "groups": 11466,
+        "training_runs": 3,
+        "replicates": 2000,
+        "training_seed_uncertainty": false,
+        "metrics": {
+          "assembly_success_rate": {
+            "point": 0.019013333333333327,
+            "ci95": [
+              0.018010325877048854,
+              0.01992372228430941
+            ]
+          },
+          "decoration_validity": {
+            "point": -0.000415833333333356,
+            "ci95": [
+              -0.0008070899132427561,
+              -0.00015154452009950314
+            ]
+          },
+          "novelty": {
+            "point": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "qed_mean": {
+            "point": 0.02069804477557406,
+            "ci95": [
+              0.018974509526050325,
+              0.02277944954306152
+            ]
+          },
+          "retained_yield": {
+            "point": 0.019012499999999988,
+            "ci95": [
+              0.0180099635729905,
+              0.019922040717815694
+            ]
+          },
+          "sas_mean": {
+            "point": -0.07569658660536627,
+            "ci95": [
+              -0.08148288243863047,
+              -0.07056402208503999
+            ]
+          },
+          "scaffold_core_match_rate": {
+            "point": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "scaffold_core_retention_rate": {
+            "point": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "unique_retained_per_intended_record": {
+            "point": 0.2670000000000006,
+            "ci95": [
+              0.23537998804298482,
+              0.2975594065727293
+            ]
+          },
+          "validity": {
+            "point": 0.019012499999999988,
+            "ci95": [
+              0.0180099635729905,
+              0.019922040717815694
+            ]
+          },
+          "zero_retained_record_fraction": {
+            "point": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "zero_valid_record_fraction": {
+            "point": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          }
+        }
+      }
+    },
+    {
+      "dataset": "moses",
+      "comparison": "Representation_RL",
+      "minuend": "atomformer",
+      "subtrahend": "plain_balanced_rl",
+      "per_run_deltas": [
+        {
+          "num_generated": 0,
+          "num_valid": 2084,
+          "validity": 0.005209999999999937,
+          "record_coverage": 0,
+          "scaffold_core_match_rate": 0.0,
+          "scaffold_core_retention_rate": 0.0,
+          "scaffold_core_metric_n": 2084,
+          "novelty": 0.0,
+          "diversity": -0.0033889971807377073,
+          "diversity_cap": 0,
+          "diversity_n": 0,
+          "unique_rate": 0.03160512533402304,
+          "mean_unique_per_record": 0.7620000000000005,
+          "mean_within_record_diversity": 0.01654261256619216,
+          "within_record_n": 0,
+          "assembly_success_rate": 0.005209999999999937,
+          "decoration_validity": -3.500000000000725e-05,
+          "qed_n": 2084,
+          "qed_mean": 0.014314221344994493,
+          "qed_std": -0.007858168382430322,
+          "qed_median": 0.010985658611009308,
+          "sas_n": 2084,
+          "sas_mean": -0.05533562465973807,
+          "sas_std": -0.009609630431014704,
+          "sas_median": -0.055728972110109964,
+          "retained_yield": 0.005209999999999937,
+          "intended_attempts": 0,
+          "uncovered_records": 0,
+          "unique_retained_per_intended_record": 0.7620000000000005,
+          "zero_valid_record_fraction": 0.0,
+          "zero_retained_record_fraction": 0.0
+        },
+        {
+          "num_generated": 0,
+          "num_valid": 1818,
+          "validity": 0.00454499999999991,
+          "record_coverage": 0,
+          "scaffold_core_match_rate": 0.0,
+          "scaffold_core_retention_rate": 0.0,
+          "scaffold_core_metric_n": 1818,
+          "novelty": 0.0,
+          "diversity": -0.00413892913863545,
+          "diversity_cap": 0,
+          "diversity_n": 0,
+          "unique_rate": 0.025796611994926055,
+          "mean_unique_per_record": 0.6600000000000001,
+          "mean_within_record_diversity": 0.01458112779868806,
+          "within_record_n": 0,
+          "assembly_success_rate": 0.004549999999999943,
+          "decoration_validity": -0.00012000000000000899,
+          "qed_n": 1818,
+          "qed_mean": 0.014539983970694115,
+          "qed_std": -0.007283139037723194,
+          "qed_median": 0.010953652399887659,
+          "sas_n": 1818,
+          "sas_mean": -0.05616451317189819,
+          "sas_std": -0.011018361193449233,
+          "sas_median": -0.05710767295560082,
+          "retained_yield": 0.00454499999999991,
+          "intended_attempts": 0,
+          "uncovered_records": 0,
+          "unique_retained_per_intended_record": 0.6600000000000001,
+          "zero_valid_record_fraction": 0.0,
+          "zero_retained_record_fraction": 0.0
+        },
+        {
+          "num_generated": 0,
+          "num_valid": 1933,
+          "validity": 0.004832500000000017,
+          "record_coverage": 0,
+          "scaffold_core_match_rate": 0.0,
+          "scaffold_core_retention_rate": 0.0,
+          "scaffold_core_metric_n": 1933,
+          "novelty": 0.0,
+          "diversity": -0.004409198546251769,
+          "diversity_cap": 0,
+          "diversity_n": 0,
+          "unique_rate": 0.03228121874050538,
+          "mean_unique_per_record": 0.8512500000000003,
+          "mean_within_record_diversity": 0.017986473642969292,
+          "within_record_n": 0,
+          "assembly_success_rate": 0.004835000000000034,
+          "decoration_validity": -0.00011250000000007088,
+          "qed_n": 1933,
+          "qed_mean": 0.013615920283391869,
+          "qed_std": -0.006892405447829417,
+          "qed_median": 0.010282668452431976,
+          "sas_n": 1933,
+          "sas_mean": -0.052618045210801156,
+          "sas_std": -0.011883449113807731,
+          "sas_median": -0.052399962237987374,
+          "retained_yield": 0.004832500000000017,
+          "intended_attempts": 0,
+          "uncovered_records": 0,
+          "unique_retained_per_intended_record": 0.8512500000000003,
+          "zero_valid_record_fraction": 0.0,
+          "zero_retained_record_fraction": 0.0
+        }
+      ],
+      "mean_sd": {
+        "num_generated": {
+          "mean": 0,
+          "sd": 0.0
+        },
+        "num_valid": {
+          "mean": 1945,
+          "sd": 133.4053971921676
+        },
+        "validity": {
+          "mean": 0.0048624999999999545,
+          "sd": 0.0003335134929804281
+        },
+        "record_coverage": {
+          "mean": 0,
+          "sd": 0.0
+        },
+        "scaffold_core_match_rate": {
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "scaffold_core_retention_rate": {
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "scaffold_core_metric_n": {
+          "mean": 1945,
+          "sd": 133.4053971921676
+        },
+        "novelty": {
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "diversity": {
+          "mean": -0.003979041621874975,
+          "sd": 0.000528560043950602
+        },
+        "diversity_cap": {
+          "mean": 0,
+          "sd": 0.0
+        },
+        "diversity_n": {
+          "mean": 0,
+          "sd": 0.0
+        },
+        "unique_rate": {
+          "mean": 0.02989431868981816,
+          "sd": 0.0035647826990708566
+        },
+        "mean_unique_per_record": {
+          "mean": 0.7577500000000003,
+          "sd": 0.09569580711818054
+        },
+        "mean_within_record_diversity": {
+          "mean": 0.016370071335949837,
+          "sd": 0.0017092170537678986
+        },
+        "within_record_n": {
+          "mean": 0,
+          "sd": 0.0
+        },
+        "assembly_success_rate": {
+          "mean": 0.004864999999999971,
+          "sd": 0.00033102114736070136
+        },
+        "decoration_validity": {
+          "mean": -8.91666666666957e-05,
+          "sd": 4.705935967833468e-05
+        },
+        "qed_n": {
+          "mean": 1945,
+          "sd": 133.4053971921676
+        },
+        "qed_mean": {
+          "mean": 0.014156708533026826,
+          "sd": 0.00048174800362650903
+        },
+        "qed_std": {
+          "mean": -0.0073445709559943105,
+          "sd": 0.00048580337781770327
+        },
+        "qed_median": {
+          "mean": 0.010740659821109647,
+          "sd": 0.0003969548711440965
+        },
+        "sas_n": {
+          "mean": 1945,
+          "sd": 133.4053971921676
+        },
+        "sas_mean": {
+          "mean": -0.0547060610141458,
+          "sd": 0.0018551607848541062
+        },
+        "sas_std": {
+          "mean": -0.010837146912757223,
+          "sd": 0.0011476897717587694
+        },
+        "sas_median": {
+          "mean": -0.05507886910123272,
+          "sd": 0.0024202500886884725
+        },
+        "retained_yield": {
+          "mean": 0.0048624999999999545,
+          "sd": 0.0003335134929804281
+        },
+        "intended_attempts": {
+          "mean": 0,
+          "sd": 0.0
+        },
+        "uncovered_records": {
+          "mean": 0,
+          "sd": 0.0
+        },
+        "unique_retained_per_intended_record": {
+          "mean": 0.7577500000000003,
+          "sd": 0.09569580711818054
+        },
+        "zero_valid_record_fraction": {
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "zero_retained_record_fraction": {
+          "mean": 0.0,
+          "sd": 0.0
+        }
+      },
+      "paired_target_core_ci": {
+        "unit": "scaffold_core",
+        "groups": 11466,
+        "training_runs": 3,
+        "replicates": 2000,
+        "training_seed_uncertainty": false,
+        "metrics": {
+          "assembly_success_rate": {
+            "point": 0.004864999999999971,
+            "ci95": [
+              0.0044712049349363335,
+              0.005253049995722368
+            ]
+          },
+          "decoration_validity": {
+            "point": -8.91666666666957e-05,
+            "ci95": [
+              -0.00022493809172853633,
+              2.3884157899522952e-05
+            ]
+          },
+          "novelty": {
+            "point": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "qed_mean": {
+            "point": 0.014156708533024828,
+            "ci95": [
+              0.0125540854336434,
+              0.016051420159376224
+            ]
+          },
+          "retained_yield": {
+            "point": 0.0048624999999999545,
+            "ci95": [
+              0.004469460242679553,
+              0.005249061332564693
+            ]
+          },
+          "sas_mean": {
+            "point": -0.0547060610141498,
+            "ci95": [
+              -0.0602920729483076,
+              -0.04962096103948835
+            ]
+          },
+          "scaffold_core_match_rate": {
+            "point": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "scaffold_core_retention_rate": {
+            "point": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "unique_retained_per_intended_record": {
+            "point": 0.7577500000000003,
+            "ci95": [
+              0.7234203738332097,
+              0.7892046687299367
+            ]
+          },
+          "validity": {
+            "point": 0.0048624999999999545,
+            "ci95": [
+              0.004469460242679553,
+              0.005249061332564693
+            ]
+          },
+          "zero_retained_record_fraction": {
+            "point": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "zero_valid_record_fraction": {
+            "point": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          }
+        }
+      }
+    },
+    {
+      "dataset": "moses",
+      "comparison": "Supervised_anchor",
+      "minuend": "atomformer",
+      "subtrahend": "pure_rl",
+      "per_run_deltas": [
+        {
+          "num_generated": 0,
+          "num_valid": -119,
+          "validity": -0.0002975000000000616,
+          "record_coverage": 0,
+          "scaffold_core_match_rate": 0.0,
+          "scaffold_core_retention_rate": 0.0,
+          "scaffold_core_metric_n": -119,
+          "novelty": 0.0,
+          "diversity": 0.0037657541999337463,
+          "diversity_cap": 0,
+          "diversity_n": 0,
+          "unique_rate": 0.07319045981733663,
+          "mean_unique_per_record": 1.5517500000000002,
+          "mean_within_record_diversity": 0.03012920236554248,
+          "within_record_n": 0,
+          "assembly_success_rate": -0.0002975000000000616,
+          "decoration_validity": -0.0002874999999999961,
+          "qed_n": -119,
+          "qed_mean": 0.0024249574898846937,
+          "qed_std": 0.0008091985207335228,
+          "qed_median": 0.0013909413440227336,
+          "sas_n": -119,
+          "sas_mean": 0.028966154597385607,
+          "sas_std": -0.009090912963903075,
+          "sas_median": 0.027688221153848502,
+          "retained_yield": -0.0002975000000000616,
+          "intended_attempts": 0,
+          "uncovered_records": 0,
+          "unique_retained_per_intended_record": 1.5517500000000002,
+          "zero_valid_record_fraction": 0.0,
+          "zero_retained_record_fraction": 0.0
+        },
+        {
+          "num_generated": 0,
+          "num_valid": -328,
+          "validity": -0.0008200000000000429,
+          "record_coverage": 0,
+          "scaffold_core_match_rate": 0.0,
+          "scaffold_core_retention_rate": 0.0,
+          "scaffold_core_metric_n": -328,
+          "novelty": 0.0,
+          "diversity": 0.005470900364510589,
+          "diversity_cap": 0,
+          "diversity_n": 0,
+          "unique_rate": 0.09791825036044197,
+          "mean_unique_per_record": 2.1568000000000005,
+          "mean_within_record_diversity": 0.042598650315798875,
+          "within_record_n": 0,
+          "assembly_success_rate": -0.0008150000000000102,
+          "decoration_validity": -0.0007099999999999884,
+          "qed_n": -328,
+          "qed_mean": 0.003707978731418815,
+          "qed_std": 0.001616612578785731,
+          "qed_median": 0.00209076581776102,
+          "sas_n": -328,
+          "sas_mean": 0.026515557413454793,
+          "sas_std": -0.01372559126543016,
+          "sas_median": 0.024463079155966128,
+          "retained_yield": -0.0008200000000000429,
+          "intended_attempts": 0,
+          "uncovered_records": 0,
+          "unique_retained_per_intended_record": 2.1568000000000005,
+          "zero_valid_record_fraction": 0.0,
+          "zero_retained_record_fraction": 0.0
+        },
+        {
+          "num_generated": 0,
+          "num_valid": -191,
+          "validity": -0.0004775000000000196,
+          "record_coverage": 0,
+          "scaffold_core_match_rate": 0.0,
+          "scaffold_core_retention_rate": 0.0,
+          "scaffold_core_metric_n": -191,
+          "novelty": 0.0,
+          "diversity": -0.0012852629730113474,
+          "diversity_cap": 0,
+          "diversity_n": 0,
+          "unique_rate": 0.055067792642779,
+          "mean_unique_per_record": 1.2422000000000004,
+          "mean_within_record_diversity": 0.016767880984314282,
+          "within_record_n": 0,
+          "assembly_success_rate": -0.0004750000000000032,
+          "decoration_validity": -0.00046000000000001595,
+          "qed_n": -191,
+          "qed_mean": 0.00348912889703501,
+          "qed_std": -0.0007215770325427057,
+          "qed_median": 0.0010628439131855627,
+          "sas_n": -191,
+          "sas_mean": 0.009600635510098154,
+          "sas_std": -0.01532115765167169,
+          "sas_median": 0.005192119096693482,
+          "retained_yield": -0.0004775000000000196,
+          "intended_attempts": 0,
+          "uncovered_records": 0,
+          "unique_retained_per_intended_record": 1.2422000000000004,
+          "zero_valid_record_fraction": 0.0,
+          "zero_retained_record_fraction": 0.0
+        }
+      ],
+      "mean_sd": {
+        "num_generated": {
+          "mean": 0,
+          "sd": 0.0
+        },
+        "num_valid": {
+          "mean": -212.66666666666666,
+          "sd": 106.17124532251344
+        },
+        "validity": {
+          "mean": -0.000531666666666708,
+          "sd": 0.0002654281133062778
+        },
+        "record_coverage": {
+          "mean": 0,
+          "sd": 0.0
+        },
+        "scaffold_core_match_rate": {
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "scaffold_core_retention_rate": {
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "scaffold_core_metric_n": {
+          "mean": -212.66666666666666,
+          "sd": 106.17124532251344
+        },
+        "novelty": {
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "diversity": {
+          "mean": 0.002650463863810996,
+          "sd": 0.0035134513176085826
+        },
+        "diversity_cap": {
+          "mean": 0,
+          "sd": 0.0
+        },
+        "diversity_n": {
+          "mean": 0,
+          "sd": 0.0
+        },
+        "unique_rate": {
+          "mean": 0.07539216760685254,
+          "sd": 0.02150990631188608
+        },
+        "mean_unique_per_record": {
+          "mean": 1.6502500000000004,
+          "sd": 0.4651881098007558
+        },
+        "mean_within_record_diversity": {
+          "mean": 0.02983191122188521,
+          "sd": 0.012917950595282677
+        },
+        "within_record_n": {
+          "mean": 0,
+          "sd": 0.0
+        },
+        "assembly_success_rate": {
+          "mean": -0.0005291666666666917,
+          "sd": 0.0002629678370700907
+        },
+        "decoration_validity": {
+          "mean": -0.0004858333333333335,
+          "sd": 0.0002124313614637234
+        },
+        "qed_n": {
+          "mean": -212.66666666666666,
+          "sd": 106.17124532251344
+        },
+        "qed_mean": {
+          "mean": 0.0032073550394461727,
+          "sd": 0.0006863550514655736
+        },
+        "qed_std": {
+          "mean": 0.0005680780223255161,
+          "sd": 0.0011875971478979943
+        },
+        "qed_median": {
+          "mean": 0.0015148503583231054,
+          "sd": 0.0005250437537436058
+        },
+        "sas_n": {
+          "mean": -212.66666666666666,
+          "sd": 106.17124532251344
+        },
+        "sas_mean": {
+          "mean": 0.02169411584031285,
+          "sd": 0.010544693286788372
+        },
+        "sas_std": {
+          "mean": -0.012712553960334974,
+          "sd": 0.00323630509277218
+        },
+        "sas_median": {
+          "mean": 0.019114473135502703,
+          "sd": 0.012164470465790394
+        },
+        "retained_yield": {
+          "mean": -0.000531666666666708,
+          "sd": 0.0002654281133062778
+        },
+        "intended_attempts": {
+          "mean": 0,
+          "sd": 0.0
+        },
+        "uncovered_records": {
+          "mean": 0,
+          "sd": 0.0
+        },
+        "unique_retained_per_intended_record": {
+          "mean": 1.6502500000000004,
+          "sd": 0.4651881098007558
+        },
+        "zero_valid_record_fraction": {
+          "mean": 0.0,
+          "sd": 0.0
+        },
+        "zero_retained_record_fraction": {
+          "mean": 0.0,
+          "sd": 0.0
+        }
+      },
+      "paired_target_core_ci": {
+        "unit": "scaffold_core",
+        "groups": 11466,
+        "training_runs": 3,
+        "replicates": 2000,
+        "training_seed_uncertainty": false,
+        "metrics": {
+          "assembly_success_rate": {
+            "point": -0.0005291666666666917,
+            "ci95": [
+              -0.0007265422376110617,
+              -0.0003920013514237422
+            ]
+          },
+          "decoration_validity": {
+            "point": -0.0004858333333333335,
+            "ci95": [
+              -0.0006554352603638495,
+              -0.0003634934413380855
+            ]
+          },
+          "novelty": {
+            "point": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "qed_mean": {
+            "point": 0.0032073550394430272,
+            "ci95": [
+              0.0025211583539769306,
+              0.0038394648893832397
+            ]
+          },
+          "retained_yield": {
+            "point": -0.000531666666666708,
+            "ci95": [
+              -0.0007327770018933635,
+              -0.0003921760915633871
+            ]
+          },
+          "sas_mean": {
+            "point": 0.02169411584031374,
+            "ci95": [
+              0.016262234946874052,
+              0.028265564095542615
+            ]
+          },
+          "scaffold_core_match_rate": {
+            "point": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "scaffold_core_retention_rate": {
+            "point": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "unique_retained_per_intended_record": {
+            "point": 1.6502500000000004,
+            "ci95": [
+              1.5460331758642398,
+              1.7517904766214647
+            ]
+          },
+          "validity": {
+            "point": -0.000531666666666708,
+            "ci95": [
+              -0.0007327770018933635,
+              -0.0003921760915633871
+            ]
+          },
+          "zero_retained_record_fraction": {
+            "point": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "zero_valid_record_fraction": {
+            "point": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          }
+        }
+      }
+    }
+  ]
+}
