@@ -1,0 +1,42 @@
+{
+  "runtime_snapshots": {
+    "atomformer": {
+      "python": "3.8.10 (default, Jun  4 2021, 15:09:15) \n[GCC 7.5.0]",
+      "torch": "1.11.0+cu113",
+      "numpy": "1.22.4",
+      "rdkit": "2022.09.5",
+      "cuda": true
+    },
+    "baseline": {
+      "python": "3.10.21 (main, Aug 27 2026, 14:42:07) [GCC 14.3.0]",
+      "torch": "1.13.1+cu117",
+      "numpy": "1.26.4",
+      "rdkit": "2026.03.5",
+      "cuda": true
+    }
+  },
+  "roles": {
+    "atomformer": "Primary model training and final common scoring",
+    "baseline": "External baseline training and generation"
+  },
+  "common_final_scoring_rdkit": "2022.09.5",
+  "upstream": {
+    "libinvent": {
+      "commit": "84bcf5ace4b8c02012cf32fee4cdc2bc6e319c4d",
+      "url": "https://github.com/MolecularAI/Lib-INVENT"
+    },
+    "smilesrnn": {
+      "commit": "c8ee705961b4411707c69f73d309c1cf61208b95",
+      "url": "https://github.com/MorganCThomas/SMILES-RNN"
+    },
+    "promptsmiles": {
+      "commit": "5632d236b390b148ed27596c8f5085b4ab96b020",
+      "url": "https://github.com/compsciencelab/PromptSMILES"
+    },
+    "drugex": {
+      "url": "https://github.com/CDDLeiden/DrugEx",
+      "commit": "bf61ce71db96bdfe25cc2832ec0d4cf0b1142db4"
+    }
+  },
+  "scope": "Observed core runtime versions, not a complete operating-system or transitive dependency lock. Baseline generation RDKit differs from final common scoring."
+}

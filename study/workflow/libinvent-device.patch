@@ -1,0 +1,29 @@
+--- models/decorator.py
++++ models/decorator.py
+@@ -51,16 +51,16 @@
+ 
+         # sum up bidirectional layers and collapse
+         hs_h = hs_h.view(self.num_layers, 2, batch_size, self.num_dimensions)\
+-            .sum(dim=1).squeeze()  # (layers, batch, dim)
++            .sum(dim=1)  # (layers, batch, dim)
+         hs_c = hs_c.view(self.num_layers, 2, batch_size, self.num_dimensions)\
+-            .sum(dim=1).squeeze()  # (layers, batch, dim)
++            .sum(dim=1)  # (layers, batch, dim)
+         padded_seqs = padded_seqs.view(batch_size, max_seq_size, 2, self.num_dimensions)\
+-            .sum(dim=2).squeeze()  # (batch, seq, dim)
++            .sum(dim=2)  # (batch, seq, dim)
+ 
+         return padded_seqs, (hs_h, hs_c)
+ 
+     def _initialize_hidden_state(self, batch_size):
+-        return torch.zeros(self.num_layers*2, batch_size, self.num_dimensions).cuda()
++        return torch.zeros(self.num_layers*2, batch_size, self.num_dimensions, device=next(self.parameters()).device)
+ 
+     def get_params(self):
+         parameter_enums = GenerativeModelParametersEnum
+--- models/__init__.py
++++ models/__init__.py
+@@ -1,2 +1 @@
+-from models.actions import SampleModel, Action, TrainModel, CollectStatsFromModel, \
+-    CalculateNLLsFromModel
++"""Core LibINVENT models. Optional CLI/scoring imports intentionally lazy."""

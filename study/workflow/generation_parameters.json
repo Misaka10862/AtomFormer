@@ -1,0 +1,1873 @@
+{
+  "runs": [
+    {
+      "dataset": "gdb13",
+      "configuration": "atomformer",
+      "run": 1,
+      "metadata": [
+        {
+          "kind": "generation_contract.json",
+          "source_sha256": "77242a79e8832df1194ade704fd113e5a6e6c86b3ab7afb029dc130c19eaae1f",
+          "blocks": {
+            "args": {
+              "batch_size": 128,
+              "max_samples": 0,
+              "max_length": 128,
+              "temperature": 1.0,
+              "greedy": 0,
+              "samples_per_scaffold": 20,
+              "sampling_seed": 0,
+              "expected_rdkit": "2022.09.5",
+              "representation": "rooted",
+              "require_full_coverage": 1
+            }
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "gdb13",
+      "configuration": "atomformer",
+      "run": 2,
+      "metadata": [
+        {
+          "kind": "generation_contract.json",
+          "source_sha256": "e598ccf4f6ff8bb1f557266ea24e3025ec99979708ad8da470ded63c9519e3f4",
+          "blocks": {
+            "parameters": {
+              "batch_records": 128,
+              "sample_block": 4,
+              "sampling_seed": 0
+            },
+            "run": {
+              "seed": 43,
+              "representation": "rooted",
+              "samples_per_record": 20,
+              "temperature": 1.0,
+              "max_length": 128,
+              "graph_max_length": 80
+            }
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "gdb13",
+      "configuration": "atomformer",
+      "run": 3,
+      "metadata": [
+        {
+          "kind": "generation_contract.json",
+          "source_sha256": "c5b7d03b21c0db3df2b2c97ab3e9b9d5bbae63c7a0b43038b6c1c14f9fc84049",
+          "blocks": {
+            "parameters": {
+              "batch_records": 128,
+              "sample_block": 4,
+              "sampling_seed": 0
+            },
+            "run": {
+              "seed": 44,
+              "representation": "rooted",
+              "samples_per_record": 20,
+              "temperature": 1.0,
+              "max_length": 128,
+              "graph_max_length": 80
+            }
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "gdb13",
+      "configuration": "supervised",
+      "run": 1,
+      "metadata": [
+        {
+          "kind": "generation_contract.json",
+          "source_sha256": "1d0188ca654048e9feb60eff565e4cf2fce6b1d05d3b781af95abd75b122913b",
+          "blocks": {
+            "parameters": {
+              "batch_records": 128,
+              "sample_block": 4,
+              "sampling_seed": 0
+            },
+            "run": {
+              "seed": 42,
+              "max_length": 128,
+              "representation": "rooted"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "gdb13",
+      "configuration": "supervised",
+      "run": 2,
+      "metadata": [
+        {
+          "kind": "generation_contract.json",
+          "source_sha256": "3e33aa1e7f1e40f89b4516b94f3a062d1d994cb50f0b897aab00ef3b3eb7fc26",
+          "blocks": {
+            "parameters": {
+              "batch_records": 128,
+              "sample_block": 4,
+              "sampling_seed": 0
+            },
+            "run": {
+              "seed": 43,
+              "max_length": 128,
+              "representation": "rooted"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "gdb13",
+      "configuration": "supervised",
+      "run": 3,
+      "metadata": [
+        {
+          "kind": "generation_contract.json",
+          "source_sha256": "cdfe61ed9c682d9d6ce15e8d54996346dc9ce21b6839be2564bdc6a7d29300d5",
+          "blocks": {
+            "parameters": {
+              "batch_records": 128,
+              "sample_block": 4,
+              "sampling_seed": 0
+            },
+            "run": {
+              "seed": 44,
+              "max_length": 128,
+              "representation": "rooted"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "gdb13",
+      "configuration": "plain_supervised",
+      "run": 1,
+      "metadata": [
+        {
+          "kind": "generation_contract.json",
+          "source_sha256": "be70770a60fda6a84631f239e8765e431b537ba5a7fabf5e1ac76bd75e839ffe",
+          "blocks": {
+            "parameters": {
+              "batch_records": 128,
+              "sample_block": 4,
+              "sampling_seed": 0
+            },
+            "run": {
+              "seed": 42,
+              "max_length": 128,
+              "representation": "plain"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "gdb13",
+      "configuration": "plain_supervised",
+      "run": 2,
+      "metadata": [
+        {
+          "kind": "generation_contract.json",
+          "source_sha256": "56ae0b1f7fad33ded525e8c19edf4b62646a5be43df323a837bc07822384f9e9",
+          "blocks": {
+            "parameters": {
+              "batch_records": 128,
+              "sample_block": 4,
+              "sampling_seed": 0
+            },
+            "run": {
+              "seed": 43,
+              "max_length": 128,
+              "representation": "plain"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "gdb13",
+      "configuration": "plain_supervised",
+      "run": 3,
+      "metadata": [
+        {
+          "kind": "generation_contract.json",
+          "source_sha256": "790598cf6f6069774acd8650472ef4d009e6ac52104c26faed4071003df173c3",
+          "blocks": {
+            "parameters": {
+              "batch_records": 128,
+              "sample_block": 4,
+              "sampling_seed": 0
+            },
+            "run": {
+              "seed": 44,
+              "max_length": 128,
+              "representation": "plain"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "gdb13",
+      "configuration": "plain_balanced_rl",
+      "run": 1,
+      "metadata": [
+        {
+          "kind": "generation_contract.json",
+          "source_sha256": "d911c7d4e439d3d828ecff74ec608708e4277785b40667ca9ea26f200ef235e2",
+          "blocks": {
+            "parameters": {
+              "batch_records": 128,
+              "sample_block": 4,
+              "sampling_seed": 0
+            },
+            "run": {
+              "seed": 42,
+              "max_length": 128,
+              "representation": "plain"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "gdb13",
+      "configuration": "plain_balanced_rl",
+      "run": 2,
+      "metadata": [
+        {
+          "kind": "generation_contract.json",
+          "source_sha256": "644244c8dd40d7497731739787aa4ba0dbf84b832a430333718aadf6593944ac",
+          "blocks": {
+            "parameters": {
+              "batch_records": 128,
+              "sample_block": 4,
+              "sampling_seed": 0
+            },
+            "run": {
+              "seed": 43,
+              "max_length": 128,
+              "representation": "plain"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "gdb13",
+      "configuration": "plain_balanced_rl",
+      "run": 3,
+      "metadata": [
+        {
+          "kind": "generation_contract.json",
+          "source_sha256": "79722ad6cb2fd24f7f849002606515d1cc7f1b63bbc3e8d8549db1c90af4ecde",
+          "blocks": {
+            "parameters": {
+              "batch_records": 128,
+              "sample_block": 4,
+              "sampling_seed": 0
+            },
+            "run": {
+              "seed": 44,
+              "max_length": 128,
+              "representation": "plain"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "gdb13",
+      "configuration": "pure_rl",
+      "run": 1,
+      "metadata": [
+        {
+          "kind": "generation_contract.json",
+          "source_sha256": "d6a221f0c78e3d91d3107d74b4cf0c47231e9bd723f78bf424db32aa25726448",
+          "blocks": {
+            "parameters": {
+              "batch_records": 128,
+              "sample_block": 4,
+              "sampling_seed": 0
+            },
+            "run": {
+              "seed": 42,
+              "max_length": 128,
+              "representation": "rooted"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "gdb13",
+      "configuration": "pure_rl",
+      "run": 2,
+      "metadata": [
+        {
+          "kind": "generation_contract.json",
+          "source_sha256": "eee23b426eeec5fa60bb71fb533c00fc5135f7917bf2b8ece73af35cbaf752c4",
+          "blocks": {
+            "parameters": {
+              "batch_records": 128,
+              "sample_block": 4,
+              "sampling_seed": 0
+            },
+            "run": {
+              "seed": 43,
+              "max_length": 128,
+              "representation": "rooted"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "gdb13",
+      "configuration": "pure_rl",
+      "run": 3,
+      "metadata": [
+        {
+          "kind": "generation_contract.json",
+          "source_sha256": "feeaf02359f62aee4695836732bf8b21b9032ded33f0737f2a99f3591987db66",
+          "blocks": {
+            "parameters": {
+              "batch_records": 128,
+              "sample_block": 4,
+              "sampling_seed": 0
+            },
+            "run": {
+              "seed": 44,
+              "max_length": 128,
+              "representation": "rooted"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "gdb13",
+      "configuration": "geometry_extension",
+      "run": 1,
+      "metadata": [
+        {
+          "kind": "generation_contract.json",
+          "source_sha256": "4d846311001096a45c9997eea32d6d98ee9e048b8487bf53abd9fcf73b40aa52",
+          "blocks": {
+            "args": {
+              "batch_size": 16,
+              "max_samples": 0,
+              "max_length": 128,
+              "temperature": 1.0,
+              "greedy": 0,
+              "samples_per_scaffold": 20,
+              "sampling_seed": 0,
+              "expected_rdkit": "2022.09.5",
+              "representation": "rooted",
+              "require_full_coverage": 1
+            }
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "gdb13",
+      "configuration": "geometry_extension",
+      "run": 2,
+      "metadata": [
+        {
+          "kind": "generation_contract.json",
+          "source_sha256": "e4df590290e8dff69b3b1aedcda96b1faa1e6bc10a6d478883d6af42680c3c8c",
+          "blocks": {
+            "args": {
+              "batch_size": 128,
+              "max_samples": 0,
+              "max_length": 128,
+              "temperature": 1.0,
+              "greedy": 0,
+              "samples_per_scaffold": 20,
+              "sampling_seed": 0,
+              "expected_rdkit": "2022.09.5",
+              "representation": "rooted",
+              "require_full_coverage": 1
+            }
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "gdb13",
+      "configuration": "geometry_extension",
+      "run": 3,
+      "metadata": [
+        {
+          "kind": "generation_contract.json",
+          "source_sha256": "b15d1ebd21c20736868735bee6122dfccecac9feab05cddc36ff0eb86102ea15",
+          "blocks": {
+            "parameters": {
+              "batch_records": 128,
+              "sample_block": 4,
+              "sampling_seed": 0
+            },
+            "run": {
+              "seed": 44,
+              "representation": "rooted",
+              "samples_per_record": 20,
+              "temperature": 1.0,
+              "max_length": 128,
+              "graph_max_length": 80
+            }
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "gdb13",
+      "configuration": "drugex",
+      "run": 1,
+      "metadata": []
+    },
+    {
+      "dataset": "gdb13",
+      "configuration": "drugex",
+      "run": 2,
+      "metadata": []
+    },
+    {
+      "dataset": "gdb13",
+      "configuration": "drugex",
+      "run": 3,
+      "metadata": []
+    },
+    {
+      "dataset": "gdb13",
+      "configuration": "libinvent",
+      "run": 1,
+      "metadata": []
+    },
+    {
+      "dataset": "gdb13",
+      "configuration": "libinvent",
+      "run": 2,
+      "metadata": []
+    },
+    {
+      "dataset": "gdb13",
+      "configuration": "libinvent",
+      "run": 3,
+      "metadata": []
+    },
+    {
+      "dataset": "gdb13",
+      "configuration": "promptsmiles",
+      "run": 1,
+      "metadata": []
+    },
+    {
+      "dataset": "gdb13",
+      "configuration": "promptsmiles",
+      "run": 2,
+      "metadata": []
+    },
+    {
+      "dataset": "gdb13",
+      "configuration": "promptsmiles",
+      "run": 3,
+      "metadata": []
+    },
+    {
+      "dataset": "chembl37",
+      "configuration": "atomformer",
+      "run": 1,
+      "metadata": [
+        {
+          "kind": "generation_contract.json",
+          "source_sha256": "2d6e8b68ac87d7c8dab9a5bb81fcf2e441ef7c2fb3ce532bfb8eb67485f165d4",
+          "blocks": {
+            "resource": {
+              "physical_batch": 256,
+              "eval_batch": 64,
+              "baseline_supervised_batch": 128,
+              "drugex_supervised_batch": 32
+            },
+            "run": {
+              "seed": 42,
+              "representation": "rooted",
+              "samples_per_record": 20,
+              "temperature": 1.0,
+              "max_length": 256,
+              "graph_max_length": 128
+            }
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "chembl37",
+      "configuration": "atomformer",
+      "run": 2,
+      "metadata": [
+        {
+          "kind": "generation_contract.json",
+          "source_sha256": "da9f2708ba31b4229b866363aaec21beed117067ea7767c5bc99f72149790d45",
+          "blocks": {
+            "resource": {
+              "physical_batch": 256,
+              "eval_batch": 64,
+              "baseline_supervised_batch": 128,
+              "drugex_supervised_batch": 32
+            },
+            "run": {
+              "seed": 43,
+              "representation": "rooted",
+              "samples_per_record": 20,
+              "temperature": 1.0,
+              "max_length": 256,
+              "graph_max_length": 128
+            }
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "chembl37",
+      "configuration": "atomformer",
+      "run": 3,
+      "metadata": [
+        {
+          "kind": "generation_contract.json",
+          "source_sha256": "6fa44f264dfe84f0f09509eace96965ac8d7bf07220f9c66edb781f5c8fd6780",
+          "blocks": {
+            "resource": {
+              "physical_batch": 256,
+              "eval_batch": 64,
+              "baseline_supervised_batch": 128,
+              "drugex_supervised_batch": 32
+            },
+            "run": {
+              "seed": 44,
+              "representation": "rooted",
+              "samples_per_record": 20,
+              "temperature": 1.0,
+              "max_length": 256,
+              "graph_max_length": 128
+            }
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "chembl37",
+      "configuration": "supervised",
+      "run": 1,
+      "metadata": [
+        {
+          "kind": "generation_contract.json",
+          "source_sha256": "6f346e5bce37e61cce8f31abf12b5e6f185850b170ae39ffc59c4bcbb356ceb8",
+          "blocks": {
+            "resource": {
+              "physical_batch": 256,
+              "eval_batch": 64,
+              "baseline_supervised_batch": 128,
+              "drugex_supervised_batch": 32
+            },
+            "run": {
+              "seed": 42,
+              "max_length": 256,
+              "representation": "rooted"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "chembl37",
+      "configuration": "supervised",
+      "run": 2,
+      "metadata": [
+        {
+          "kind": "generation_contract.json",
+          "source_sha256": "cf109f351b1bab910ae48dc796ca125d8d7dc8442a46a03e879558b99baa168c",
+          "blocks": {
+            "resource": {
+              "physical_batch": 256,
+              "eval_batch": 64,
+              "baseline_supervised_batch": 128,
+              "drugex_supervised_batch": 32
+            },
+            "run": {
+              "seed": 43,
+              "max_length": 256,
+              "representation": "rooted"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "chembl37",
+      "configuration": "supervised",
+      "run": 3,
+      "metadata": [
+        {
+          "kind": "generation_contract.json",
+          "source_sha256": "59c863c6b53493725fcc3828ec829dcf80456bef64018f72c2aba2107107c6a5",
+          "blocks": {
+            "resource": {
+              "physical_batch": 256,
+              "eval_batch": 64,
+              "baseline_supervised_batch": 128,
+              "drugex_supervised_batch": 32
+            },
+            "run": {
+              "seed": 44,
+              "max_length": 256,
+              "representation": "rooted"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "chembl37",
+      "configuration": "plain_supervised",
+      "run": 1,
+      "metadata": [
+        {
+          "kind": "generation_contract.json",
+          "source_sha256": "ee78ffe78e29facb30bc5526e3c667a95e56a4ee03bc9c30076dc7ea36ee08bb",
+          "blocks": {
+            "resource": {
+              "physical_batch": 256,
+              "eval_batch": 64,
+              "baseline_supervised_batch": 128,
+              "drugex_supervised_batch": 32
+            },
+            "run": {
+              "seed": 42,
+              "max_length": 256,
+              "representation": "plain"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "chembl37",
+      "configuration": "plain_supervised",
+      "run": 2,
+      "metadata": [
+        {
+          "kind": "generation_contract.json",
+          "source_sha256": "76f2242cefa363155ff0bdedc0b3cd62b7f1267a4aa9877e5dd59721d76ec175",
+          "blocks": {
+            "resource": {
+              "physical_batch": 256,
+              "eval_batch": 64,
+              "baseline_supervised_batch": 128,
+              "drugex_supervised_batch": 32
+            },
+            "run": {
+              "seed": 43,
+              "max_length": 256,
+              "representation": "plain"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "chembl37",
+      "configuration": "plain_supervised",
+      "run": 3,
+      "metadata": [
+        {
+          "kind": "generation_contract.json",
+          "source_sha256": "e9bbd73207ce1ff87633aff5e6afa2e1dfbef579684be5592e20e281241b954d",
+          "blocks": {
+            "resource": {
+              "physical_batch": 256,
+              "eval_batch": 64,
+              "baseline_supervised_batch": 128,
+              "drugex_supervised_batch": 32
+            },
+            "run": {
+              "seed": 44,
+              "max_length": 256,
+              "representation": "plain"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "chembl37",
+      "configuration": "plain_balanced_rl",
+      "run": 1,
+      "metadata": [
+        {
+          "kind": "generation_contract.json",
+          "source_sha256": "f2980b866045d49916738b12849e81f89189c907b50cb7f1924715365c8d4608",
+          "blocks": {
+            "resource": {
+              "physical_batch": 256,
+              "eval_batch": 64,
+              "baseline_supervised_batch": 128,
+              "drugex_supervised_batch": 32
+            },
+            "run": {
+              "seed": 42,
+              "max_length": 256,
+              "representation": "plain"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "chembl37",
+      "configuration": "plain_balanced_rl",
+      "run": 2,
+      "metadata": [
+        {
+          "kind": "generation_contract.json",
+          "source_sha256": "077b1648fa3e47403473b16690ab84acbfc94bd8f389cabac316261ef4716d6c",
+          "blocks": {
+            "resource": {
+              "physical_batch": 256,
+              "eval_batch": 64,
+              "baseline_supervised_batch": 128,
+              "drugex_supervised_batch": 32
+            },
+            "run": {
+              "seed": 43,
+              "max_length": 256,
+              "representation": "plain"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "chembl37",
+      "configuration": "plain_balanced_rl",
+      "run": 3,
+      "metadata": [
+        {
+          "kind": "generation_contract.json",
+          "source_sha256": "d26ca3092c8004adbb5dfe3805cff6844b081ac12db32ad9025026cedbd7c5ce",
+          "blocks": {
+            "resource": {
+              "physical_batch": 256,
+              "eval_batch": 64,
+              "baseline_supervised_batch": 128,
+              "drugex_supervised_batch": 32
+            },
+            "run": {
+              "seed": 44,
+              "max_length": 256,
+              "representation": "plain"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "chembl37",
+      "configuration": "pure_rl",
+      "run": 1,
+      "metadata": [
+        {
+          "kind": "generation_contract.json",
+          "source_sha256": "80ade68640a8754167e748f1f343fb54cf332ff602d1503d78a14184c0b050e6",
+          "blocks": {
+            "resource": {
+              "physical_batch": 256,
+              "eval_batch": 64,
+              "baseline_supervised_batch": 128,
+              "drugex_supervised_batch": 32
+            },
+            "run": {
+              "seed": 42,
+              "max_length": 256,
+              "representation": "rooted"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "chembl37",
+      "configuration": "pure_rl",
+      "run": 2,
+      "metadata": [
+        {
+          "kind": "generation_contract.json",
+          "source_sha256": "afc949fa61a7a5dc5a065b2cf1c63a08356250d0a401bddbdfacf40f092ba02e",
+          "blocks": {
+            "resource": {
+              "physical_batch": 256,
+              "eval_batch": 64,
+              "baseline_supervised_batch": 128,
+              "drugex_supervised_batch": 32
+            },
+            "run": {
+              "seed": 43,
+              "max_length": 256,
+              "representation": "rooted"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "chembl37",
+      "configuration": "pure_rl",
+      "run": 3,
+      "metadata": [
+        {
+          "kind": "generation_contract.json",
+          "source_sha256": "ed9aa14542bebf366e74e5e669bf413cae1864cef68c2bd5390de28def813af9",
+          "blocks": {
+            "resource": {
+              "physical_batch": 256,
+              "eval_batch": 64,
+              "baseline_supervised_batch": 128,
+              "drugex_supervised_batch": 32
+            },
+            "run": {
+              "seed": 44,
+              "max_length": 256,
+              "representation": "rooted"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "chembl37",
+      "configuration": "geometry_extension",
+      "run": 1,
+      "metadata": [
+        {
+          "kind": "generation_contract.json",
+          "source_sha256": "b3970e0ba0c6c6e7e4010327d7ed076ca96c4041ec0aebd80509fb31ddbf15e7",
+          "blocks": {
+            "resource": {
+              "physical_batch": 128,
+              "eval_batch": 64,
+              "baseline_supervised_batch": 128,
+              "drugex_supervised_batch": 32
+            },
+            "run": {
+              "seed": 42,
+              "representation": "rooted",
+              "samples_per_record": 20,
+              "temperature": 1.0,
+              "max_length": 256,
+              "graph_max_length": 128
+            }
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "chembl37",
+      "configuration": "geometry_extension",
+      "run": 2,
+      "metadata": [
+        {
+          "kind": "generation_contract.json",
+          "source_sha256": "71cc2f96ca5ec1935eb708277ec763dc32016633e9c7f1ef2f5d180fe2e2bf5f",
+          "blocks": {
+            "resource": {
+              "physical_batch": 128,
+              "eval_batch": 64,
+              "baseline_supervised_batch": 128,
+              "drugex_supervised_batch": 32
+            },
+            "run": {
+              "seed": 43,
+              "representation": "rooted",
+              "samples_per_record": 20,
+              "temperature": 1.0,
+              "max_length": 256,
+              "graph_max_length": 128
+            }
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "chembl37",
+      "configuration": "geometry_extension",
+      "run": 3,
+      "metadata": [
+        {
+          "kind": "generation_contract.json",
+          "source_sha256": "2d2f52a255e42f8c78dccdfecf94215a0f96f76547b0322b6cbb2732ee55cde0",
+          "blocks": {
+            "resource": {
+              "physical_batch": 128,
+              "eval_batch": 64,
+              "baseline_supervised_batch": 128,
+              "drugex_supervised_batch": 32
+            },
+            "run": {
+              "seed": 44,
+              "representation": "rooted",
+              "samples_per_record": 20,
+              "temperature": 1.0,
+              "max_length": 256,
+              "graph_max_length": 128
+            }
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "chembl37",
+      "configuration": "drugex",
+      "run": 1,
+      "metadata": [
+        {
+          "kind": "generation_contract.json",
+          "source_sha256": "1b68631ecb4fb85e30a6eb0493f1dcd30cba0ec9b8a3a1ecb7d9df4f4a9d07d7",
+          "blocks": {
+            "resource": {
+              "physical_batch": 256,
+              "eval_batch": 64,
+              "baseline_supervised_batch": 128,
+              "drugex_supervised_batch": 32
+            },
+            "run": {
+              "seed": 42,
+              "representation": "native",
+              "samples_per_record": 20,
+              "temperature": 1.0,
+              "max_length": 256,
+              "graph_max_length": 128
+            }
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "chembl37",
+      "configuration": "drugex",
+      "run": 2,
+      "metadata": [
+        {
+          "kind": "generation_contract.json",
+          "source_sha256": "890b5c792acd4e95593bd227b6b5d8cb248512c1e110a7c84570246fa0cfb688",
+          "blocks": {
+            "resource": {
+              "physical_batch": 256,
+              "eval_batch": 64,
+              "baseline_supervised_batch": 128,
+              "drugex_supervised_batch": 32
+            },
+            "run": {
+              "seed": 43,
+              "representation": "native",
+              "samples_per_record": 20,
+              "temperature": 1.0,
+              "max_length": 256,
+              "graph_max_length": 128
+            }
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "chembl37",
+      "configuration": "drugex",
+      "run": 3,
+      "metadata": [
+        {
+          "kind": "generation_contract.json",
+          "source_sha256": "b863c2da784bccb8707cfcc57b1e4a1f8b6d50b7c7381a0f86ea9ca431b8072e",
+          "blocks": {
+            "resource": {
+              "physical_batch": 256,
+              "eval_batch": 64,
+              "baseline_supervised_batch": 128,
+              "drugex_supervised_batch": 32
+            },
+            "run": {
+              "seed": 44,
+              "representation": "native",
+              "samples_per_record": 20,
+              "temperature": 1.0,
+              "max_length": 256,
+              "graph_max_length": 128
+            }
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "chembl37",
+      "configuration": "libinvent",
+      "run": 1,
+      "metadata": [
+        {
+          "kind": "generation_contract.json",
+          "source_sha256": "76ef2d06cd00966647658c000aa0227edcb751cdaec0472c8a6327e599cd313d",
+          "blocks": {
+            "resource": {
+              "physical_batch": 256,
+              "eval_batch": 64,
+              "baseline_supervised_batch": 128,
+              "drugex_supervised_batch": 32
+            },
+            "run": {
+              "seed": 42,
+              "representation": "native",
+              "samples_per_record": 20,
+              "temperature": 1.0,
+              "max_length": 256,
+              "graph_max_length": 128
+            }
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "chembl37",
+      "configuration": "libinvent",
+      "run": 2,
+      "metadata": [
+        {
+          "kind": "generation_contract.json",
+          "source_sha256": "4b39e69132c1899e94504383e7eac01a188a0912523773ea4a16596d8aeb10e7",
+          "blocks": {
+            "resource": {
+              "physical_batch": 256,
+              "eval_batch": 64,
+              "baseline_supervised_batch": 128,
+              "drugex_supervised_batch": 32
+            },
+            "run": {
+              "seed": 43,
+              "representation": "native",
+              "samples_per_record": 20,
+              "temperature": 1.0,
+              "max_length": 256,
+              "graph_max_length": 128
+            }
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "chembl37",
+      "configuration": "libinvent",
+      "run": 3,
+      "metadata": [
+        {
+          "kind": "generation_contract.json",
+          "source_sha256": "94c6c0ff61370dfe58834c02cbff0803da82575cbc7f616663356c9c194e1198",
+          "blocks": {
+            "resource": {
+              "physical_batch": 256,
+              "eval_batch": 64,
+              "baseline_supervised_batch": 128,
+              "drugex_supervised_batch": 32
+            },
+            "run": {
+              "seed": 44,
+              "representation": "native",
+              "samples_per_record": 20,
+              "temperature": 1.0,
+              "max_length": 256,
+              "graph_max_length": 128
+            }
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "chembl37",
+      "configuration": "promptsmiles",
+      "run": 1,
+      "metadata": [
+        {
+          "kind": "generation_contract.json",
+          "source_sha256": "723d21e169995b118b8865817c7ffc6cda6e8a879b9933ec70c9b0a78a778094",
+          "blocks": {
+            "resource": {
+              "physical_batch": 256,
+              "eval_batch": 64,
+              "baseline_supervised_batch": 128,
+              "drugex_supervised_batch": 32
+            },
+            "run": {
+              "seed": 42,
+              "representation": "native",
+              "samples_per_record": 20,
+              "temperature": 1.0,
+              "max_length": 256,
+              "graph_max_length": 128
+            }
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "chembl37",
+      "configuration": "promptsmiles",
+      "run": 2,
+      "metadata": [
+        {
+          "kind": "generation_contract.json",
+          "source_sha256": "c987cece7bf96ee0b83dee972fe573cea3a247e71206a15acd5eab25ff553136",
+          "blocks": {
+            "resource": {
+              "physical_batch": 256,
+              "eval_batch": 64,
+              "baseline_supervised_batch": 128,
+              "drugex_supervised_batch": 32
+            },
+            "run": {
+              "seed": 43,
+              "representation": "native",
+              "samples_per_record": 20,
+              "temperature": 1.0,
+              "max_length": 256,
+              "graph_max_length": 128
+            }
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "chembl37",
+      "configuration": "promptsmiles",
+      "run": 3,
+      "metadata": [
+        {
+          "kind": "generation_contract.json",
+          "source_sha256": "317731f87db27dae0ee124b98853055ccaa8e7150a9fe3299045c7d822378e12",
+          "blocks": {
+            "resource": {
+              "physical_batch": 256,
+              "eval_batch": 64,
+              "baseline_supervised_batch": 128,
+              "drugex_supervised_batch": 32
+            },
+            "run": {
+              "seed": 44,
+              "representation": "native",
+              "samples_per_record": 20,
+              "temperature": 1.0,
+              "max_length": 256,
+              "graph_max_length": 128
+            }
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "moses",
+      "configuration": "atomformer",
+      "run": 1,
+      "metadata": [
+        {
+          "kind": "generation_contract.json",
+          "source_sha256": "fa79a7ef29476ff313afd35168349cc4d30ee89e38e8752f2e3addcd5975d71d",
+          "blocks": {
+            "resource": {
+              "physical_batch": 256,
+              "eval_batch": 64,
+              "baseline_supervised_batch": 128,
+              "drugex_supervised_batch": 32
+            },
+            "run": {
+              "seed": 42,
+              "representation": "rooted",
+              "samples_per_record": 20,
+              "temperature": 1.0,
+              "max_length": 256,
+              "graph_max_length": 128
+            }
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "moses",
+      "configuration": "atomformer",
+      "run": 2,
+      "metadata": [
+        {
+          "kind": "generation_contract.json",
+          "source_sha256": "7061afa71adf4e0bcb93ae40cff21874c51ec8ef10b72b2c8cd1aebe34c547e3",
+          "blocks": {
+            "resource": {
+              "physical_batch": 256,
+              "eval_batch": 64,
+              "baseline_supervised_batch": 128,
+              "drugex_supervised_batch": 32
+            },
+            "run": {
+              "seed": 43,
+              "representation": "rooted",
+              "samples_per_record": 20,
+              "temperature": 1.0,
+              "max_length": 256,
+              "graph_max_length": 128
+            }
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "moses",
+      "configuration": "atomformer",
+      "run": 3,
+      "metadata": [
+        {
+          "kind": "generation_contract.json",
+          "source_sha256": "c4489aa0c4ae8e5dfc65a03b25704505d4331b269232b5c55e58a3c53c4c3521",
+          "blocks": {
+            "resource": {
+              "physical_batch": 256,
+              "eval_batch": 64,
+              "baseline_supervised_batch": 128,
+              "drugex_supervised_batch": 32
+            },
+            "run": {
+              "seed": 44,
+              "representation": "rooted",
+              "samples_per_record": 20,
+              "temperature": 1.0,
+              "max_length": 256,
+              "graph_max_length": 128
+            }
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "moses",
+      "configuration": "supervised",
+      "run": 1,
+      "metadata": [
+        {
+          "kind": "generation_contract.json",
+          "source_sha256": "e1ec32225afafc3ec721529b7eddb71f4aca2b1f9e44839f595be02cf0d924c2",
+          "blocks": {
+            "resource": {
+              "physical_batch": 256,
+              "eval_batch": 64,
+              "baseline_supervised_batch": 128,
+              "drugex_supervised_batch": 32
+            },
+            "run": {
+              "seed": 42,
+              "max_length": 256,
+              "representation": "rooted"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "moses",
+      "configuration": "supervised",
+      "run": 2,
+      "metadata": [
+        {
+          "kind": "generation_contract.json",
+          "source_sha256": "af0b04969ef6c9a8bf101b0f80bd44c9a48f26a4a8918a0ebb4bc37df8e590f5",
+          "blocks": {
+            "resource": {
+              "physical_batch": 256,
+              "eval_batch": 64,
+              "baseline_supervised_batch": 128,
+              "drugex_supervised_batch": 32
+            },
+            "run": {
+              "seed": 43,
+              "max_length": 256,
+              "representation": "rooted"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "moses",
+      "configuration": "supervised",
+      "run": 3,
+      "metadata": [
+        {
+          "kind": "generation_contract.json",
+          "source_sha256": "f542a82ef10819de87ee20018e5d646f093e57a16a128659fa7f80d59bf8427f",
+          "blocks": {
+            "resource": {
+              "physical_batch": 256,
+              "eval_batch": 64,
+              "baseline_supervised_batch": 128,
+              "drugex_supervised_batch": 32
+            },
+            "run": {
+              "seed": 44,
+              "max_length": 256,
+              "representation": "rooted"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "moses",
+      "configuration": "plain_supervised",
+      "run": 1,
+      "metadata": [
+        {
+          "kind": "generation_contract.json",
+          "source_sha256": "97f91477e8299decab53a75703a95a89c97487001e6018a332fd2cec93d6b461",
+          "blocks": {
+            "resource": {
+              "physical_batch": 256,
+              "eval_batch": 64,
+              "baseline_supervised_batch": 128,
+              "drugex_supervised_batch": 32
+            },
+            "run": {
+              "seed": 42,
+              "max_length": 256,
+              "representation": "plain"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "moses",
+      "configuration": "plain_supervised",
+      "run": 2,
+      "metadata": [
+        {
+          "kind": "generation_contract.json",
+          "source_sha256": "129e9f48dfa50fa28ac8effe6c38e8adc16c7d45d311aaca30014ecd1d0fe1b9",
+          "blocks": {
+            "resource": {
+              "physical_batch": 256,
+              "eval_batch": 64,
+              "baseline_supervised_batch": 128,
+              "drugex_supervised_batch": 32
+            },
+            "run": {
+              "seed": 43,
+              "max_length": 256,
+              "representation": "plain"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "moses",
+      "configuration": "plain_supervised",
+      "run": 3,
+      "metadata": [
+        {
+          "kind": "generation_contract.json",
+          "source_sha256": "6d70790954131639d2635770b6b866a29422ed3fa2f9f21b980b724038e43b1c",
+          "blocks": {
+            "resource": {
+              "physical_batch": 256,
+              "eval_batch": 64,
+              "baseline_supervised_batch": 128,
+              "drugex_supervised_batch": 32
+            },
+            "run": {
+              "seed": 44,
+              "max_length": 256,
+              "representation": "plain"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "moses",
+      "configuration": "plain_balanced_rl",
+      "run": 1,
+      "metadata": [
+        {
+          "kind": "generation_contract.json",
+          "source_sha256": "3b7c1f78205194d94bfdfa39edfc6dcc2ec807255ba2224c6319a3879038d5b6",
+          "blocks": {
+            "resource": {
+              "physical_batch": 256,
+              "eval_batch": 64,
+              "baseline_supervised_batch": 128,
+              "drugex_supervised_batch": 32
+            },
+            "run": {
+              "seed": 42,
+              "max_length": 256,
+              "representation": "plain"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "moses",
+      "configuration": "plain_balanced_rl",
+      "run": 2,
+      "metadata": [
+        {
+          "kind": "generation_contract.json",
+          "source_sha256": "86ff4193f5675ad70843360fc2e22defb9d3218223ee223dc11333503f5951e3",
+          "blocks": {
+            "resource": {
+              "physical_batch": 256,
+              "eval_batch": 64,
+              "baseline_supervised_batch": 128,
+              "drugex_supervised_batch": 32
+            },
+            "run": {
+              "seed": 43,
+              "max_length": 256,
+              "representation": "plain"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "moses",
+      "configuration": "plain_balanced_rl",
+      "run": 3,
+      "metadata": [
+        {
+          "kind": "generation_contract.json",
+          "source_sha256": "01bdd6a559d8b0ffebcaa23ea8afb16daac6c683163aa1995f52602616399e65",
+          "blocks": {
+            "resource": {
+              "physical_batch": 256,
+              "eval_batch": 64,
+              "baseline_supervised_batch": 128,
+              "drugex_supervised_batch": 32
+            },
+            "run": {
+              "seed": 44,
+              "max_length": 256,
+              "representation": "plain"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "moses",
+      "configuration": "pure_rl",
+      "run": 1,
+      "metadata": [
+        {
+          "kind": "generation_contract.json",
+          "source_sha256": "a29fdfb091b7b7b4aa17e9f79afc012eeed9b1f35715acb6e96aeb6f0c363eff",
+          "blocks": {
+            "resource": {
+              "physical_batch": 256,
+              "eval_batch": 64,
+              "baseline_supervised_batch": 128,
+              "drugex_supervised_batch": 32
+            },
+            "run": {
+              "seed": 42,
+              "max_length": 256,
+              "representation": "rooted"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "moses",
+      "configuration": "pure_rl",
+      "run": 2,
+      "metadata": [
+        {
+          "kind": "generation_contract.json",
+          "source_sha256": "4f0438cc3d6d311f5dd59bf8099a98dbdd95bfa04bd19f03bb3acc4251138640",
+          "blocks": {
+            "resource": {
+              "physical_batch": 256,
+              "eval_batch": 64,
+              "baseline_supervised_batch": 128,
+              "drugex_supervised_batch": 32
+            },
+            "run": {
+              "seed": 43,
+              "max_length": 256,
+              "representation": "rooted"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "moses",
+      "configuration": "pure_rl",
+      "run": 3,
+      "metadata": [
+        {
+          "kind": "generation_contract.json",
+          "source_sha256": "893b566e9464952ce5fafdfcc4fe25c5b7a955192457ec0356be2466d5480cce",
+          "blocks": {
+            "resource": {
+              "physical_batch": 256,
+              "eval_batch": 64,
+              "baseline_supervised_batch": 128,
+              "drugex_supervised_batch": 32
+            },
+            "run": {
+              "seed": 44,
+              "max_length": 256,
+              "representation": "rooted"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "moses",
+      "configuration": "geometry_extension",
+      "run": 1,
+      "metadata": [
+        {
+          "kind": "generation_contract.json",
+          "source_sha256": "6a2ab7e69cb8e6506f97931da02cefa6c54789f21632ccd379d68b1eaa07225a",
+          "blocks": {
+            "resource": {
+              "physical_batch": 256,
+              "eval_batch": 64,
+              "baseline_supervised_batch": 128,
+              "drugex_supervised_batch": 32
+            },
+            "run": {
+              "seed": 42,
+              "representation": "rooted",
+              "samples_per_record": 20,
+              "temperature": 1.0,
+              "max_length": 256,
+              "graph_max_length": 128
+            }
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "moses",
+      "configuration": "geometry_extension",
+      "run": 2,
+      "metadata": [
+        {
+          "kind": "generation_contract.json",
+          "source_sha256": "9e26e377b193a6fab2269c10e26a6dea434352f36a269c9ec763cfb8a0a26aa5",
+          "blocks": {
+            "resource": {
+              "physical_batch": 256,
+              "eval_batch": 64,
+              "baseline_supervised_batch": 128,
+              "drugex_supervised_batch": 32
+            },
+            "run": {
+              "seed": 43,
+              "representation": "rooted",
+              "samples_per_record": 20,
+              "temperature": 1.0,
+              "max_length": 256,
+              "graph_max_length": 128
+            }
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "moses",
+      "configuration": "geometry_extension",
+      "run": 3,
+      "metadata": [
+        {
+          "kind": "generation_contract.json",
+          "source_sha256": "be9e700a642a4c323b40e432ab79055f0c4c354f54a4dab1b7194123bb296e0f",
+          "blocks": {
+            "resource": {
+              "physical_batch": 256,
+              "eval_batch": 64,
+              "baseline_supervised_batch": 128,
+              "drugex_supervised_batch": 32
+            },
+            "run": {
+              "seed": 44,
+              "representation": "rooted",
+              "samples_per_record": 20,
+              "temperature": 1.0,
+              "max_length": 256,
+              "graph_max_length": 128
+            }
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "moses",
+      "configuration": "drugex",
+      "run": 1,
+      "metadata": [
+        {
+          "kind": "generation_contract.json",
+          "source_sha256": "a0c604a637efc4adc18446574361de7e355759d35ba1c6cf89eb6387b025bd63",
+          "blocks": {
+            "resource": {
+              "physical_batch": 256,
+              "eval_batch": 64,
+              "baseline_supervised_batch": 128,
+              "drugex_supervised_batch": 32
+            },
+            "run": {
+              "seed": 42,
+              "representation": "native",
+              "samples_per_record": 20,
+              "temperature": 1.0,
+              "max_length": 256,
+              "graph_max_length": 128
+            }
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "moses",
+      "configuration": "drugex",
+      "run": 2,
+      "metadata": [
+        {
+          "kind": "generation_contract.json",
+          "source_sha256": "242d0852752149614d0f6f5504b8df51a9b4db6c80df498774754c4ceeb5332b",
+          "blocks": {
+            "resource": {
+              "physical_batch": 256,
+              "eval_batch": 64,
+              "baseline_supervised_batch": 128,
+              "drugex_supervised_batch": 32
+            },
+            "run": {
+              "seed": 43,
+              "representation": "native",
+              "samples_per_record": 20,
+              "temperature": 1.0,
+              "max_length": 256,
+              "graph_max_length": 128
+            }
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "moses",
+      "configuration": "drugex",
+      "run": 3,
+      "metadata": [
+        {
+          "kind": "generation_contract.json",
+          "source_sha256": "5ca4eae26bf869291b338018ce2fb5f820c51284a7e13a839b93d9fb594b5afc",
+          "blocks": {
+            "resource": {
+              "physical_batch": 256,
+              "eval_batch": 64,
+              "baseline_supervised_batch": 128,
+              "drugex_supervised_batch": 32
+            },
+            "run": {
+              "seed": 44,
+              "representation": "native",
+              "samples_per_record": 20,
+              "temperature": 1.0,
+              "max_length": 256,
+              "graph_max_length": 128
+            }
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "moses",
+      "configuration": "libinvent",
+      "run": 1,
+      "metadata": [
+        {
+          "kind": "generation_contract.json",
+          "source_sha256": "161b64038dc99747d1de6713ba621f5f8d92bfe68054368229feb9aef06c805a",
+          "blocks": {
+            "resource": {
+              "physical_batch": 256,
+              "eval_batch": 64,
+              "baseline_supervised_batch": 128,
+              "drugex_supervised_batch": 32
+            },
+            "run": {
+              "seed": 42,
+              "representation": "native",
+              "samples_per_record": 20,
+              "temperature": 1.0,
+              "max_length": 256,
+              "graph_max_length": 128
+            }
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "moses",
+      "configuration": "libinvent",
+      "run": 2,
+      "metadata": [
+        {
+          "kind": "generation_contract.json",
+          "source_sha256": "b5750392c666f4ecbcc8efde1f2d21f240049ae62ae54e26e0c418aa4891b2ca",
+          "blocks": {
+            "resource": {
+              "physical_batch": 256,
+              "eval_batch": 64,
+              "baseline_supervised_batch": 128,
+              "drugex_supervised_batch": 32
+            },
+            "run": {
+              "seed": 43,
+              "representation": "native",
+              "samples_per_record": 20,
+              "temperature": 1.0,
+              "max_length": 256,
+              "graph_max_length": 128
+            }
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "moses",
+      "configuration": "libinvent",
+      "run": 3,
+      "metadata": [
+        {
+          "kind": "generation_contract.json",
+          "source_sha256": "62b43ab46a7c26f29cf8357bd9cb17ad47ee8dfc296c21d9ed64f2166b04727e",
+          "blocks": {
+            "resource": {
+              "physical_batch": 256,
+              "eval_batch": 64,
+              "baseline_supervised_batch": 128,
+              "drugex_supervised_batch": 32
+            },
+            "run": {
+              "seed": 44,
+              "representation": "native",
+              "samples_per_record": 20,
+              "temperature": 1.0,
+              "max_length": 256,
+              "graph_max_length": 128
+            }
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "moses",
+      "configuration": "promptsmiles",
+      "run": 1,
+      "metadata": [
+        {
+          "kind": "generation_contract.json",
+          "source_sha256": "06199a5786e8f5626d69eb2d5dcd140f63d1d80cd6b622f3b6bbce0dbc71c559",
+          "blocks": {
+            "resource": {
+              "physical_batch": 256,
+              "eval_batch": 64,
+              "baseline_supervised_batch": 128,
+              "drugex_supervised_batch": 32
+            },
+            "run": {
+              "seed": 42,
+              "representation": "native",
+              "samples_per_record": 20,
+              "temperature": 1.0,
+              "max_length": 256,
+              "graph_max_length": 128
+            }
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "moses",
+      "configuration": "promptsmiles",
+      "run": 2,
+      "metadata": [
+        {
+          "kind": "generation_contract.json",
+          "source_sha256": "fc44133d05baedec17765ca1615fb22cb406e0e91e8915f236a8a8051475ef7f",
+          "blocks": {
+            "resource": {
+              "physical_batch": 256,
+              "eval_batch": 64,
+              "baseline_supervised_batch": 128,
+              "drugex_supervised_batch": 32
+            },
+            "run": {
+              "seed": 43,
+              "representation": "native",
+              "samples_per_record": 20,
+              "temperature": 1.0,
+              "max_length": 256,
+              "graph_max_length": 128
+            }
+          }
+        }
+      ]
+    },
+    {
+      "dataset": "moses",
+      "configuration": "promptsmiles",
+      "run": 3,
+      "metadata": [
+        {
+          "kind": "generation_contract.json",
+          "source_sha256": "63230c1708cb7cbe2db5751c8975447eb481ca3aa99f701ef1304cc11d18883d",
+          "blocks": {
+            "resource": {
+              "physical_batch": 256,
+              "eval_batch": 64,
+              "baseline_supervised_batch": 128,
+              "drugex_supervised_batch": 32
+            },
+            "run": {
+              "seed": 44,
+              "representation": "native",
+              "samples_per_record": 20,
+              "temperature": 1.0,
+              "max_length": 256,
+              "graph_max_length": 128
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

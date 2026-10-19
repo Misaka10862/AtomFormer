@@ -80,3 +80,13 @@ training or generation trajectories. In particular, microbatch loss weighting,
 sampling batch boundaries, random-number consumption and library versions must
 be matched before claiming an exact replay. Paper property scoring used RDKit
 2022.09.5. No new numerical result is substituted for the archived evaluations.
+
+## Recorded workflow supplement
+
+[Workflow instructions](workflow/README.txt) describe the recorded parameter
+blocks for all 81 evaluations, core software versions, pinned upstream baseline
+sources, the included scientific implementation modules, and the common scoring
+and paired-bootstrap entry points. Use the v1.1.0 code tag. The supplement
+distinguishes recorded settings from missing historical fields and keeps the
+model/scoring environment separate from the external-baseline environment.
+Full training or generation replay has not been certified.

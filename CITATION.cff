@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "Please cite the software version and the linked research-data archive used."
 type: software
-version: 1.0.0
+version: 1.1.0
 date-released: 2026-10-19
 title: "AtomFormer: scaffold-preserving molecular decoration"
 authors:

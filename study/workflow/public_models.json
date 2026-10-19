@@ -1,0 +1,76 @@
+{
+  "models": [
+    {
+      "dataset": "chembl37",
+      "run": 1,
+      "file": "chembl37/run1.pt",
+      "sha256": "94b27020cbe79569399004629d34375910705b8a165979acb93b48c2fe9bd372",
+      "source_sha256": "0ce51444bb5bc2097af10851db832597f298adfc6e839a1d30dc7f445a23a348",
+      "state_tensors": 168
+    },
+    {
+      "dataset": "chembl37",
+      "run": 2,
+      "file": "chembl37/run2.pt",
+      "sha256": "5b7c54023f2a5d27e5a0838172461e86602de66cbf589f8a3709662c19a887d8",
+      "source_sha256": "60e45514326a650d4521c32f169976a2b3f98ce86253bb2eb62112390adc9bc3",
+      "state_tensors": 168
+    },
+    {
+      "dataset": "chembl37",
+      "run": 3,
+      "file": "chembl37/run3.pt",
+      "sha256": "6278376bdb0876659a8d8c59cb7b96bd93c4c403add7ec40d07e0664215c21a6",
+      "source_sha256": "8e3b67d52f50d7b35bd92fee61d768deb038dda168dae3cb0a123081d57b38d2",
+      "state_tensors": 168
+    },
+    {
+      "dataset": "gdb13",
+      "run": 1,
+      "file": "gdb13/run1.pt",
+      "sha256": "86a17a459e3ca0757ce2649a99b0d4ccbf2236bc82f621591a5fe89e4ab34165",
+      "source_sha256": "c2948aa6cf42e238185ffa8e64cf701215315323a6e0b3c45dc1670fb9fe7bde",
+      "state_tensors": 168
+    },
+    {
+      "dataset": "gdb13",
+      "run": 2,
+      "file": "gdb13/run2.pt",
+      "sha256": "d1e5c2ba74fad951b234ae4432c8a6c32875f58b8f2635924efd42489b5a4350",
+      "source_sha256": "89d903d05bb542aa18ee28b189b8d733428b3552f2efdf8f787f889c322cc068",
+      "state_tensors": 168
+    },
+    {
+      "dataset": "gdb13",
+      "run": 3,
+      "file": "gdb13/run3.pt",
+      "sha256": "3908863898dfead748240e83b696abcdf3903d5657594877c42dc1d03b50fe22",
+      "source_sha256": "dd005e4752679b1ee5b98eca59c8e4b20c9f05b97591e9d7ff1da4f9e340905c",
+      "state_tensors": 168
+    },
+    {
+      "dataset": "moses",
+      "run": 1,
+      "file": "moses/run1.pt",
+      "sha256": "9ba19458b09f1fe2952ee036caa0ae5383d3db58720dcabe1e33139e1c121238",
+      "source_sha256": "7a159654f03f4b0fa24aa184aabf86405f4a46db3f06668c21ce4d87d39bc50e",
+      "state_tensors": 168
+    },
+    {
+      "dataset": "moses",
+      "run": 2,
+      "file": "moses/run2.pt",
+      "sha256": "f7d2a240e997f2895a06b312ef465cf2b767a3f4bae043ed27544b9c101466b2",
+      "source_sha256": "d2fa7569ba3a2ebbe8246af012d06a40b1f4c26c388279675cca40c9087d0c02",
+      "state_tensors": 168
+    },
+    {
+      "dataset": "moses",
+      "run": 3,
+      "file": "moses/run3.pt",
+      "sha256": "4fb649baff2a7709659b457022ad84d172e3f2fba294e9f738e0757257221392",
+      "source_sha256": "c41dcef0a5007853e2de67cf15ff20619f1533afabe0cc4ab8156782b06c4fb6",
+      "state_tensors": 168
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "libinvent": {
+    "commit": "84bcf5ace4b8c02012cf32fee4cdc2bc6e319c4d",
+    "url": "https://github.com/MolecularAI/Lib-INVENT"
+  },
+  "smilesrnn": {
+    "commit": "c8ee705961b4411707c69f73d309c1cf61208b95",
+    "url": "https://github.com/MorganCThomas/SMILES-RNN"
+  },
+  "promptsmiles": {
+    "commit": "5632d236b390b148ed27596c8f5085b4ab96b020",
+    "url": "https://github.com/compsciencelab/PromptSMILES"
+  },
+  "drugex": {
+    "url": "https://github.com/CDDLeiden/DrugEx",
+    "commit": "bf61ce71db96bdfe25cc2832ec0d4cf0b1142db4"
+  }
+}

@@ -12,9 +12,11 @@ and saved evaluation outputs have been prepared for the associated
 The deposit is currently a draft and its files are not yet publicly accessible.
 The [study guide](study/README.md) describes their use and the fixed evaluation
 protocol. See [data sources](study/data_sources.json) for original dataset versions
-and citations. Use the `v1.0.0` code tag with this archive. Original software is distributed
+and citations. Use the `v1.1.0` code tag with this archive. Original software is distributed
 under GPL-3.0-or-later, with the upstream notices in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 Data and model artifacts have their own licenses and are distributed separately.
+The [recorded workflow supplement](study/workflow/README.txt) supplies per-run
+settings, observed environments, pinned baseline adapters and paired-statistics code.
 
 ## Installation
 

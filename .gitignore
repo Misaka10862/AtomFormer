@@ -23,3 +23,6 @@ outputs/
 *.key
 id_rsa*
 id_ed25519*
+
+# Reconstructed external runtime and generated workflow artifacts
+study/workflow/upstream/
