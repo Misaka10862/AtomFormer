@@ -1,0 +1,129 @@
+{
+  "protocol_id": "supplement_A_v1",
+  "baselines": {
+    "libinvent": {
+      "model_family": "official_decorator",
+      "checkpoint_stage": "supervised_prior",
+      "source_url": "https://github.com/MolecularAI/Lib-INVENT",
+      "release_or_commit": "84bcf5ace4b8c02012cf32fee4cdc2bc6e319c4d",
+      "asset": {
+        "filename": "reaction_based.model",
+        "upstream_path": "trained_models/reaction_based.model",
+        "url": "https://raw.githubusercontent.com/MolecularAI/Lib-INVENT/84bcf5ace4b8c02012cf32fee4cdc2bc6e319c4d/trained_models/reaction_based.model",
+        "bytes": 94756727,
+        "git_blob_sha1": "4c768007ca7fad50d90870cc661e4dff99871491"
+      },
+      "pretraining_corpus": "ChEMBL27 reaction-sliced; author preprocessing and DRD2 exclusions",
+      "known_objectives": [
+        "supervised decorator likelihood"
+      ],
+      "native_decoding_config": {
+        "sampler": "DecoratorModel.sample_decorations",
+        "randomize": false,
+        "sample_uniquely": false,
+        "temperature": "native_softmax_1",
+        "assembly": "reinvent-chemistry==0.0.31 BondMaker; native output conversion"
+      },
+      "upstream_names": [
+        "libinvent"
+      ],
+      "license": {
+        "code": "Apache-2.0, fixed source LICENSE",
+        "weights": "repository-level Apache-2.0; separate checkpoint license not provided"
+      },
+      "method": "libinvent",
+      "registry_id": "libinvent-official-v1",
+      "checkpoint_sha256": "a451e83fe5ac94380a8a7161a314c77afc5fc6ea0f15ff06dae620a00eb41c1a",
+      "tokenizer_sha256": "ce966e02db65dca5367cc8b7cbbbb9c606894d62596d7ebcace2aca778b5469d",
+      "loader_version": "84bcf5ace4b8c02012cf32fee4cdc2bc6e319c4d",
+      "training_overlap_status": "unknown_pending_author_lists"
+    },
+    "promptsmiles": {
+      "model_family": "SMILES-RNN plus PromptSMILES",
+      "checkpoint_stage": "public_CLM_prior",
+      "source_url": "https://github.com/MorganCThomas/SMILES-RNN/tree/c8ee705961b4411707c69f73d309c1cf61208b95/priors",
+      "release_or_commit": {
+        "smilesrnn": "c8ee705961b4411707c69f73d309c1cf61208b95",
+        "promptsmiles": "5632d236b390b148ed27596c8f5085b4ab96b020"
+      },
+      "asset": {
+        "filename": "ChEMBL28pur.ckpt",
+        "upstream_path": "priors/ChEMBL28pur.ckpt",
+        "url": "https://raw.githubusercontent.com/MorganCThomas/SMILES-RNN/c8ee705961b4411707c69f73d309c1cf61208b95/priors/ChEMBL28pur.ckpt",
+        "bytes": 17475232,
+        "git_blob_sha1": "1c38d27a54b35bef8b99c0e22245b2bf40b05722"
+      },
+      "pretraining_corpus": "ChEMBL28pur; exact preprocessing/split pending author artifact audit",
+      "known_objectives": [
+        "public SMILES language model likelihood; exact training log unknown"
+      ],
+      "native_decoding_config": {
+        "temperature": 1.0,
+        "optimize_prompts": true,
+        "shuffle": true,
+        "batch_prompts": true,
+        "prompt_random_seed": 123,
+        "return_all": false
+      },
+      "upstream_names": [
+        "smilesrnn",
+        "promptsmiles"
+      ],
+      "license": {
+        "CLM_code": "MIT",
+        "PromptSMILES_code": "Apache-2.0",
+        "weights": "SMILES-RNN repository-level MIT; separate checkpoint license not provided"
+      },
+      "method": "promptsmiles",
+      "registry_id": "promptsmiles-official-v1",
+      "checkpoint_sha256": "bf0882cc1f35743c6226001129a1031e79ad25f357f903d02f953ed0e5d0d289",
+      "tokenizer_sha256": "b076c36d6812723add420ce6b16336a00b7335e59fc864c984a3513bd1652429",
+      "loader_version": {
+        "smilesrnn": "c8ee705961b4411707c69f73d309c1cf61208b95",
+        "promptsmiles": "5632d236b390b148ed27596c8f5085b4ab96b020"
+      },
+      "training_overlap_status": "unknown_pending_author_lists"
+    },
+    "drugex": {
+      "model_family": "DrugEx v3 ChEMBL27 BRICS graph Transformer",
+      "checkpoint_stage": "public_graph_pretraining",
+      "source_url": "https://zenodo.org/records/7096823",
+      "release_or_commit": {
+        "weights_record": "7096823",
+        "loader": "bf61ce71db96bdfe25cc2832ec0d4cf0b1142db4"
+      },
+      "asset": {
+        "metadata_url": "https://zenodo.org/api/records/7096823"
+      },
+      "pretraining_corpus": "ChEMBL27 BRICS; exact list pending metadata audit",
+      "known_objectives": [
+        "graph pretraining likelihood"
+      ],
+      "native_decoding_config": {
+        "sampler": "GraphTransformer.sample",
+        "temperature": "native action softmax",
+        "legal_action_masks": true,
+        "post_generation_filter": false,
+        "n_head": 8,
+        "max_len": "from official package; never benchmark lengths"
+      },
+      "upstream_names": [
+        "drugex"
+      ],
+      "license": {
+        "code": "MIT",
+        "weights": "MIT, Zenodo record 7096823 publisher metadata"
+      },
+      "method": "drugex",
+      "registry_id": "drugex-official-v1",
+      "checkpoint_sha256": "a7499238584a2b52e106dfb2693185ef038343c8283f1703acd384deddd29629",
+      "tokenizer_sha256": "ee46a97ba1bf0573a813fdf2e324d70d38a23976d845b3a253a2563b0b5b963b",
+      "loader_version": {
+        "weights_record": "7096823",
+        "loader": "bf61ce71db96bdfe25cc2832ec0d4cf0b1142db4"
+      },
+      "training_overlap_status": "unknown_pending_author_lists"
+    }
+  },
+  "selection_rule": "one preregistered checkpoint across datasets; no benchmark-result-driven replacement"
+}

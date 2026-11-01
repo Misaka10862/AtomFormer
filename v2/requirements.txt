@@ -1,0 +1,4 @@
+# Match archived chemistry and model environments; install CUDA wheels as appropriate.
+numpy==1.24.4
+rdkit-pypi==2022.9.5
+torch==1.13.1

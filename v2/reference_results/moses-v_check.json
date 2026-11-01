@@ -1,0 +1,2607 @@
+{
+  "baseline_wins": {
+    "mean_unique_retained": [
+      "libinvent_official",
+      "promptsmiles_public_clm",
+      "drugex_official"
+    ],
+    "qed": [
+      "libinvent_official",
+      "promptsmiles_public_clm",
+      "drugex_official"
+    ],
+    "retained_diversity_all_records": [
+      "libinvent_official",
+      "promptsmiles_public_clm"
+    ],
+    "sas": [
+      "libinvent_official",
+      "promptsmiles_public_clm",
+      "drugex_official"
+    ]
+  },
+  "common_records": 3999,
+  "dataset": "moses",
+  "populations": {
+    "common_support": {
+      "bootstrap": {
+        "aggregate_diversity_bootstrap_performed": false,
+        "bootstrap_replicates": 2000,
+        "bootstrap_seed": 0,
+        "comparisons": {
+          "atomformer_supervised": {
+            "D": {
+              "ci95": [
+                -0.032976714337430046,
+                -0.019262413010267765
+              ],
+              "defined_bootstrap_replicates": 2000,
+              "difference": -0.026337784116137325
+            },
+            "U": {
+              "ci95": [
+                -1.604349053939564,
+                -1.1665935992985546
+              ],
+              "defined_bootstrap_replicates": 2000,
+              "difference": -1.3844294406935074
+            },
+            "Y": {
+              "ci95": [
+                -0.00362154821186067,
+                -0.0006766988453530409
+              ],
+              "defined_bootstrap_replicates": 2000,
+              "difference": -0.0019088105359673646
+            },
+            "core_match": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "defined_bootstrap_replicates": 2000,
+              "difference": 0.0
+            },
+            "core_retention": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "defined_bootstrap_replicates": 2000,
+              "difference": 0.0
+            },
+            "novelty": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "defined_bootstrap_replicates": 2000,
+              "difference": 0.0
+            },
+            "qed": {
+              "ci95": [
+                0.0024856739912098025,
+                0.007487970041670122
+              ],
+              "defined_bootstrap_replicates": 2000,
+              "difference": 0.005065906703228595
+            },
+            "retained_qed": {
+              "ci95": [
+                0.0024856739912098025,
+                0.007487970041670122
+              ],
+              "defined_bootstrap_replicates": 2000,
+              "difference": 0.005065906703228595
+            },
+            "retained_sas": {
+              "ci95": [
+                -0.010418819562544535,
+                0.02093603993408788
+              ],
+              "defined_bootstrap_replicates": 2000,
+              "difference": 0.0036888913404333756
+            },
+            "sas": {
+              "ci95": [
+                -0.010418819562544535,
+                0.02093603993408788
+              ],
+              "defined_bootstrap_replicates": 2000,
+              "difference": 0.0036888913404333756
+            },
+            "valid_yield": {
+              "ci95": [
+                -0.00362154821186067,
+                -0.0006766988453530409
+              ],
+              "defined_bootstrap_replicates": 2000,
+              "difference": -0.0019088105359673646
+            },
+            "validity": {
+              "ci95": [
+                -0.00362154821186067,
+                -0.0006766988453530409
+              ],
+              "defined_bootstrap_replicates": 2000,
+              "difference": -0.0019088105359673646
+            }
+          },
+          "atomformer_zero": {
+            "D": {
+              "ci95": [
+                -0.042039092779644405,
+                -0.03871499476539847
+              ],
+              "defined_bootstrap_replicates": 2000,
+              "difference": -0.04025380976089654
+            },
+            "U": {
+              "ci95": [
+                -2.3515121052190686,
+                -1.9777407946744336
+              ],
+              "defined_bootstrap_replicates": 2000,
+              "difference": -2.1787946986746682
+            },
+            "Y": {
+              "ci95": [
+                0.00015706806282733687,
+                0.0008053290912705124
+              ],
+              "defined_bootstrap_replicates": 2000,
+              "difference": 0.0004501125281320961
+            },
+            "core_match": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "defined_bootstrap_replicates": 2000,
+              "difference": 0.0
+            },
+            "core_retention": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "defined_bootstrap_replicates": 2000,
+              "difference": 0.0
+            },
+            "novelty": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "defined_bootstrap_replicates": 2000,
+              "difference": 0.0
+            },
+            "qed": {
+              "ci95": [
+                0.0022056846530186247,
+                0.006268826503266656
+              ],
+              "defined_bootstrap_replicates": 2000,
+              "difference": 0.004401952872818304
+            },
+            "retained_qed": {
+              "ci95": [
+                0.0022056846530186247,
+                0.006268826503266656
+              ],
+              "defined_bootstrap_replicates": 2000,
+              "difference": 0.004401952872818304
+            },
+            "retained_sas": {
+              "ci95": [
+                -0.06267124561853343,
+                -0.026157921282982777
+              ],
+              "defined_bootstrap_replicates": 2000,
+              "difference": -0.04225084763086073
+            },
+            "sas": {
+              "ci95": [
+                -0.06267124561853343,
+                -0.026157921282982777
+              ],
+              "defined_bootstrap_replicates": 2000,
+              "difference": -0.04225084763086073
+            },
+            "valid_yield": {
+              "ci95": [
+                0.00015706806282733687,
+                0.0008053290912705124
+              ],
+              "defined_bootstrap_replicates": 2000,
+              "difference": 0.0004501125281320961
+            },
+            "validity": {
+              "ci95": [
+                0.00015706806282733687,
+                0.0008053290912705124
+              ],
+              "defined_bootstrap_replicates": 2000,
+              "difference": 0.0004501125281320961
+            }
+          },
+          "drugex_official": {
+            "D": {
+              "ci95": [
+                -0.05595387921601702,
+                0.06166129422747754
+              ],
+              "defined_bootstrap_replicates": 2000,
+              "difference": 0.011476779449562269
+            },
+            "U": {
+              "ci95": [
+                -8.693745151963894,
+                -5.519241982507289
+              ],
+              "defined_bootstrap_replicates": 2000,
+              "difference": -6.914645327998667
+            },
+            "Y": {
+              "ci95": [
+                -0.6706960112069602,
+                -0.573373344765171
+              ],
+              "defined_bootstrap_replicates": 2000,
+              "difference": -0.6168583812619821
+            },
+            "core_match": {
+              "ci95": [
+                -0.0009021708486044444,
+                -0.0002012440541528937
+              ],
+              "defined_bootstrap_replicates": 2000,
+              "difference": -0.000445944819538191
+            },
+            "core_retention": {
+              "ci95": [
+                -0.672911597729116,
+                -0.5741830999333142
+              ],
+              "defined_bootstrap_replicates": 2000,
+              "difference": -0.6182003834291907
+            },
+            "novelty": {
+              "ci95": [
+                -0.001739544422471262,
+                -0.00012294678862989628
+              ],
+              "defined_bootstrap_replicates": 2000,
+              "difference": -0.0007710260898559085
+            },
+            "qed": {
+              "ci95": [
+                -0.15356077531621293,
+                -0.1392372636389454
+              ],
+              "defined_bootstrap_replicates": 2000,
+              "difference": -0.14649882413007953
+            },
+            "retained_qed": {
+              "ci95": [
+                -0.029265709587111055,
+                -0.015279811334972138
+              ],
+              "defined_bootstrap_replicates": 2000,
+              "difference": -0.021627051734822267
+            },
+            "retained_sas": {
+              "ci95": [
+                0.00019188742976927742,
+                0.06223898277198403
+              ],
+              "defined_bootstrap_replicates": 2000,
+              "difference": 0.030601147772765902
+            },
+            "sas": {
+              "ci95": [
+                0.3048518166713148,
+                0.37213389526672236
+              ],
+              "defined_bootstrap_replicates": 2000,
+              "difference": 0.3389950128395198
+            },
+            "valid_yield": {
+              "ci95": [
+                0.0007956805910769305,
+                0.0021158708909713164
+              ],
+              "defined_bootstrap_replicates": 2000,
+              "difference": 0.001342002167208478
+            },
+            "validity": {
+              "ci95": [
+                0.0007956805910769305,
+                0.0021158708909713164
+              ],
+              "defined_bootstrap_replicates": 2000,
+              "difference": 0.001342002167208478
+            }
+          },
+          "libinvent_official": {
+            "D": {
+              "ci95": [
+                -0.1494381384170966,
+                -0.07887697567555924
+              ],
+              "defined_bootstrap_replicates": 2000,
+              "difference": -0.10835561350101408
+            },
+            "U": {
+              "ci95": [
+                -8.568950147431941,
+                -5.662975582055651
+              ],
+              "defined_bootstrap_replicates": 2000,
+              "difference": -6.969325664749521
+            },
+            "Y": {
+              "ci95": [
+                -0.4933704020530367,
+                -0.3648850881881347
+              ],
+              "defined_bootstrap_replicates": 2000,
+              "difference": -0.42146786696674166
+            },
+            "core_match": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "defined_bootstrap_replicates": 2000,
+              "difference": 0.0
+            },
+            "core_retention": {
+              "ci95": [
+                -0.4530036868028139,
+                -0.3596039799842351
+              ],
+              "defined_bootstrap_replicates": 2000,
+              "difference": -0.40163483426221214
+            },
+            "novelty": {
+              "ci95": [
+                -0.0008700203384822691,
+                -0.00022008499457759623
+              ],
+              "defined_bootstrap_replicates": 2000,
+              "difference": -0.0005055107137411641
+            },
+            "qed": {
+              "ci95": [
+                -0.10640681721613587,
+                -0.06001076219437296
+              ],
+              "defined_bootstrap_replicates": 2000,
+              "difference": -0.07910121990617802
+            },
+            "retained_qed": {
+              "ci95": [
+                -0.021831682172749778,
+                -0.003625529772612879
+              ],
+              "defined_bootstrap_replicates": 2000,
+              "difference": -0.011192626391866911
+            },
+            "retained_sas": {
+              "ci95": [
+                0.0013166940440920705,
+                0.04095862448079313
+              ],
+              "defined_bootstrap_replicates": 2000,
+              "difference": 0.020212837863780475
+            },
+            "sas": {
+              "ci95": [
+                0.05577577041119941,
+                0.18241069133381504
+              ],
+              "defined_bootstrap_replicates": 2000,
+              "difference": 0.10832402291271181
+            },
+            "valid_yield": {
+              "ci95": [
+                -0.07266666666666666,
+                -0.008557434617872728
+              ],
+              "defined_bootstrap_replicates": 2000,
+              "difference": -0.034046011502875784
+            },
+            "validity": {
+              "ci95": [
+                -0.07266666666666666,
+                -0.008557434617872728
+              ],
+              "defined_bootstrap_replicates": 2000,
+              "difference": -0.034046011502875784
+            }
+          },
+          "promptsmiles_public_clm": {
+            "D": {
+              "ci95": [
+                -0.16520803905796294,
+                -0.0668338989262516
+              ],
+              "defined_bootstrap_replicates": 2000,
+              "difference": -0.10703372313608561
+            },
+            "U": {
+              "ci95": [
+                -8.55052420254294,
+                -5.352725218864727
+              ],
+              "defined_bootstrap_replicates": 2000,
+              "difference": -6.75677252646495
+            },
+            "Y": {
+              "ci95": [
+                -0.5636238198983297,
+                -0.43024604072398187
+              ],
+              "defined_bootstrap_replicates": 2000,
+              "difference": -0.4880636825873135
+            },
+            "core_match": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "defined_bootstrap_replicates": 2000,
+              "difference": 0.0
+            },
+            "core_retention": {
+              "ci95": [
+                -0.4269340213238406,
+                -0.3514896239054578
+              ],
+              "defined_bootstrap_replicates": 2000,
+              "difference": -0.3869005561776898
+            },
+            "novelty": {
+              "ci95": [
+                -0.0009696989090178798,
+                -0.00034490738000458876
+              ],
+              "defined_bootstrap_replicates": 2000,
+              "difference": -0.0006455279483082998
+            },
+            "qed": {
+              "ci95": [
+                -0.06916808805972297,
+                -0.057291565385148124
+              ],
+              "defined_bootstrap_replicates": 2000,
+              "difference": -0.06325292455390596
+            },
+            "retained_qed": {
+              "ci95": [
+                -0.01983500604245525,
+                -0.00834244101134618
+              ],
+              "defined_bootstrap_replicates": 2000,
+              "difference": -0.013781984650509949
+            },
+            "retained_sas": {
+              "ci95": [
+                -0.17195821162394598,
+                -0.12252578117540525
+              ],
+              "defined_bootstrap_replicates": 2000,
+              "difference": -0.14845804655164896
+            },
+            "sas": {
+              "ci95": [
+                -0.021607017023948405,
+                0.047248707681609936
+              ],
+              "defined_bootstrap_replicates": 2000,
+              "difference": 0.009905807061745264
+            },
+            "valid_yield": {
+              "ci95": [
+                -0.24889582868614768,
+                -0.11062821194400152
+              ],
+              "defined_bootstrap_replicates": 2000,
+              "difference": -0.16584979578227887
+            },
+            "validity": {
+              "ci95": [
+                -0.24889582868614768,
+                -0.11062821194400152
+              ],
+              "defined_bootstrap_replicates": 2000,
+              "difference": -0.16584979578227887
+            }
+          }
+        },
+        "conditional_on_evaluated_checkpoints": true,
+        "core_count": 2211,
+        "difference_direction": "system_minus_reference",
+        "external_repeats_are_training_pairs": false,
+        "implementation": "core_sufficient_statistics_python_random_draws_v1",
+        "reference": "atomformer_rl"
+      },
+      "paired_main_minus_supervised": {
+        "difference_direction": "left_minus_right",
+        "metrics": {
+          "aggregate_diversity_uniform": {
+            "mean": -0.0019146449125109581,
+            "per_training_seed": {
+              "42": -0.0011137972879993185,
+              "43": -0.0023456330415009274,
+              "44": -0.0022845044080326282
+            },
+            "sample_sd": 0.0006942275316651432
+          },
+          "mean_unique_retained": {
+            "mean": 1.3844294406935063,
+            "per_training_seed": {
+              "42": 1.7269317329332328,
+              "43": 1.1580395098774687,
+              "44": 1.268317079269817
+            },
+            "sample_sd": 0.3016971175199912
+          },
+          "qed": {
+            "mean": -0.005065906703227485,
+            "per_training_seed": {
+              "42": -0.005797674772619943,
+              "43": -0.003243793578970533,
+              "44": -0.0061562517580919796
+            },
+            "sample_sd": 0.001588148778238244
+          },
+          "retained_diversity_all_records": {
+            "mean": 0.026337784116137325,
+            "per_training_seed": {
+              "42": 0.03419141406567336,
+              "43": 0.02558319597538461,
+              "44": 0.019238742307354006
+            },
+            "sample_sd": 0.0075048418120992905
+          },
+          "retained_yield": {
+            "mean": 0.0019088105359673275,
+            "per_training_seed": {
+              "42": 0.0016629157289322904,
+              "43": 0.001925481370342541,
+              "44": 0.0021380345086271513
+            },
+            "sample_sd": 0.00023799769167737273
+          },
+          "sas": {
+            "mean": -0.0036888913404318955,
+            "per_training_seed": {
+              "42": 0.004192268355931894,
+              "43": -0.0006317845915071452,
+              "44": -0.014627157785720435
+            },
+            "sample_sd": 0.009775076794123804
+          }
+        }
+      },
+      "paired_main_minus_zero": {
+        "difference_direction": "left_minus_right",
+        "metrics": {
+          "aggregate_diversity_uniform": {
+            "mean": 0.0004390614358037818,
+            "per_training_seed": {
+              "42": -0.002211024469257916,
+              "43": 0.0011898387639044383,
+              "44": 0.0023383700127648233
+            },
+            "sample_sd": 0.0023657974312178984
+          },
+          "mean_unique_retained": {
+            "mean": 2.178794698674668,
+            "per_training_seed": {
+              "42": 3.8589647411852956,
+              "43": 0.9679919979994995,
+              "44": 1.7094273568392087
+            },
+            "sample_sd": 1.5015525720556924
+          },
+          "qed": {
+            "mean": -0.004401952872818415,
+            "per_training_seed": {
+              "42": -0.009830501616855614,
+              "43": -0.002397744445519323,
+              "44": -0.0009776125560803095
+            },
+            "sample_sd": 0.004754581973806035
+          },
+          "retained_diversity_all_records": {
+            "mean": 0.04025380976089645,
+            "per_training_seed": {
+              "42": 0.06895198441414799,
+              "43": 0.018366345039038612,
+              "44": 0.03344309982950275
+            },
+            "sample_sd": 0.025971446919152246
+          },
+          "retained_yield": {
+            "mean": -0.0004501125281320591,
+            "per_training_seed": {
+              "42": -0.00043760940235060275,
+              "43": -0.00040010002500634467,
+              "44": -0.0005126281570392299
+            },
+            "sample_sd": 5.7296520316968664e-05
+          },
+          "sas": {
+            "mean": 0.042250847630864286,
+            "per_training_seed": {
+              "42": 0.06310149427299283,
+              "43": 0.027596625895250693,
+              "44": 0.03605442272434933
+            },
+            "sample_sd": 0.018545772586947073
+          }
+        }
+      },
+      "systems": {
+        "atomformer_rl": {
+          "kind": "atomformer",
+          "metrics": {
+            "aggregate_diversity_uniform": {
+              "defined_runs": 3,
+              "mean": 0.8537553667857672,
+              "sample_sd": 0.00047703951059945953,
+              "values": [
+                0.8541108506176325,
+                0.85394202866871,
+                0.8532132210709593
+              ]
+            },
+            "core_match": {
+              "defined_runs": 3,
+              "mean": 1.0,
+              "sample_sd": 0.0,
+              "values": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "core_retention": {
+              "defined_runs": 3,
+              "mean": 1.0,
+              "sample_sd": 0.0,
+              "values": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "mean_unique_retained": {
+              "defined_runs": 3,
+              "mean": 10.57639409852463,
+              "sample_sd": 0.20348252377272932,
+              "values": [
+                10.346586646661665,
+                10.648912228057014,
+                10.733683420855213
+              ]
+            },
+            "novelty_vs_benchmark_train": {
+              "defined_runs": 3,
+              "mean": 1.0,
+              "sample_sd": 0.0,
+              "values": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "qed": {
+              "defined_runs": 3,
+              "mean": 0.7833033146489107,
+              "sample_sd": 0.0008215531918898865,
+              "values": [
+                0.7835093079190077,
+                0.7823983674376976,
+                0.7840022685900265
+              ]
+            },
+            "retained_diversity_all_records": {
+              "defined_runs": 3,
+              "mean": 0.27536167024759534,
+              "sample_sd": 0.0042474997886452715,
+              "values": [
+                0.27132704267102575,
+                0.2797940595405652,
+                0.274963908531195
+              ]
+            },
+            "retained_yield": {
+              "defined_runs": 3,
+              "mean": 0.9986579978327915,
+              "sample_sd": 0.00017021403564778604,
+              "values": [
+                0.998849712428107,
+                0.9985996499124781,
+                0.9985246311577894
+              ]
+            },
+            "sas": {
+              "defined_runs": 3,
+              "mean": 2.4494565155340635,
+              "sample_sd": 0.0026029456923247173,
+              "values": [
+                2.4465888747823015,
+                2.4516699535510464,
+                2.450110718268842
+              ]
+            },
+            "validity": {
+              "defined_runs": 3,
+              "mean": 0.9986579978327915,
+              "sample_sd": 0.00017021403564778604,
+              "values": [
+                0.998849712428107,
+                0.9985996499124781,
+                0.9985246311577894
+              ]
+            }
+          },
+          "n_checkpoints": 3,
+          "n_sampling_repeats": 3,
+          "sd_interpretation": "training plus sampling variation"
+        },
+        "atomformer_supervised": {
+          "kind": "atomformer",
+          "metrics": {
+            "aggregate_diversity_uniform": {
+              "defined_runs": 3,
+              "mean": 0.8556700116982783,
+              "sample_sd": 0.0005520520747161914,
+              "values": [
+                0.8552246479056318,
+                0.856287661710211,
+                0.8554977254789919
+              ]
+            },
+            "core_match": {
+              "defined_runs": 3,
+              "mean": 1.0,
+              "sample_sd": 0.0,
+              "values": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "core_retention": {
+              "defined_runs": 3,
+              "mean": 1.0,
+              "sample_sd": 0.0,
+              "values": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "mean_unique_retained": {
+              "defined_runs": 3,
+              "mean": 9.191964657831125,
+              "sample_sd": 0.49579882634785205,
+              "values": [
+                8.619654913728432,
+                9.490872718179546,
+                9.465366341585396
+              ]
+            },
+            "novelty_vs_benchmark_train": {
+              "defined_runs": 3,
+              "mean": 1.0,
+              "sample_sd": 0.0,
+              "values": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "qed": {
+              "defined_runs": 3,
+              "mean": 0.7883692213521382,
+              "sample_sd": 0.0023997755416029186,
+              "values": [
+                0.7893069826916277,
+                0.7856421610166682,
+                0.7901585203481185
+              ]
+            },
+            "retained_diversity_all_records": {
+              "defined_runs": 3,
+              "mean": 0.24902388613145798,
+              "sample_sd": 0.010323336591953268,
+              "values": [
+                0.2371356286053524,
+                0.2542108635651806,
+                0.255725166223841
+              ]
+            },
+            "retained_yield": {
+              "defined_runs": 3,
+              "mean": 0.9967491872968242,
+              "sample_sd": 0.0004053404620516773,
+              "values": [
+                0.9971867966991748,
+                0.9966741685421355,
+                0.9963865966491623
+              ]
+            },
+            "sas": {
+              "defined_runs": 3,
+              "mean": 2.453145406874495,
+              "sample_sd": 0.011194503778499848,
+              "values": [
+                2.4423966064263696,
+                2.4523017381425536,
+                2.4647378760545626
+              ]
+            },
+            "validity": {
+              "defined_runs": 3,
+              "mean": 0.9967491872968242,
+              "sample_sd": 0.0004053404620516773,
+              "values": [
+                0.9971867966991748,
+                0.9966741685421355,
+                0.9963865966491623
+              ]
+            }
+          },
+          "n_checkpoints": 3,
+          "n_sampling_repeats": 3,
+          "sd_interpretation": "training plus sampling variation"
+        },
+        "atomformer_zero": {
+          "kind": "atomformer",
+          "metrics": {
+            "aggregate_diversity_uniform": {
+              "defined_runs": 3,
+              "mean": 0.8533163053499635,
+              "sample_sd": 0.0027669816350848614,
+              "values": [
+                0.8563218750868904,
+                0.8527521899048056,
+                0.8508748510581945
+              ]
+            },
+            "core_match": {
+              "defined_runs": 3,
+              "mean": 1.0,
+              "sample_sd": 0.0,
+              "values": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "core_retention": {
+              "defined_runs": 3,
+              "mean": 1.0,
+              "sample_sd": 0.0,
+              "values": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "mean_unique_retained": {
+              "defined_runs": 3,
+              "mean": 8.397599399849963,
+              "sample_sd": 1.6863607201607167,
+              "values": [
+                6.487621905476369,
+                9.680920230057515,
+                9.024256064016004
+              ]
+            },
+            "novelty_vs_benchmark_train": {
+              "defined_runs": 3,
+              "mean": 1.0,
+              "sample_sd": 0.0,
+              "values": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "qed": {
+              "defined_runs": 3,
+              "mean": 0.7877052675217291,
+              "sample_sd": 0.004880521546646351,
+              "values": [
+                0.7933398095358634,
+                0.784796111883217,
+                0.7849798811461068
+              ]
+            },
+            "retained_diversity_all_records": {
+              "defined_runs": 3,
+              "mean": 0.23510786048669888,
+              "sample_sd": 0.030044108923269888,
+              "values": [
+                0.20237505825687777,
+                0.2614277145015266,
+                0.24152080870169226
+              ]
+            },
+            "retained_yield": {
+              "defined_runs": 3,
+              "mean": 0.9991081103609236,
+              "sample_sd": 0.00015633074379855602,
+              "values": [
+                0.9992873218304577,
+                0.9989997499374844,
+                0.9990372593148287
+              ]
+            },
+            "sas": {
+              "defined_runs": 3,
+              "mean": 2.4072056679031992,
+              "sample_sd": 0.021142447842057103,
+              "values": [
+                2.3834873805093086,
+                2.4240733276557958,
+                2.414056295544493
+              ]
+            },
+            "validity": {
+              "defined_runs": 3,
+              "mean": 0.9991081103609236,
+              "sample_sd": 0.00015633074379855602,
+              "values": [
+                0.9992873218304577,
+                0.9989997499374844,
+                0.9990372593148287
+              ]
+            }
+          },
+          "n_checkpoints": 3,
+          "n_sampling_repeats": 3,
+          "sd_interpretation": "training plus sampling variation"
+        },
+        "drugex_official": {
+          "kind": "official",
+          "metrics": {
+            "aggregate_diversity_uniform": {
+              "defined_runs": 3,
+              "mean": 0.8634031227901903,
+              "sample_sd": 0.0002610354417167937,
+              "values": [
+                0.863118226521792,
+                0.8634603354328273,
+                0.8636308064159516
+              ]
+            },
+            "core_match": {
+              "defined_runs": 3,
+              "mean": 0.9995540551804618,
+              "sample_sd": 4.0191926152369763e-05,
+              "values": [
+                0.999524881220305,
+                0.9995373843460865,
+                0.9995998999749938
+              ]
+            },
+            "core_retention": {
+              "defined_runs": 3,
+              "mean": 0.38179961657080935,
+              "sample_sd": 0.0013041865005592576,
+              "values": [
+                0.3832208052013003,
+                0.38152038009502376,
+                0.38065766441610405
+              ]
+            },
+            "mean_unique_retained": {
+              "defined_runs": 3,
+              "mean": 3.661748770525965,
+              "sample_sd": 0.017755025601159415,
+              "values": [
+                3.6814203550887723,
+                3.646911727931983,
+                3.6569142285571394
+              ]
+            },
+            "novelty_vs_benchmark_train": {
+              "defined_runs": 3,
+              "mean": 0.9992289739101442,
+              "sample_sd": 0.00014916670974555064,
+              "values": [
+                0.9992748187046762,
+                0.9990622655663915,
+                0.9993498374593648
+              ]
+            },
+            "qed": {
+              "defined_runs": 3,
+              "mean": 0.6368044905188306,
+              "sample_sd": 0.0003008635929857106,
+              "values": [
+                0.6364658582970505,
+                0.6370410008658088,
+                0.6369066123936324
+              ]
+            },
+            "retained_diversity_all_records": {
+              "defined_runs": 3,
+              "mean": 0.28683844969715755,
+              "sample_sd": 0.0012678850844136248,
+              "values": [
+                0.28692158771747706,
+                0.2855310415821106,
+                0.28806271979188497
+              ]
+            },
+            "retained_yield": {
+              "defined_runs": 3,
+              "mean": 0.38179961657080935,
+              "sample_sd": 0.0013041865005592576,
+              "values": [
+                0.3832208052013003,
+                0.38152038009502376,
+                0.38065766441610405
+              ]
+            },
+            "sas": {
+              "defined_runs": 3,
+              "mean": 2.7884515283735856,
+              "sample_sd": 0.001599355766101773,
+              "values": [
+                2.788327944387885,
+                2.786917549670057,
+                2.790109091062815
+              ]
+            },
+            "validity": {
+              "defined_runs": 3,
+              "mean": 1.0,
+              "sample_sd": 0.0,
+              "values": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            }
+          },
+          "n_checkpoints": 1,
+          "n_sampling_repeats": 3,
+          "sd_interpretation": "fixed-checkpoint sampling variation"
+        },
+        "libinvent_official": {
+          "kind": "official",
+          "metrics": {
+            "aggregate_diversity_uniform": {
+              "defined_runs": 3,
+              "mean": 0.8616131657478204,
+              "sample_sd": 0.0007472426841387214,
+              "values": [
+                0.8617053033464167,
+                0.8608241268103657,
+                0.862310067086679
+              ]
+            },
+            "core_match": {
+              "defined_runs": 3,
+              "mean": 1.0,
+              "sample_sd": 0.0,
+              "values": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "core_retention": {
+              "defined_runs": 3,
+              "mean": 0.5983651657377879,
+              "sample_sd": 0.0014093496137444165,
+              "values": [
+                0.5983174105233139,
+                0.5997977860161253,
+                0.5969803006739243
+              ]
+            },
+            "mean_unique_retained": {
+              "defined_runs": 3,
+              "mean": 3.6070684337751104,
+              "sample_sd": 0.022891763081723953,
+              "values": [
+                3.582145536384096,
+                3.611902975743936,
+                3.6271567891972993
+              ]
+            },
+            "novelty_vs_benchmark_train": {
+              "defined_runs": 3,
+              "mean": 0.9994944892862588,
+              "sample_sd": 8.499959299828106e-05,
+              "values": [
+                0.9995722230144019,
+                0.9994037279962669,
+                0.9995075168481078
+              ]
+            },
+            "qed": {
+              "defined_runs": 3,
+              "mean": 0.7042020947427319,
+              "sample_sd": 0.00020933188844403372,
+              "values": [
+                0.7040868619430927,
+                0.7044437244326558,
+                0.7040756978524471
+              ]
+            },
+            "retained_diversity_all_records": {
+              "defined_runs": 3,
+              "mean": 0.16700605674658128,
+              "sample_sd": 0.0017733084896569171,
+              "values": [
+                0.1649779245863618,
+                0.16777592422923016,
+                0.1682643214241519
+              ]
+            },
+            "retained_yield": {
+              "defined_runs": 3,
+              "mean": 0.5771901308660499,
+              "sample_sd": 0.001309211210310516,
+              "values": [
+                0.577094273568392,
+                0.5785446361590397,
+                0.5759314828707177
+              ]
+            },
+            "sas": {
+              "defined_runs": 3,
+              "mean": 2.557780538446774,
+              "sample_sd": 0.00032342206326757046,
+              "values": [
+                2.558111694581334,
+                2.557465449370148,
+                2.55776447138884
+              ]
+            },
+            "validity": {
+              "defined_runs": 3,
+              "mean": 0.9646119863299158,
+              "sample_sd": 0.00011345050920078408,
+              "values": [
+                0.9645286321580395,
+                0.9645661415353839,
+                0.9647411852963241
+              ]
+            }
+          },
+          "n_checkpoints": 1,
+          "n_sampling_repeats": 3,
+          "sd_interpretation": "fixed-checkpoint sampling variation"
+        },
+        "promptsmiles_public_clm": {
+          "kind": "official",
+          "metrics": {
+            "aggregate_diversity_uniform": {
+              "defined_runs": 3,
+              "mean": 0.854947054306638,
+              "sample_sd": 0.0004189117793727326,
+              "values": [
+                0.854719918289715,
+                0.8546907655843785,
+                0.8554304790458203
+              ]
+            },
+            "core_match": {
+              "defined_runs": 3,
+              "mean": 1.0,
+              "sample_sd": 0.0,
+              "values": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "core_retention": {
+              "defined_runs": 3,
+              "mean": 0.6130994438223102,
+              "sample_sd": 0.0019852826374183044,
+              "values": [
+                0.6146740841817991,
+                0.6108693041964339,
+                0.6137549430886974
+              ]
+            },
+            "mean_unique_retained": {
+              "defined_runs": 3,
+              "mean": 3.8196215720596816,
+              "sample_sd": 0.009795090568058187,
+              "values": [
+                3.8282070517629405,
+                3.8217054263565893,
+                3.808952238059515
+              ]
+            },
+            "novelty_vs_benchmark_train": {
+              "defined_runs": 3,
+              "mean": 0.9993544720516917,
+              "sample_sd": 5.344259044190051e-05,
+              "values": [
+                0.9993402210259563,
+                0.9993095995677493,
+                0.9994135955613694
+              ]
+            },
+            "qed": {
+              "defined_runs": 3,
+              "mean": 0.7200503900950045,
+              "sample_sd": 0.0005911352683352596,
+              "values": [
+                0.7205596944956517,
+                0.7194021674739417,
+                0.7201893083154202
+              ]
+            },
+            "retained_diversity_all_records": {
+              "defined_runs": 3,
+              "mean": 0.1683279471115098,
+              "sample_sd": 0.001201989578018538,
+              "values": [
+                0.16963423741526268,
+                0.16726862074711105,
+                0.1680809831721557
+              ]
+            },
+            "retained_yield": {
+              "defined_runs": 3,
+              "mean": 0.510594315245478,
+              "sample_sd": 0.001830003778941913,
+              "values": [
+                0.5125281320330083,
+                0.5088897224306077,
+                0.5103650912728181
+              ]
+            },
+            "sas": {
+              "defined_runs": 3,
+              "mean": 2.459362322595812,
+              "sample_sd": 0.0007723274138197931,
+              "values": [
+                2.4598942749239567,
+                2.459716233255743,
+                2.4584764596077355
+              ]
+            },
+            "validity": {
+              "defined_runs": 3,
+              "mean": 0.8328082020505126,
+              "sample_sd": 0.0011582106423726462,
+              "values": [
+                0.8338209552388097,
+                0.8330582645661415,
+                0.8315453863465867
+              ]
+            }
+          },
+          "n_checkpoints": 1,
+          "n_sampling_repeats": 3,
+          "sd_interpretation": "fixed-checkpoint sampling variation"
+        }
+      }
+    },
+    "full_requests": {
+      "systems": {
+        "atomformer_rl": {
+          "kind": "atomformer",
+          "metrics": {
+            "aggregate_diversity_uniform": {
+              "defined_runs": 3,
+              "mean": 0.8537553667857672,
+              "sample_sd": 0.00047703951059945953,
+              "values": [
+                0.8541108506176325,
+                0.85394202866871,
+                0.8532132210709593
+              ]
+            },
+            "core_match": {
+              "defined_runs": 3,
+              "mean": 1.0,
+              "sample_sd": 0.0,
+              "values": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "core_retention": {
+              "defined_runs": 3,
+              "mean": 1.0,
+              "sample_sd": 0.0,
+              "values": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "mean_unique_retained": {
+              "defined_runs": 3,
+              "mean": 10.57639409852463,
+              "sample_sd": 0.20348252377272932,
+              "values": [
+                10.346586646661665,
+                10.648912228057014,
+                10.733683420855213
+              ]
+            },
+            "novelty_vs_benchmark_train": {
+              "defined_runs": 3,
+              "mean": 1.0,
+              "sample_sd": 0.0,
+              "values": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "qed": {
+              "defined_runs": 3,
+              "mean": 0.7833033146489107,
+              "sample_sd": 0.0008215531918898865,
+              "values": [
+                0.7835093079190077,
+                0.7823983674376976,
+                0.7840022685900265
+              ]
+            },
+            "retained_diversity_all_records": {
+              "defined_runs": 3,
+              "mean": 0.27536167024759534,
+              "sample_sd": 0.0042474997886452715,
+              "values": [
+                0.27132704267102575,
+                0.2797940595405652,
+                0.274963908531195
+              ]
+            },
+            "retained_yield": {
+              "defined_runs": 3,
+              "mean": 0.9986579978327915,
+              "sample_sd": 0.00017021403564778604,
+              "values": [
+                0.998849712428107,
+                0.9985996499124781,
+                0.9985246311577894
+              ]
+            },
+            "sas": {
+              "defined_runs": 3,
+              "mean": 2.4494565155340635,
+              "sample_sd": 0.0026029456923247173,
+              "values": [
+                2.4465888747823015,
+                2.4516699535510464,
+                2.450110718268842
+              ]
+            },
+            "validity": {
+              "defined_runs": 3,
+              "mean": 0.9986579978327915,
+              "sample_sd": 0.00017021403564778604,
+              "values": [
+                0.998849712428107,
+                0.9985996499124781,
+                0.9985246311577894
+              ]
+            }
+          },
+          "n_checkpoints": 3,
+          "n_sampling_repeats": 3,
+          "sd_interpretation": "training plus sampling variation"
+        },
+        "atomformer_supervised": {
+          "kind": "atomformer",
+          "metrics": {
+            "aggregate_diversity_uniform": {
+              "defined_runs": 3,
+              "mean": 0.8556700116982783,
+              "sample_sd": 0.0005520520747161914,
+              "values": [
+                0.8552246479056318,
+                0.856287661710211,
+                0.8554977254789919
+              ]
+            },
+            "core_match": {
+              "defined_runs": 3,
+              "mean": 1.0,
+              "sample_sd": 0.0,
+              "values": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "core_retention": {
+              "defined_runs": 3,
+              "mean": 1.0,
+              "sample_sd": 0.0,
+              "values": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "mean_unique_retained": {
+              "defined_runs": 3,
+              "mean": 9.191964657831125,
+              "sample_sd": 0.49579882634785205,
+              "values": [
+                8.619654913728432,
+                9.490872718179546,
+                9.465366341585396
+              ]
+            },
+            "novelty_vs_benchmark_train": {
+              "defined_runs": 3,
+              "mean": 1.0,
+              "sample_sd": 0.0,
+              "values": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "qed": {
+              "defined_runs": 3,
+              "mean": 0.7883692213521382,
+              "sample_sd": 0.0023997755416029186,
+              "values": [
+                0.7893069826916277,
+                0.7856421610166682,
+                0.7901585203481185
+              ]
+            },
+            "retained_diversity_all_records": {
+              "defined_runs": 3,
+              "mean": 0.24902388613145798,
+              "sample_sd": 0.010323336591953268,
+              "values": [
+                0.2371356286053524,
+                0.2542108635651806,
+                0.255725166223841
+              ]
+            },
+            "retained_yield": {
+              "defined_runs": 3,
+              "mean": 0.9967491872968242,
+              "sample_sd": 0.0004053404620516773,
+              "values": [
+                0.9971867966991748,
+                0.9966741685421355,
+                0.9963865966491623
+              ]
+            },
+            "sas": {
+              "defined_runs": 3,
+              "mean": 2.453145406874495,
+              "sample_sd": 0.011194503778499848,
+              "values": [
+                2.4423966064263696,
+                2.4523017381425536,
+                2.4647378760545626
+              ]
+            },
+            "validity": {
+              "defined_runs": 3,
+              "mean": 0.9967491872968242,
+              "sample_sd": 0.0004053404620516773,
+              "values": [
+                0.9971867966991748,
+                0.9966741685421355,
+                0.9963865966491623
+              ]
+            }
+          },
+          "n_checkpoints": 3,
+          "n_sampling_repeats": 3,
+          "sd_interpretation": "training plus sampling variation"
+        },
+        "atomformer_zero": {
+          "kind": "atomformer",
+          "metrics": {
+            "aggregate_diversity_uniform": {
+              "defined_runs": 3,
+              "mean": 0.8533163053499635,
+              "sample_sd": 0.0027669816350848614,
+              "values": [
+                0.8563218750868904,
+                0.8527521899048056,
+                0.8508748510581945
+              ]
+            },
+            "core_match": {
+              "defined_runs": 3,
+              "mean": 1.0,
+              "sample_sd": 0.0,
+              "values": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "core_retention": {
+              "defined_runs": 3,
+              "mean": 1.0,
+              "sample_sd": 0.0,
+              "values": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "mean_unique_retained": {
+              "defined_runs": 3,
+              "mean": 8.397599399849963,
+              "sample_sd": 1.6863607201607167,
+              "values": [
+                6.487621905476369,
+                9.680920230057515,
+                9.024256064016004
+              ]
+            },
+            "novelty_vs_benchmark_train": {
+              "defined_runs": 3,
+              "mean": 1.0,
+              "sample_sd": 0.0,
+              "values": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "qed": {
+              "defined_runs": 3,
+              "mean": 0.7877052675217291,
+              "sample_sd": 0.004880521546646351,
+              "values": [
+                0.7933398095358634,
+                0.784796111883217,
+                0.7849798811461068
+              ]
+            },
+            "retained_diversity_all_records": {
+              "defined_runs": 3,
+              "mean": 0.23510786048669888,
+              "sample_sd": 0.030044108923269888,
+              "values": [
+                0.20237505825687777,
+                0.2614277145015266,
+                0.24152080870169226
+              ]
+            },
+            "retained_yield": {
+              "defined_runs": 3,
+              "mean": 0.9991081103609236,
+              "sample_sd": 0.00015633074379855602,
+              "values": [
+                0.9992873218304577,
+                0.9989997499374844,
+                0.9990372593148287
+              ]
+            },
+            "sas": {
+              "defined_runs": 3,
+              "mean": 2.4072056679031992,
+              "sample_sd": 0.021142447842057103,
+              "values": [
+                2.3834873805093086,
+                2.4240733276557958,
+                2.414056295544493
+              ]
+            },
+            "validity": {
+              "defined_runs": 3,
+              "mean": 0.9991081103609236,
+              "sample_sd": 0.00015633074379855602,
+              "values": [
+                0.9992873218304577,
+                0.9989997499374844,
+                0.9990372593148287
+              ]
+            }
+          },
+          "n_checkpoints": 3,
+          "n_sampling_repeats": 3,
+          "sd_interpretation": "training plus sampling variation"
+        },
+        "drugex_official": {
+          "kind": "official",
+          "metrics": {
+            "aggregate_diversity_uniform": {
+              "defined_runs": 3,
+              "mean": 0.8634031227901903,
+              "sample_sd": 0.0002610354417167937,
+              "values": [
+                0.863118226521792,
+                0.8634603354328273,
+                0.8636308064159516
+              ]
+            },
+            "core_match": {
+              "defined_runs": 3,
+              "mean": 0.9995540551804618,
+              "sample_sd": 4.0191926152369763e-05,
+              "values": [
+                0.999524881220305,
+                0.9995373843460865,
+                0.9995998999749938
+              ]
+            },
+            "core_retention": {
+              "defined_runs": 3,
+              "mean": 0.38179961657080935,
+              "sample_sd": 0.0013041865005592576,
+              "values": [
+                0.3832208052013003,
+                0.38152038009502376,
+                0.38065766441610405
+              ]
+            },
+            "mean_unique_retained": {
+              "defined_runs": 3,
+              "mean": 3.661748770525965,
+              "sample_sd": 0.017755025601159415,
+              "values": [
+                3.6814203550887723,
+                3.646911727931983,
+                3.6569142285571394
+              ]
+            },
+            "novelty_vs_benchmark_train": {
+              "defined_runs": 3,
+              "mean": 0.9992289739101442,
+              "sample_sd": 0.00014916670974555064,
+              "values": [
+                0.9992748187046762,
+                0.9990622655663915,
+                0.9993498374593648
+              ]
+            },
+            "qed": {
+              "defined_runs": 3,
+              "mean": 0.6368044905188306,
+              "sample_sd": 0.0003008635929857106,
+              "values": [
+                0.6364658582970505,
+                0.6370410008658088,
+                0.6369066123936324
+              ]
+            },
+            "retained_diversity_all_records": {
+              "defined_runs": 3,
+              "mean": 0.28683844969715755,
+              "sample_sd": 0.0012678850844136248,
+              "values": [
+                0.28692158771747706,
+                0.2855310415821106,
+                0.28806271979188497
+              ]
+            },
+            "retained_yield": {
+              "defined_runs": 3,
+              "mean": 0.38179961657080935,
+              "sample_sd": 0.0013041865005592576,
+              "values": [
+                0.3832208052013003,
+                0.38152038009502376,
+                0.38065766441610405
+              ]
+            },
+            "sas": {
+              "defined_runs": 3,
+              "mean": 2.7884515283735856,
+              "sample_sd": 0.001599355766101773,
+              "values": [
+                2.788327944387885,
+                2.786917549670057,
+                2.790109091062815
+              ]
+            },
+            "validity": {
+              "defined_runs": 3,
+              "mean": 1.0,
+              "sample_sd": 0.0,
+              "values": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            }
+          },
+          "n_checkpoints": 1,
+          "n_sampling_repeats": 3,
+          "sd_interpretation": "fixed-checkpoint sampling variation"
+        },
+        "libinvent_official": {
+          "kind": "official",
+          "metrics": {
+            "aggregate_diversity_uniform": {
+              "defined_runs": 3,
+              "mean": 0.8616131657478204,
+              "sample_sd": 0.0007472426841387214,
+              "values": [
+                0.8617053033464167,
+                0.8608241268103657,
+                0.862310067086679
+              ]
+            },
+            "core_match": {
+              "defined_runs": 3,
+              "mean": 1.0,
+              "sample_sd": 0.0,
+              "values": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "core_retention": {
+              "defined_runs": 3,
+              "mean": 0.5983651657377879,
+              "sample_sd": 0.0014093496137444165,
+              "values": [
+                0.5983174105233139,
+                0.5997977860161253,
+                0.5969803006739243
+              ]
+            },
+            "mean_unique_retained": {
+              "defined_runs": 3,
+              "mean": 3.6070684337751104,
+              "sample_sd": 0.022891763081723953,
+              "values": [
+                3.582145536384096,
+                3.611902975743936,
+                3.6271567891972993
+              ]
+            },
+            "novelty_vs_benchmark_train": {
+              "defined_runs": 3,
+              "mean": 0.9994944892862588,
+              "sample_sd": 8.499959299828106e-05,
+              "values": [
+                0.9995722230144019,
+                0.9994037279962669,
+                0.9995075168481078
+              ]
+            },
+            "qed": {
+              "defined_runs": 3,
+              "mean": 0.7042020947427319,
+              "sample_sd": 0.00020933188844403372,
+              "values": [
+                0.7040868619430927,
+                0.7044437244326558,
+                0.7040756978524471
+              ]
+            },
+            "retained_diversity_all_records": {
+              "defined_runs": 3,
+              "mean": 0.16700605674658128,
+              "sample_sd": 0.0017733084896569171,
+              "values": [
+                0.1649779245863618,
+                0.16777592422923016,
+                0.1682643214241519
+              ]
+            },
+            "retained_yield": {
+              "defined_runs": 3,
+              "mean": 0.5771901308660499,
+              "sample_sd": 0.001309211210310516,
+              "values": [
+                0.577094273568392,
+                0.5785446361590397,
+                0.5759314828707177
+              ]
+            },
+            "sas": {
+              "defined_runs": 3,
+              "mean": 2.557780538446774,
+              "sample_sd": 0.00032342206326757046,
+              "values": [
+                2.558111694581334,
+                2.557465449370148,
+                2.55776447138884
+              ]
+            },
+            "validity": {
+              "defined_runs": 3,
+              "mean": 0.9646119863299158,
+              "sample_sd": 0.00011345050920078408,
+              "values": [
+                0.9645286321580395,
+                0.9645661415353839,
+                0.9647411852963241
+              ]
+            }
+          },
+          "n_checkpoints": 1,
+          "n_sampling_repeats": 3,
+          "sd_interpretation": "fixed-checkpoint sampling variation"
+        },
+        "promptsmiles_public_clm": {
+          "kind": "official",
+          "metrics": {
+            "aggregate_diversity_uniform": {
+              "defined_runs": 3,
+              "mean": 0.854947054306638,
+              "sample_sd": 0.0004189117793727326,
+              "values": [
+                0.854719918289715,
+                0.8546907655843785,
+                0.8554304790458203
+              ]
+            },
+            "core_match": {
+              "defined_runs": 3,
+              "mean": 1.0,
+              "sample_sd": 0.0,
+              "values": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "core_retention": {
+              "defined_runs": 3,
+              "mean": 0.6130994438223102,
+              "sample_sd": 0.0019852826374183044,
+              "values": [
+                0.6146740841817991,
+                0.6108693041964339,
+                0.6137549430886974
+              ]
+            },
+            "mean_unique_retained": {
+              "defined_runs": 3,
+              "mean": 3.8196215720596816,
+              "sample_sd": 0.009795090568058187,
+              "values": [
+                3.8282070517629405,
+                3.8217054263565893,
+                3.808952238059515
+              ]
+            },
+            "novelty_vs_benchmark_train": {
+              "defined_runs": 3,
+              "mean": 0.9993544720516917,
+              "sample_sd": 5.344259044190051e-05,
+              "values": [
+                0.9993402210259563,
+                0.9993095995677493,
+                0.9994135955613694
+              ]
+            },
+            "qed": {
+              "defined_runs": 3,
+              "mean": 0.7200503900950045,
+              "sample_sd": 0.0005911352683352596,
+              "values": [
+                0.7205596944956517,
+                0.7194021674739417,
+                0.7201893083154202
+              ]
+            },
+            "retained_diversity_all_records": {
+              "defined_runs": 3,
+              "mean": 0.1683279471115098,
+              "sample_sd": 0.001201989578018538,
+              "values": [
+                0.16963423741526268,
+                0.16726862074711105,
+                0.1680809831721557
+              ]
+            },
+            "retained_yield": {
+              "defined_runs": 3,
+              "mean": 0.510594315245478,
+              "sample_sd": 0.001830003778941913,
+              "values": [
+                0.5125281320330083,
+                0.5088897224306077,
+                0.5103650912728181
+              ]
+            },
+            "sas": {
+              "defined_runs": 3,
+              "mean": 2.459362322595812,
+              "sample_sd": 0.0007723274138197931,
+              "values": [
+                2.4598942749239567,
+                2.459716233255743,
+                2.4584764596077355
+              ]
+            },
+            "validity": {
+              "defined_runs": 3,
+              "mean": 0.8328082020505126,
+              "sample_sd": 0.0011582106423726462,
+              "values": [
+                0.8338209552388097,
+                0.8330582645661415,
+                0.8315453863465867
+              ]
+            }
+          },
+          "n_checkpoints": 1,
+          "n_sampling_repeats": 3,
+          "sd_interpretation": "fixed-checkpoint sampling variation"
+        }
+      }
+    },
+    "native_support": {
+      "systems": {
+        "atomformer_rl": {
+          "kind": "atomformer",
+          "metrics": {
+            "aggregate_diversity_uniform": {
+              "defined_runs": 3,
+              "mean": 0.8537553667857672,
+              "sample_sd": 0.00047703951059945953,
+              "values": [
+                0.8541108506176325,
+                0.85394202866871,
+                0.8532132210709593
+              ]
+            },
+            "core_match": {
+              "defined_runs": 3,
+              "mean": 1.0,
+              "sample_sd": 0.0,
+              "values": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "core_retention": {
+              "defined_runs": 3,
+              "mean": 1.0,
+              "sample_sd": 0.0,
+              "values": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "mean_unique_retained": {
+              "defined_runs": 3,
+              "mean": 10.57639409852463,
+              "sample_sd": 0.20348252377272932,
+              "values": [
+                10.346586646661665,
+                10.648912228057014,
+                10.733683420855213
+              ]
+            },
+            "novelty_vs_benchmark_train": {
+              "defined_runs": 3,
+              "mean": 1.0,
+              "sample_sd": 0.0,
+              "values": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "qed": {
+              "defined_runs": 3,
+              "mean": 0.7833033146489107,
+              "sample_sd": 0.0008215531918898865,
+              "values": [
+                0.7835093079190077,
+                0.7823983674376976,
+                0.7840022685900265
+              ]
+            },
+            "retained_diversity_all_records": {
+              "defined_runs": 3,
+              "mean": 0.27536167024759534,
+              "sample_sd": 0.0042474997886452715,
+              "values": [
+                0.27132704267102575,
+                0.2797940595405652,
+                0.274963908531195
+              ]
+            },
+            "retained_yield": {
+              "defined_runs": 3,
+              "mean": 0.9986579978327915,
+              "sample_sd": 0.00017021403564778604,
+              "values": [
+                0.998849712428107,
+                0.9985996499124781,
+                0.9985246311577894
+              ]
+            },
+            "sas": {
+              "defined_runs": 3,
+              "mean": 2.4494565155340635,
+              "sample_sd": 0.0026029456923247173,
+              "values": [
+                2.4465888747823015,
+                2.4516699535510464,
+                2.450110718268842
+              ]
+            },
+            "validity": {
+              "defined_runs": 3,
+              "mean": 0.9986579978327915,
+              "sample_sd": 0.00017021403564778604,
+              "values": [
+                0.998849712428107,
+                0.9985996499124781,
+                0.9985246311577894
+              ]
+            }
+          },
+          "n_checkpoints": 3,
+          "n_sampling_repeats": 3,
+          "sd_interpretation": "training plus sampling variation"
+        },
+        "atomformer_supervised": {
+          "kind": "atomformer",
+          "metrics": {
+            "aggregate_diversity_uniform": {
+              "defined_runs": 3,
+              "mean": 0.8556700116982783,
+              "sample_sd": 0.0005520520747161914,
+              "values": [
+                0.8552246479056318,
+                0.856287661710211,
+                0.8554977254789919
+              ]
+            },
+            "core_match": {
+              "defined_runs": 3,
+              "mean": 1.0,
+              "sample_sd": 0.0,
+              "values": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "core_retention": {
+              "defined_runs": 3,
+              "mean": 1.0,
+              "sample_sd": 0.0,
+              "values": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "mean_unique_retained": {
+              "defined_runs": 3,
+              "mean": 9.191964657831125,
+              "sample_sd": 0.49579882634785205,
+              "values": [
+                8.619654913728432,
+                9.490872718179546,
+                9.465366341585396
+              ]
+            },
+            "novelty_vs_benchmark_train": {
+              "defined_runs": 3,
+              "mean": 1.0,
+              "sample_sd": 0.0,
+              "values": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "qed": {
+              "defined_runs": 3,
+              "mean": 0.7883692213521382,
+              "sample_sd": 0.0023997755416029186,
+              "values": [
+                0.7893069826916277,
+                0.7856421610166682,
+                0.7901585203481185
+              ]
+            },
+            "retained_diversity_all_records": {
+              "defined_runs": 3,
+              "mean": 0.24902388613145798,
+              "sample_sd": 0.010323336591953268,
+              "values": [
+                0.2371356286053524,
+                0.2542108635651806,
+                0.255725166223841
+              ]
+            },
+            "retained_yield": {
+              "defined_runs": 3,
+              "mean": 0.9967491872968242,
+              "sample_sd": 0.0004053404620516773,
+              "values": [
+                0.9971867966991748,
+                0.9966741685421355,
+                0.9963865966491623
+              ]
+            },
+            "sas": {
+              "defined_runs": 3,
+              "mean": 2.453145406874495,
+              "sample_sd": 0.011194503778499848,
+              "values": [
+                2.4423966064263696,
+                2.4523017381425536,
+                2.4647378760545626
+              ]
+            },
+            "validity": {
+              "defined_runs": 3,
+              "mean": 0.9967491872968242,
+              "sample_sd": 0.0004053404620516773,
+              "values": [
+                0.9971867966991748,
+                0.9966741685421355,
+                0.9963865966491623
+              ]
+            }
+          },
+          "n_checkpoints": 3,
+          "n_sampling_repeats": 3,
+          "sd_interpretation": "training plus sampling variation"
+        },
+        "atomformer_zero": {
+          "kind": "atomformer",
+          "metrics": {
+            "aggregate_diversity_uniform": {
+              "defined_runs": 3,
+              "mean": 0.8533163053499635,
+              "sample_sd": 0.0027669816350848614,
+              "values": [
+                0.8563218750868904,
+                0.8527521899048056,
+                0.8508748510581945
+              ]
+            },
+            "core_match": {
+              "defined_runs": 3,
+              "mean": 1.0,
+              "sample_sd": 0.0,
+              "values": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "core_retention": {
+              "defined_runs": 3,
+              "mean": 1.0,
+              "sample_sd": 0.0,
+              "values": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "mean_unique_retained": {
+              "defined_runs": 3,
+              "mean": 8.397599399849963,
+              "sample_sd": 1.6863607201607167,
+              "values": [
+                6.487621905476369,
+                9.680920230057515,
+                9.024256064016004
+              ]
+            },
+            "novelty_vs_benchmark_train": {
+              "defined_runs": 3,
+              "mean": 1.0,
+              "sample_sd": 0.0,
+              "values": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "qed": {
+              "defined_runs": 3,
+              "mean": 0.7877052675217291,
+              "sample_sd": 0.004880521546646351,
+              "values": [
+                0.7933398095358634,
+                0.784796111883217,
+                0.7849798811461068
+              ]
+            },
+            "retained_diversity_all_records": {
+              "defined_runs": 3,
+              "mean": 0.23510786048669888,
+              "sample_sd": 0.030044108923269888,
+              "values": [
+                0.20237505825687777,
+                0.2614277145015266,
+                0.24152080870169226
+              ]
+            },
+            "retained_yield": {
+              "defined_runs": 3,
+              "mean": 0.9991081103609236,
+              "sample_sd": 0.00015633074379855602,
+              "values": [
+                0.9992873218304577,
+                0.9989997499374844,
+                0.9990372593148287
+              ]
+            },
+            "sas": {
+              "defined_runs": 3,
+              "mean": 2.4072056679031992,
+              "sample_sd": 0.021142447842057103,
+              "values": [
+                2.3834873805093086,
+                2.4240733276557958,
+                2.414056295544493
+              ]
+            },
+            "validity": {
+              "defined_runs": 3,
+              "mean": 0.9991081103609236,
+              "sample_sd": 0.00015633074379855602,
+              "values": [
+                0.9992873218304577,
+                0.9989997499374844,
+                0.9990372593148287
+              ]
+            }
+          },
+          "n_checkpoints": 3,
+          "n_sampling_repeats": 3,
+          "sd_interpretation": "training plus sampling variation"
+        },
+        "drugex_official": {
+          "kind": "official",
+          "metrics": {
+            "aggregate_diversity_uniform": {
+              "defined_runs": 3,
+              "mean": 0.8634031227901903,
+              "sample_sd": 0.0002610354417167937,
+              "values": [
+                0.863118226521792,
+                0.8634603354328273,
+                0.8636308064159516
+              ]
+            },
+            "core_match": {
+              "defined_runs": 3,
+              "mean": 0.9995540551804618,
+              "sample_sd": 4.0191926152369763e-05,
+              "values": [
+                0.999524881220305,
+                0.9995373843460865,
+                0.9995998999749938
+              ]
+            },
+            "core_retention": {
+              "defined_runs": 3,
+              "mean": 0.38179961657080935,
+              "sample_sd": 0.0013041865005592576,
+              "values": [
+                0.3832208052013003,
+                0.38152038009502376,
+                0.38065766441610405
+              ]
+            },
+            "mean_unique_retained": {
+              "defined_runs": 3,
+              "mean": 3.661748770525965,
+              "sample_sd": 0.017755025601159415,
+              "values": [
+                3.6814203550887723,
+                3.646911727931983,
+                3.6569142285571394
+              ]
+            },
+            "novelty_vs_benchmark_train": {
+              "defined_runs": 3,
+              "mean": 0.9992289739101442,
+              "sample_sd": 0.00014916670974555064,
+              "values": [
+                0.9992748187046762,
+                0.9990622655663915,
+                0.9993498374593648
+              ]
+            },
+            "qed": {
+              "defined_runs": 3,
+              "mean": 0.6368044905188306,
+              "sample_sd": 0.0003008635929857106,
+              "values": [
+                0.6364658582970505,
+                0.6370410008658088,
+                0.6369066123936324
+              ]
+            },
+            "retained_diversity_all_records": {
+              "defined_runs": 3,
+              "mean": 0.28683844969715755,
+              "sample_sd": 0.0012678850844136248,
+              "values": [
+                0.28692158771747706,
+                0.2855310415821106,
+                0.28806271979188497
+              ]
+            },
+            "retained_yield": {
+              "defined_runs": 3,
+              "mean": 0.38179961657080935,
+              "sample_sd": 0.0013041865005592576,
+              "values": [
+                0.3832208052013003,
+                0.38152038009502376,
+                0.38065766441610405
+              ]
+            },
+            "sas": {
+              "defined_runs": 3,
+              "mean": 2.7884515283735856,
+              "sample_sd": 0.001599355766101773,
+              "values": [
+                2.788327944387885,
+                2.786917549670057,
+                2.790109091062815
+              ]
+            },
+            "validity": {
+              "defined_runs": 3,
+              "mean": 1.0,
+              "sample_sd": 0.0,
+              "values": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            }
+          },
+          "n_checkpoints": 1,
+          "n_sampling_repeats": 3,
+          "sd_interpretation": "fixed-checkpoint sampling variation"
+        },
+        "libinvent_official": {
+          "kind": "official",
+          "metrics": {
+            "aggregate_diversity_uniform": {
+              "defined_runs": 3,
+              "mean": 0.8616131657478204,
+              "sample_sd": 0.0007472426841387214,
+              "values": [
+                0.8617053033464167,
+                0.8608241268103657,
+                0.862310067086679
+              ]
+            },
+            "core_match": {
+              "defined_runs": 3,
+              "mean": 1.0,
+              "sample_sd": 0.0,
+              "values": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "core_retention": {
+              "defined_runs": 3,
+              "mean": 0.5983651657377879,
+              "sample_sd": 0.0014093496137444165,
+              "values": [
+                0.5983174105233139,
+                0.5997977860161253,
+                0.5969803006739243
+              ]
+            },
+            "mean_unique_retained": {
+              "defined_runs": 3,
+              "mean": 3.6070684337751104,
+              "sample_sd": 0.022891763081723953,
+              "values": [
+                3.582145536384096,
+                3.611902975743936,
+                3.6271567891972993
+              ]
+            },
+            "novelty_vs_benchmark_train": {
+              "defined_runs": 3,
+              "mean": 0.9994944892862588,
+              "sample_sd": 8.499959299828106e-05,
+              "values": [
+                0.9995722230144019,
+                0.9994037279962669,
+                0.9995075168481078
+              ]
+            },
+            "qed": {
+              "defined_runs": 3,
+              "mean": 0.7042020947427319,
+              "sample_sd": 0.00020933188844403372,
+              "values": [
+                0.7040868619430927,
+                0.7044437244326558,
+                0.7040756978524471
+              ]
+            },
+            "retained_diversity_all_records": {
+              "defined_runs": 3,
+              "mean": 0.16700605674658128,
+              "sample_sd": 0.0017733084896569171,
+              "values": [
+                0.1649779245863618,
+                0.16777592422923016,
+                0.1682643214241519
+              ]
+            },
+            "retained_yield": {
+              "defined_runs": 3,
+              "mean": 0.5771901308660499,
+              "sample_sd": 0.001309211210310516,
+              "values": [
+                0.577094273568392,
+                0.5785446361590397,
+                0.5759314828707177
+              ]
+            },
+            "sas": {
+              "defined_runs": 3,
+              "mean": 2.557780538446774,
+              "sample_sd": 0.00032342206326757046,
+              "values": [
+                2.558111694581334,
+                2.557465449370148,
+                2.55776447138884
+              ]
+            },
+            "validity": {
+              "defined_runs": 3,
+              "mean": 0.9646119863299158,
+              "sample_sd": 0.00011345050920078408,
+              "values": [
+                0.9645286321580395,
+                0.9645661415353839,
+                0.9647411852963241
+              ]
+            }
+          },
+          "n_checkpoints": 1,
+          "n_sampling_repeats": 3,
+          "sd_interpretation": "fixed-checkpoint sampling variation"
+        },
+        "promptsmiles_public_clm": {
+          "kind": "official",
+          "metrics": {
+            "aggregate_diversity_uniform": {
+              "defined_runs": 3,
+              "mean": 0.854947054306638,
+              "sample_sd": 0.0004189117793727326,
+              "values": [
+                0.854719918289715,
+                0.8546907655843785,
+                0.8554304790458203
+              ]
+            },
+            "core_match": {
+              "defined_runs": 3,
+              "mean": 1.0,
+              "sample_sd": 0.0,
+              "values": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "core_retention": {
+              "defined_runs": 3,
+              "mean": 0.6130994438223102,
+              "sample_sd": 0.0019852826374183044,
+              "values": [
+                0.6146740841817991,
+                0.6108693041964339,
+                0.6137549430886974
+              ]
+            },
+            "mean_unique_retained": {
+              "defined_runs": 3,
+              "mean": 3.8196215720596816,
+              "sample_sd": 0.009795090568058187,
+              "values": [
+                3.8282070517629405,
+                3.8217054263565893,
+                3.808952238059515
+              ]
+            },
+            "novelty_vs_benchmark_train": {
+              "defined_runs": 3,
+              "mean": 0.9993544720516917,
+              "sample_sd": 5.344259044190051e-05,
+              "values": [
+                0.9993402210259563,
+                0.9993095995677493,
+                0.9994135955613694
+              ]
+            },
+            "qed": {
+              "defined_runs": 3,
+              "mean": 0.7200503900950045,
+              "sample_sd": 0.0005911352683352596,
+              "values": [
+                0.7205596944956517,
+                0.7194021674739417,
+                0.7201893083154202
+              ]
+            },
+            "retained_diversity_all_records": {
+              "defined_runs": 3,
+              "mean": 0.1683279471115098,
+              "sample_sd": 0.001201989578018538,
+              "values": [
+                0.16963423741526268,
+                0.16726862074711105,
+                0.1680809831721557
+              ]
+            },
+            "retained_yield": {
+              "defined_runs": 3,
+              "mean": 0.510594315245478,
+              "sample_sd": 0.001830003778941913,
+              "values": [
+                0.5125281320330083,
+                0.5088897224306077,
+                0.5103650912728181
+              ]
+            },
+            "sas": {
+              "defined_runs": 3,
+              "mean": 2.459362322595812,
+              "sample_sd": 0.0007723274138197931,
+              "values": [
+                2.4598942749239567,
+                2.459716233255743,
+                2.4584764596077355
+              ]
+            },
+            "validity": {
+              "defined_runs": 3,
+              "mean": 0.8328082020505126,
+              "sample_sd": 0.0011582106423726462,
+              "values": [
+                0.8338209552388097,
+                0.8330582645661415,
+                0.8315453863465867
+              ]
+            }
+          },
+          "n_checkpoints": 1,
+          "n_sampling_repeats": 3,
+          "sd_interpretation": "fixed-checkpoint sampling variation"
+        }
+      }
+    }
+  },
+  "requested_records": 3999,
+  "split": "v_check",
+  "technical_checks_passed": true
+}
