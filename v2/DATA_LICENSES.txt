@@ -1,0 +1,21 @@
+AtomFormer research artifact licenses and attribution
+
+Original study annotations, reference summaries, generated outputs and exported model weights: Creative Commons Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0), https://creativecommons.org/licenses/by-sa/3.0/ . Credit Pengkai Zhang and Yongna Yuan and cite the deposited version. Upstream notices below remain applicable.
+
+ChEMBL37: EMBL-EBI ChEMBL release 37, CC BY-SA 3.0. Source: https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/chembl_37/chembl_37_chemreps.txt.gz . The study data were cleaned, selected, partitioned and converted to scaffold/decoration records. This does not imply endorsement by the ChEMBL authors. Cite Zdrazil et al., Nucleic Acids Research 52, D1180-D1192 (2024), https://doi.org/10.1093/nar/gkad1004 .
+
+MOSES: https://github.com/molecularsets/moses , revision dd7ed6ab38e23afd3ef5371d67939a1760bd8599 . The upstream permission notice is reproduced below. Cite Polykovskiy et al., Frontiers in Pharmacology 11, 565644 (2020), https://doi.org/10.3389/fphar.2020.565644 .
+
+GDB13: upstream structures are NOT redistributed in the selector archive. Obtain gdb13.1M.freq.ll.smi.gz from https://zenodo.org/records/5172018 under the provider's terms at https://gdb.unibe.ch/downloads/ . The archive supplies study-produced selectors, checksums and numerical annotations, not additional rights over upstream GDB data. Cite Blum and Reymond, J. Am. Chem. Soc. 131, 8732-8733 (2009), https://doi.org/10.1021/ja902302h .
+
+Software: the AtomFormer source repository is licensed separately under GPL-3.0-or-later. External software and baseline implementations retain their own licenses. No external baseline model binaries or code are included in this data deposit.
+
+MOSES upstream notice:
+
+Copyright 2018 Insilico Medicine, Inc
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
