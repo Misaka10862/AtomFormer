@@ -1,6 +1,6 @@
 AtomFormer research artifacts, version 2.0.0
 Creators: Pengkai Zhang and Yongna Yuan, Lanzhou University
-Code: https://github.com/Misaka10862/AtomFormer/tree/codex/atomformer-v2/v2
+Code: https://github.com/Misaka10862/AtomFormer/tree/v2.0.0/v2
 Reserved data DOI: 10.5281/zenodo.23862166
 
 This deposit is a draft pending author approval. Do not describe it as publicly available until publication.
