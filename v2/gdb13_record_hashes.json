@@ -1,0 +1,25 @@
+{
+  "algorithm": "SHA256 of JSON array, original record order, sort_keys=True, separators=(comma,colon), allow_nan=False, UTF-8",
+  "splits": {
+    "train": {
+      "records": 181472,
+      "semantic_sha256": "b9dfe5d4a901981f662557118db9ace7d915c9e2bb15290528c4c425182e3129"
+    },
+    "v_select": {
+      "records": 17469,
+      "semantic_sha256": "422801a9f329344c64d2d753f998a0c6cc24dd477873ab53ac64e4b6f6878484"
+    },
+    "v_check": {
+      "records": 4367,
+      "semantic_sha256": "9431151e986bd63d3a5529cf14c7dd9cb978140d6dfd42b4f74f917e850bf440"
+    },
+    "test": {
+      "records": 24441,
+      "semantic_sha256": "baf7b49333d3b0e17dee089d1d3976616ab369c958124e4aca37c133aceefdb1"
+    },
+    "excluded_validation": {
+      "records": 1532,
+      "semantic_sha256": "5bf5c781d6e4968fd2eb1a7314d57af9e5955f5bb92eb3e9b4cbacc586ae305e"
+    }
+  }
+}

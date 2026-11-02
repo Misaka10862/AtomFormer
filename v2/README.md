@@ -63,7 +63,7 @@ python restore_gdb13.py --legacy-inputs /path/to/reconstructed-gdb13 \
   --output /path/to/new-gdb13-inputs
 ```
 
-This applies the source-identity-based scaffold mapping and reproduces the selection/check split. Compare the produced scientific records against the v2 input manifest; gzip container byte hashes can differ due to timestamps. Expected sizes are train 181472, selection-validation 17469, check-validation 4367 and test 24441. The excluded 1532 validation records overlap training scoring cores. The nonoverlap test subset has 24003 records. Historical rooted sulfur-H assembly limitations remain part of the fixed inputs; reconstruction does not silently remove them.
+This applies the source-identity-based scaffold mapping and reproduces the selection/check split. Compare the produced scientific records against `gdb13_record_hashes.json`; gzip container byte hashes can differ due to timestamps. The restoration entry point was checked against all 229281 fixed records with exact scientific-field equality. Expected sizes are train 181472, selection-validation 17469, check-validation 4367 and test 24441. The excluded 1532 validation records overlap training scoring cores. The nonoverlap test subset has 24003 records. Historical rooted sulfur-H assembly limitations remain part of the fixed inputs; reconstruction does not silently remove them.
 
 ## Metrics and statistical interpretation
 
