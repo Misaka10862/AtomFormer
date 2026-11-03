@@ -1,15 +1,15 @@
 AtomFormer research artifacts, version 2.0.0
 Creators: Pengkai Zhang and Yongna Yuan, Lanzhou University
 Code: https://github.com/Misaka10862/AtomFormer/tree/v2.0.0/v2
-Reserved data DOI: 10.5281/zenodo.23862166
+Data DOI: 10.5281/zenodo.23862166
 
-This deposit is a draft pending author approval. Do not describe it as publicly available until publication.
+Published dataset: https://doi.org/10.5281/zenodo.23862166
 
 CONTENTS
 AtomFormer_Models_<dataset>_v2.0.0.zip: three supervised best, three balanced-RL last (lambda 0.10), and three unanchored-RL last (lambda 0) checkpoints per dataset. Tensors and tokenizers are preserved; optimizer states, monitoring histories and execution-control records are omitted. Model-tensor equality is verified during export. The model JSON files provide training/architecture settings; replace portable source-checkpoint placeholders when training a fresh continuation.
 AtomFormer_Inputs_chembl37_v2.0.0.zip and AtomFormer_Inputs_moses_v2.0.0.zip: fixed full training data, selection-validation, check-validation, test inputs, tokenizers, full-training novelty reference and three stratified policy lists.
 AtomFormer_Results_<dataset>_<split>_v2.0.0.zip: scored event ledgers and scalar summaries for six systems and three repeats per split. Each events.jsonl.gz retains generated outputs, attempt IDs, original model/event identity, support flags, failed attempts and scores. Separate duplicate raw ledgers and per-record summary copies are omitted. Original events can be rescored from assembled_output with the fixed input cores and training novelty reference.
-REFERENCE_RESULTS.zip: full-precision final summaries, core-bootstrap intervals, paired internal differences, official baseline registry and pinned source identities.
+AtomFormer_Technical_Metadata_v2.0.0.zip: per-run numerical metrics, official baseline registry and pinned source identities. Full-precision final summaries and core-bootstrap intervals are available in the code repository under v2/reference_results/.
 MANIFEST.json: archive SHA256/size inventory, checkpoint provenance and input checksums.
 LICENSES.txt: artifact and upstream license/attribution information.
 
