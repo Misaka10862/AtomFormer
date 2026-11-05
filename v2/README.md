@@ -8,7 +8,7 @@ This version supplies the implementation and reference results for the updated C
 
 The version 2.0.0 data archive is published at **[10.5281/zenodo.23862166](https://doi.org/10.5281/zenodo.23862166)**. The [1.0.0 archive](https://doi.org/10.5281/zenodo.23468121) preserves the earlier study and the GDB13 reconstruction selectors.
 
-The planned archive contains 27 AtomFormer checkpoints, fixed ChEMBL37/MOSES inputs, 108 final scored generation ledgers (54 validation-check and 54 test evaluations), their summaries, and source/asset checksums. Internal monitoring, approval records, debugging histories and manuscript revisions are excluded.
+The published archive contains 27 AtomFormer checkpoints, fixed ChEMBL37/MOSES inputs, 108 final scored generation ledgers (54 validation-check and 54 test evaluations), their summaries, and source/asset checksums. Internal monitoring, approval records, debugging histories and manuscript revisions are excluded.
 
 ## Installation
 
@@ -23,7 +23,7 @@ The implementation modules retain their serialized schema identifiers for compat
 
 ## Generate and score
 
-After obtaining the approved archive and extracting its models/inputs:
+After downloading the published archive and extracting its models/inputs:
 
 ```sh
 python atomformer.py generate \
