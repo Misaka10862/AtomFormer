@@ -6,7 +6,7 @@ Scaffold-preserving molecular decoration with coordinate-free atom encoding, att
 
 The updated implementation and study are in **[v2/](v2/README.md)**. The main supervised-anchor weight is 0.10 on ChEMBL37, MOSES and GDB13, with supervised and zero-anchor controls and three frozen official reference systems.
 
-The updated data archive has reserved DOI **10.5281/zenodo.23862166** and remains a draft awaiting author review. It is not yet publicly accessible. Full-precision compact reference results are included in [`v2/reference_results/`](v2/reference_results/).
+The version 2.0.0 data archive is published at **[10.5281/zenodo.23862166](https://doi.org/10.5281/zenodo.23862166)**. Full-precision compact reference results are included in [`v2/reference_results/`](v2/reference_results/).
 
 ## Earlier version
 
