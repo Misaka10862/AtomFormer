@@ -6,9 +6,9 @@ This version supplies the implementation and reference results for the updated C
 
 ## Research artifacts
 
-The new Zenodo record is being prepared under reserved DOI **10.5281/zenodo.23862166**. It is **a draft awaiting author approval**, not a publicly downloadable dataset yet. The previously published [1.0.0 archive](https://doi.org/10.5281/zenodo.23468121) contains historical results and must not be substituted for this version's results.
+The version 2.0.0 data archive is published at **[10.5281/zenodo.23862166](https://doi.org/10.5281/zenodo.23862166)**. The [1.0.0 archive](https://doi.org/10.5281/zenodo.23468121) preserves the earlier study and the GDB13 reconstruction selectors.
 
-The planned archive contains 27 AtomFormer checkpoints, fixed ChEMBL37/MOSES inputs, 108 final scored generation ledgers (54 validation-check and 54 test evaluations), their summaries, and source/asset checksums. Internal monitoring, approval records, debugging histories and manuscript revisions are excluded.
+The published archive contains 27 AtomFormer checkpoints, fixed ChEMBL37/MOSES inputs, 108 final scored generation ledgers (54 validation-check and 54 test evaluations), their summaries, and source/asset checksums. Internal monitoring, approval records, debugging histories and manuscript revisions are excluded.
 
 ## Installation
 
@@ -23,7 +23,7 @@ The implementation modules retain their serialized schema identifiers for compat
 
 ## Generate and score
 
-After obtaining the approved archive and extracting its models/inputs:
+After downloading the published archive and extracting its models/inputs:
 
 ```sh
 python atomformer.py generate \
@@ -74,3 +74,7 @@ Three AtomFormer repeats vary training and sampling; external repeats vary sampl
 ## Licenses
 
 Code uses the repository's GPL-3.0-or-later license with retained third-party notices. Dataset/weight licenses are separate. Follow the original GDB13, ChEMBL and MOSES terms and the official reference checkpoint licenses. Official reference weights are identified by upstream download links and hashes rather than duplicated here.
+
+## Documentation correction (2.0.1)
+
+Version 2.0.1 corrects the archive publication status in these README files. All other repository files are identical to version 2.0.0. The published Zenodo data archive remains version 2.0.0 at the DOI above.
